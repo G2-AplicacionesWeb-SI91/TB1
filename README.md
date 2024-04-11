@@ -12,10 +12,11 @@
 
 # Informe de Trabajo Final
 - **Nombre del Startup**: a
-- **Nombre del Producto**: a
+- **Nombre del Producto**: TrackMyRoute
 - **Relación de Integrantes**:
+- - Ramirez Mendoza, Carlos Arian (u202020108)
 - - Valenzuela Vallejos, Alessandro Stefano(u202214695)
-- **Mes y Año**: marzo del 2024
+- **Mes y Año**: Abril del 2024
 
 ---
 
