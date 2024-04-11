@@ -13,7 +13,8 @@
 # Informe de Trabajo Final
 - **Nombre del Startup**: a
 - **Nombre del Producto**: a
-- **Relación de Integrantes**: 
+- **Relación de Integrantes**:
+- - Valenzuela Vallejos, Alessandro Stefano(u202214695)
 - **Mes y Año**: marzo del 2024
 
 ---
