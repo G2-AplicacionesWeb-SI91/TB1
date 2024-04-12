@@ -16,6 +16,7 @@
 - **Relación de Integrantes**:
 - - Ramirez Mendoza, Carlos Arian (u202020108)
 - - Valenzuela Vallejos, Alessandro Stefano(u202214695)
+- - Rivas Sarango, David Alejandro (U20191E831)
 - **Mes y Año**: Abril del 2024
 
 ---
@@ -367,7 +368,64 @@ Para que este verifique si es valido la ruta que ah sido escogida y el status es
 
 ## 5.1 Software Configuration Management
 - ### Software Development Environment Configuration
-   [Poner información aquí]
+   **Project Management**
+
+Para la organizacion del proyecto necesitabamos una planificación en cuanto a tareas asignadas, un punto de reunión y un repositorio donde trabajaramos en conjunto cada avance del proyecto, es por esto que elegimos las siguientes herramientas:
+
+* Centro de organización de trabajo: Github
+    
+* Planificación de tareas: Trello
+    
+* Reuniones con el equipo: Google Meet
+    
+**Requirements Management**
+
+Para realizar las actividades del proyecto necesitábamos designarlas a cada integrante del grupo en caso de revisión o cambios, esta lista de asignaciones fue realizada en Trello:
+
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://www.trello.com/</td>
+        </tr>
+    </tbody>
+</table>
+
+**Product UX/UI Design**
+
+Para el diseño de los wireframe y mockups, además de un prototipo de Web App se utilizó Figma:
+
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://www.figma.com/</td>
+        </tr>
+    </tbody>
+</table>
+
+**Software Development**
+
+La herramienta para la implementación del proyecto es WebStorm de Jetbrains:
+
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://www.jetbrains.com/es-es/webstorm/</td>
+        </tr>
+    </tbody>
+</table>
+La herramienta para la implementación del proyecto es Rider de Jetbrains:
+
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://www.jetbrains.com/es-es/rider/</td>
+        </tr>
+    </tbody>
+</table>
 - ### Source Code Management
    [Poner información aquí]
 - ### Source Code Style Guide & Conventions
