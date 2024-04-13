@@ -366,6 +366,8 @@ público.
 Las preguntas serán abiertas y no directivas para que los participantes puedan expresar sus opiniones
 libremente. A continuación, se presentan algunos ejemplos de preguntas:
 
+**Segmento 1: Usuarios Diarios de Transporte Público en Lima:**
+
 -  ¿Con qué frecuencia utilizas el transporte público en Lima?
 - ¿Cuál es tu principal motivo para utilizar el transporte público en lugar de otros medios de transporte?
 -  ¿Cuáles son los horarios en los que más utilizas el transporte público y por qué?
@@ -378,7 +380,22 @@ libremente. A continuación, se presentan algunos ejemplos de preguntas:
 - ¿Hay alguna característica específica que sientas que falta en la aplicación y que te gustaría ver implementada?
 - ¿Cómo crees que podríamos mejorar la experiencia general de los usuarios en nuestra aplicación de transporte público? 
 
+**Segmento 2: Empresas de transporte en Lima:**
+
+1. ¿Cuál es el nombre de su empresa de transporte público?
+2. ¿Cuál es su rol dentro de la empresa?
+3. ¿Podría describir brevemente las principales operaciones y servicios de transporte que ofrece su empresa en Lima?
+4. ¿Qué desafíos enfrenta actualmente su empresa en términos de operaciones de transporte y atención al cliente?
+5. ¿Está su empresa utilizando alguna aplicación o plataforma tecnológica para gestionar sus servicios de transporte?
+6. ¿Qué características o funcionalidades consideraría más útiles en una aplicación destinada a empresas de transporte público como la suya?
+7. ¿Cómo cree que una aplicación de este tipo podría mejorar la eficiencia y la calidad de los servicios de transporte que ofrece su empresa?
+8. ¿Qué aspectos consideraría más importantes al evaluar y seleccionar una aplicación para su empresa?
+9. ¿Cuál sería su principal preocupación o requisito al considerar la adopción de una nueva aplicación o plataforma tecnológica para su empresa de transporte público?
+10. ¿Tiene alguna experiencia previa en la implementación o uso de aplicaciones similares en su empresa o en la industria del transporte público en general?
+
 ### 2.2.2. Registro de entrevistas
+
+**Entrevista 01**
 
 Entrevista #1:
 
@@ -386,6 +403,28 @@ Entrevista #1:
 
 Nombre: Albre Cañamero, Jose
 Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214695_upc_edu_pe/EeS3yHZQ_xNArGNUtPUQuIQBAW61pI0n41otb6jIoq6hjQ?e=s4DVuo
+
+**Entrevista 02**
+
+Entrevistado 2:
+
+Nombre y apellidos: Fabio Horna
+
+Edad: 24 años
+
+Ubicación: Lima
+
+Evidencia de la reunión:
+<img src="https://i.imgur.com/a/ry5mUDq/.jpg" alt="Canvas" width="90%">
+
+Inicio: 00:04
+
+Fin: 02:57
+
+*Enlace de entrevista:* https://upcedupe-my.sharepoint.com/personal/u202018894_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202018894%5Fupc%5Fedu%5Fpe%2FDocuments%2FOpenSource%2FEntrevista02%20Segmento2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview
+
+*Resumen de la entrevista:*
+Nuestro entrevistado fue Fabio Horna, un joven de 24 años que trabaja en una empresa de transporte público, discutió varios aspectos de su rol como auditor y las operaciones de la empresa en Lima. Explicó los servicios de transporte que ofrece la empresa, identificando los desafíos actuales en operaciones y atención al cliente, como la eficiencia y la satisfacción del usuario. Además, mencionó que su empresa desea incorporar tecnología para mejorar la gestión de los servicios, y destacó las funcionalidades importantes que debería tener una aplicación para optimizar estos procesos. Fabio valoró características como la usabilidad y la integración de datos al seleccionar tecnología y expresó preocupaciones sobre la implementación efectiva de nuevas plataformas. También compartió experiencias previas con tecnologías similares en el sector del transporte público.
 
 ### 2.2.3. Análisis de entrevistas
 Entrevista #1:
