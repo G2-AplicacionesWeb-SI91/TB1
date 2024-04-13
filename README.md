@@ -247,6 +247,7 @@ Implementaremos estos modelos y evaluaremos la generación de ingresos y la acep
 
 #### 1.2.2.4. Lean UX Canvas
 
+![alt text](image.png)
 
 ---
 
