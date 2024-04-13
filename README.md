@@ -191,8 +191,38 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 ## 2.2 Entrevistas
 ### 2.2.1 Diseño de entrevistas
+Nuestro objetivo es obtener información sobre las necesidades y los problemas de los usuarios de
+transporte público en Lima. Esta información se utilizará para mejorar el servicio de nuestra empresa.
+Nuestros participantes serán usuarios de transporte público en Lima. Se seleccionarán participantes
+con diferentes perfiles, como edad, género, lugar de residencia, y frecuencia de uso del transporte
+público.
+Las preguntas serán abiertas y no directivas para que los participantes puedan expresar sus opiniones
+libremente. A continuación, se presentan algunos ejemplos de preguntas:
 
+-  ¿Con qué frecuencia utilizas el transporte público en Lima?
+- ¿Cuál es tu principal motivo para utilizar el transporte público en lugar de otros medios de transporte?
+-  ¿Cuáles son los horarios en los que más utilizas el transporte público y por qué?
+- ¿Has experimentado problemas de puntualidad con el transporte público? Si es así, ¿puedes describir una situación en la que esto haya sido un problema para ti?
+- ¿Has tenido alguna experiencia negativa o insegura mientras usabas el transporte público en Lima? Si es así, ¿puedes contarnos más al respecto?
+- ¿Qué tan satisfecho estás con la accesibilidad del transporte público en términos de paradas, estaciones y rutas disponibles?
+- ¿Cómo te enteras de las actualizaciones o cambios en el servicio de transporte público en Lima?
+- ¿Has utilizado aplicaciones o sitios web relacionados con el transporte público en Lima? Si es así, ¿cuál ha sido tu experiencia con ellos?
+- ¿Qué características de nuestra aplicación encuentras más útiles en tu rutina de viaje diario?
+- ¿Hay alguna característica específica que sientas que falta en la aplicación y que te gustaría ver implementada?
+- ¿Cómo crees que podríamos mejorar la experiencia general de los usuarios en nuestra aplicación de transporte público? 
 
+### 2.2.2. Registro de entrevistas
+
+Entrevista #1:
+
+<a href="https://ibb.co/HF7f6x9"><img src="https://i.ibb.co/M2nxrGJ/image.png" alt="image" border="0"></a>
+
+Nombre: Albre Cañamero, Jose
+Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214695_upc_edu_pe/EeS3yHZQ_xNArGNUtPUQuIQBAW61pI0n41otb6jIoq6hjQ?e=s4DVuo
+
+### 2.2.3. Análisis de entrevistas
+Entrevista #1:
+- En la entrevista numero 1 podemos analizar que el sujeto tiende a usar constantemente el transporte publico porque le resulta mas economico para movilizarse que otros medios de transporte, nos comenta que si le resultaria muy util una aplicacion que ayude a poder manejar las rutas mas optimas con los buses correctos para su movilizacion dentro de Lima.
 ## 2.3 Needfinding
 ### 2.3.1 User Personas
 [Poner información aquí]
