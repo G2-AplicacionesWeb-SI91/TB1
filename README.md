@@ -1041,19 +1041,143 @@ Teniendo en cuenta la información anterior nos inclinamos por este tipo de orga
 Con cada deployment de la aplicación debe establecerse como una nueva versión.
 
 - ### Source Code Style Guide & Conventions
-   Usaremos buenas prácticas en cuanto al código de manera que sea coherente y sostenible.
+   
+Usaremos buenas prácticas en cuanto al código de manera que sea coherente y sostenible.
 
+**HTML:**
+* Cada etiqueta, id, nombre y clase será nombrada usando Lowercase.
+* Utilizar UTF-8.
+* Redacción en inglés.
+* En cada referencia a un archivo, colocar el tipo de archivo (.css, .js).
+* Terminar cada etiqueta con />.
+    
+**CSS:**
+* Width del body al 100%.
+* En cuanto a las imágenes, especificar el ancho (Width) de acuerdo a la etiqueta padre.
+* Cada etiqueta, nombre y clase será nombrada de acuerdo al propósito y clasificación del elemento.
+* Separación de palabras con un guion "-".
+* Margin y padding en "*" con valor de 0.
+
+**Commit conventions:** Para las convenciones de commit, se utilizarán las convenciones básicas es decir: 
+ `git commit -m "<message>" -m"<description">`
   
 - ### Software Deployment Configuration
-   [Poner información aquí]
+
+### Lanzamiento del proyecto
+Ademáas de control de versiones, Github posee GithubPages, que sirve para lanzar tu proyecto si se encuentra en un repositorio de Github.
+
+Seleccionamos al branch "main", luego el directorio "/root" y finalmente guardamos la configuración.
+![image](https://github.com/OpenSourceWS53/TB1OpenSource/assets/119977168/af8d8d6f-628a-4bb8-b7a1-8559b1a4c651)
+
+Esperamos a que se lanze el proyecto, sabremos que esta listo cuando veamos el URL: 
+![image](https://github.com/OpenSourceWS53/TB1OpenSource/assets/119977168/c852bb62-18d3-409e-8b7c-ac3c47a2498e)
+### Creación de ramas
+Para la creación de cada rama del proyecto seguiremos estos pasos:
+1. Seleccionar "View all branches":
+   ![image](https://github.com/OpenSourceWS53/TB1OpenSource/assets/119977168/12b048a6-cce6-46e6-bc7c-c61885290b09)
+
+2. Click en "New Branch" y escribir el nombre de cada rama, luego crear nuevo branch:
+   ![image](https://github.com/OpenSourceWS53/TB1OpenSource/assets/119977168/c6bdd348-4516-4ed8-af55-34e402489013)
   
 ## 5.2 Landing Page, Services & Applications Implementation.
 - ### 5.2.1 Sprint 1
 - #### 5.2.1.1. Sprint Planning 1
-   [Poner información aquí]
+
+   <table>
+    <thead>
+        <tr>
+            <td>Sprint #</td>
+            <td>Sprint 1</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sprint Planning Background</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Date</td>
+            <td>30/03/2024</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>00:00 am</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Google Meet</td>
+        </tr>
+        <tr>
+            <td>Prepared By</td>
+            <td>David Alejandro Rivas Sarango</td>
+        </tr>
+        <tr>
+            <td>Attendees (to planning meeting)</td>
+            <td>Rivas Sarango, David Alejandro / ...</td>
+        </tr>
+        <tr>
+            <td>Sprint n – 1 Review Summary</td>
+            <td>Debido a que es el primer sprint, no hay reviews de un sprint anterior.</td>
+        </tr>
+        <tr>
+            <td>Sprint n – 1 Retrospective Summary</td>
+            <td>Siendo el primer sprint, se mencionará la expectativa de los miembros del equipo: Terminar las actividades antes de la crítica. </td>
+        </tr>
+        <tr>
+            <td colspan="2">Sprint Goal & User Stories</td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Goal</td>
+            <td>Diseñar e implementar una landing page.</td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Velocity</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Sum of Story Points</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
   
 - #### 5.2.1.2. Sprint Backlog 1
-   [Poner información aquí]
+   
+  En este primer Sprint backlog el grupo se enfoco en realizar la landing page y el diseño del Front de la aplicación junto con del CRUD de cultivos. Para el registro de cada tarea utilizamos Trello.
+
+<table>
+    <thead>
+            <tr>
+            <td>Sprint #:</td>
+            <td colspan="7">Sprint 1</td>
+            </tr>
+            <tr>
+                <td colspan="2">User Story</td>
+                <td colspan="6">Work-Item / Task</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Estimation (Hours)</td>
+                <td>Assigned to</td>
+                <td>Status (To-Do/In-Process/To-Review/Done)</td>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Estimation (Hours)</td>
+                <td>Assigned to</td>
+                <td>Status (To-Do/In-Process/To-Review/Done)</td>
+            </tr>
+    </tbody>
+</table>
   
 - #### 5.2.1.3. Development Evidence for Sprint Review
    [Poner información aquí]
