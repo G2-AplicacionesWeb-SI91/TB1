@@ -158,12 +158,12 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 <table align="center"  border="1" width="70%" style="text-align:center;">
     <tr align="center">
         <td rowspan="3">
-            <img src="images/fotointegrante1.png" alt="asddas" style="margin-bottom: 5px;" width="800"/> 
+            <img src="images/fotofavio.png" alt="Favio Sebastián Landeo Simeón" style="margin-bottom: 5px;" width="800"/> 
         </td>
         <td align="left">
             <b>Nombre y Apellido:</b>
             <br>
-            asdad
+            Favio Sebastián Landeo Simeón
         </td>
     </tr>
     <tr>
@@ -177,7 +177,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
         <td align="left">
         <b>Acerca de:</b>
         <br>
-        asddsa
+        Tengo 20 años y actualmente estoy cursando el séptimo ciclo de la carrera de Ingeniería de Software. Estoy disponible para ayudar siempre a mis compañeros y además tiendo a generar buenas relaciones sociales con diferentes tipos de personas gracias a mi tolerancia y capacidad de trabajo en equipo. En mis tiempos libres me gusta escuchar música, jugar videojuegos y editar videos.
         </td>
     </tr>
     <tr align="center">
