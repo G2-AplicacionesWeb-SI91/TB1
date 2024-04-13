@@ -206,7 +206,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
     </tr>
     <tr align="center">
         <td rowspan="3">
-            <img src="![054020191E831](https://github.com/G2-AplicacionesWeb-SI91/documentacion/assets/119977168/ae09ccca-cb76-4c69-8cf1-6cabe049d416)
+            <img src="
 " alt="Carlos Arian Ramirez Mendoza" style="margin-bottom: 5px;" width="800"/>
         </td>
         <td align="left">
@@ -231,7 +231,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
     </tr>
     <tr align="center">
         <td rowspan="3">
-            <img src="images/fotointegrante.jpg" alt="asd"  style="margin-bottom: 5px;" width="800"/>
+            <img src="![054020191E831](https://github.com/G2-AplicacionesWeb-SI91/documentacion/assets/119977168/b874f750-a060-44d9-8d26-ad19595cdf47)" alt="asd"  style="margin-bottom: 5px;" width="800"/>
         </td>
         <td align="left">
             <b>Nombre y Apellido: </b>
