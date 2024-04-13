@@ -155,7 +155,127 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 ### 1.1.2 Perfiles de integrantes del equipo
 
----
+<table align="center"  border="1" width="70%" style="text-align:center;">
+    <tr align="center">
+        <td rowspan="3">
+            <img src="images/fotointegrante1.png" alt="asddas" style="margin-bottom: 5px;" width="800"/> 
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            asdad
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingeniería de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        asddsa
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="images/Captura.PNG" alt="Carlos Oswaldo Casimiro Fernandez" style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Carlos Oswaldo, Casimiro Fernández
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingeniería de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+       Tengo 18 años y soy estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas. Me considero una persona proactiva, educada y sociable con los que me rodean. Además cuento con habilidades peculiares como la animación en 3d, edición de videos cinematográficos y conocimiento en lenguajes como c + +, Python.
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="images/arian-foto.jpg" alt="Carlos Arian Ramirez Mendoza" style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Carlos Arian Ramirez Mendoza
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingeniería de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        Soy una persona muy interesada en la tecnología, programación y videojuegos, me gusta trabajar en equipo, planificar e idear proyectos y soluciones para problemáticas de la vida real. Me apasiona el mundo de las start-ups y cómo estas pueden lograr impactar en la vida de varias personas resolviendo sus necesidades. Me comprometo a dar ideas innovadoras y dar distintos puntos de vista a la hora de realizar un trabajo.
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="images/fotointegrante.jpg" alt="asd"  style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            asdasd
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingeniería de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        asdsa</td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="images/fotointegrante.jpg" alt="asdasd"  style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            asdasd
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        INGENIERIA DE SOFTWARE
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        asdasd
+        </td>
+    </tr>
+</table>
 
 ## 1.2. Solution Profile
 
