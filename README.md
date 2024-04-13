@@ -253,26 +253,26 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
     </tr>
     <tr align="center">
         <td rowspan="3">
-            <img src="images/fotointegrante.jpg" alt="asdasd"  style="margin-bottom: 5px;" width="800"/>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/BPqhD18/image.png" alt="image" border="0"></a>
         </td>
         <td align="left">
             <b>Nombre y Apellido:</b>
             <br>
-            asdasd
+            Alessandro Stefano, Valenzuela Vallejos
         </td>
     </tr>
     <tr>
         <td align="left">
         <b>Carrera:</b>
         <br>
-        INGENIERIA DE SOFTWARE
+        Ingeniería de Software
         </td>
     </tr>
     <tr>
         <td align="left">
         <b>Acerca de:</b>
         <br>
-        asdasd
+        Soy Alessandro Valenzuela alumno de la carrera de Ingenieria de software entre mis principales atributos soy una persona dedicada, perseverante y muy competitiva, me gusta relacionarme para crear un buen ambiente de trabajo para mí y mis compañeros. Tengo conocimiento en lenguajes de programación como c + + y en el desarrollo de bases de datos. Poseo buenas capacidades para solucionar distintos problemas para el desarrollo de un trabajo.
         </td>
     </tr>
 </table>
