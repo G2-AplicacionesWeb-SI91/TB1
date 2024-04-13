@@ -18,6 +18,7 @@
 - - Valenzuela Vallejos, Alessandro Stefano(u202214695)
 - - Rivas Sarango, David Alejandro (U20191E831)
 - - Casimiro Fernandez, Carlos Oswaldo (U202115412)
+
 - **Mes y Año**: Abril del 2024
 
 ---
