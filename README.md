@@ -233,9 +233,9 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
             <img src="images/fotointegrante.jpg" alt="asd"  style="margin-bottom: 5px;" width="800"/>
         </td>
         <td align="left">
-            <b>Nombre y Apellido:</b>
+            <b>Nombre y Apellido: </b>
             <br>
-            asdasd
+            David Alejandro Rivas Sarango
         </td>
     </tr>
     <tr>
@@ -249,7 +249,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
         <td align="left">
         <b>Acerca de:</b>
         <br>
-        asdsa</td>
+        Actualmente estoy cursando la carrera de Ingeniería de Software en la UPC. Soy una persona honesta y responsable. Me interesa el área de Data Science, por esto estoy siguiendo cursos de capacitacion en SQL y Python.</td>
     </tr>
     <tr align="center">
         <td rowspan="3">
