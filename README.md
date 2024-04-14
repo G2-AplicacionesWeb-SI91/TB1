@@ -802,7 +802,7 @@ Utilizamos los siguientes iconos para la parte del dashboard.
 
 <div align="center">
 
-  <img src="images/iconos.png">
+  <img src="images/Iconos.png">
 
 </div>
 
