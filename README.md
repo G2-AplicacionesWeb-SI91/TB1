@@ -1,9 +1,7 @@
 # -Universidad Peruana de Ciencias Aplicadas-
 
 <div align="center">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC">
-
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC">
 </div>
 
 ### <center>Informe de Trabajo Final</center>
@@ -35,7 +33,17 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 ---
 # Project Report Collaboration Insights 
 
+<div align="center">
+  <img src="images/informe_insight1.png">
+</div>
 
+<div align="center">
+  <img src="images/informe_insight2.png">
+</div>
+
+<div align="center">
+  <img src="images/informe_insight3.png">
+</div>
 
 ---
 
