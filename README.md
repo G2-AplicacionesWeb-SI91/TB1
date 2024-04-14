@@ -933,13 +933,13 @@ Los tags de SEO y Meta tags son cruciales ya que desempeñan una función vital 
 
 <div align="center">
 
-  <img src="images/landing_register.png">
+  <img src="images/Landing_register.png">
 
 </div>
 
 <div align="center">
 
-  <img src="images/landing_Recuperar-Contraseña.png">
+  <img src="images/Landing_Recuperar-Contraseña.png">
 
 </div>
 
