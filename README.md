@@ -507,8 +507,10 @@ Entrevista #1:
 <a href="https://ibb.co/HF7f6x9"><img src="https://i.ibb.co/M2nxrGJ/image.png" alt="image" border="0"></a>
 
 Nombre: Albre Cañamero, Jose
-Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214695_upc_edu_pe/EeS3yHZQ_xNArGNUtPUQuIQBAW61pI0n41otb6jIoq6hjQ?e=s4DVuo
-
+**Enlace de entrevista:**
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214695_upc_edu_pe/EeS3yHZQ_xNArGNUtPUQuIQBAW61pI0n41otb6jIoq6hjQ?e=s4DVuo
+**Resumen de la entrevista:**
+El entrevistado, es un joven de 19 años que actualmente se encuentra estudiando la carrera de sociologia, el diaramente se moviliza por el transporte publico, debido a que le resulta mas económico movilizarse por ese medio. Nos comenta que la idea de nuestra le gusta mucho, porque el quisiera tener mas conocimiento sobre las mejores rutas que pueda tomar, quisiera que nosotros tengamos convenio con las empresas de los buses.
 
 **Entrevista 02**
 
