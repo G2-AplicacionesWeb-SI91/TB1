@@ -1500,7 +1500,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
                 <td>14/04/2024</td>
             </tr>
 	    <tr>
-                <td>https://github.com/G2-AplicacionesWeb-SI91/Landing</td>
+                <td></td>
                 <td>Landing page - main</td>
                 <td>5b5966f</td>
                 <td>Update styles.css</td>
@@ -1508,7 +1508,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
                 <td>14/04/2024</td>
             </tr>
 	    <tr>
-                <td>https://github.com/G2-AplicacionesWeb-SI91/Landing</td>
+                <td></td>
                 <td>Landing page - main</td>
                 <td>248073c</td>
                 <td>Update index.html</td>
