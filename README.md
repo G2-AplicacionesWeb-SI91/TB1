@@ -1295,10 +1295,9 @@ Usaremos buenas prácticas en cuanto al código de manera que sea coherente y so
 ### Lanzamiento del proyecto
 Ademáas de control de versiones, Github posee GithubPages, que sirve para lanzar tu proyecto si se encuentra en un repositorio de Github.
 
-Seleccionamos al branch "main", luego el directorio "/root" y finalmente guardamos la configuración.
+1. Seleccionamos al branch "main", luego el directorio "/root" y finalmente guardamos la configuración.
 
-
-Esperamos a que se lanze el proyecto, sabremos que esta listo cuando veamos el URL: 
+2. Esperamos a que se lanze el proyecto, sabremos que esta listo cuando veamos el URL: 
 
 ### Creación de ramas
 Para la creación de cada rama del proyecto seguiremos estos pasos:
@@ -1314,7 +1313,7 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
 
 	<img src='images/paso3-branch.JPG'/>
 
-4.Ramas creadas:
+4. Ramas creadas:
 
 	<img src='images/paso4-branch.JPG'/>
   
