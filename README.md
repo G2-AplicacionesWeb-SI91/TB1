@@ -4,20 +4,21 @@
 # Carátula
 - **Universidad**: UPC
 - **Carrera**: Ingeniería de Software
-- **Curso**: Desarrollo de Aplicaciones Open Source
+- **Curso**: Aplicaciones Web
 - **Sección**: SI91
-- **Profesor**: 
+- **Profesor**: Hugo Allan Mori Paiva
+- **Ciclo**: 2024-1
 
 ---
 
 # Informe de Trabajo Final
-- **Nombre del Startup**: a
+- **Nombre del Startup**: Sexware
 - **Nombre del Producto**: TrackMyRoute
 - **Relación de Integrantes**:
-- - Ramirez Mendoza, Carlos Arian (u202020108)
-- - Valenzuela Vallejos, Alessandro Stefano(u202214695)
-- - Rivas Sarango, David Alejandro (U20191E831)
-- - Casimiro Fernandez, Carlos Oswaldo (U202115412)
+  - Ramirez Mendoza, Carlos Arian (u202020108)
+  - Valenzuela Vallejos, Alessandro Stefano(u202214695)
+  - Rivas Sarango, David Alejandro (U20191E831)
+  - Casimiro Fernandez, Carlos Oswaldo (U202115412)
 
 - **Mes y Año**: Abril del 2024
 
