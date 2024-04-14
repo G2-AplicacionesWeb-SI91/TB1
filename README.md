@@ -1567,7 +1567,13 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
 - #### 5.2.1.7. Software Deployment Evidence for Sprint Review
    Para realizar el despliegue de la Landing Page hemos utilizado Github Pages ya que permite alojar paginas desde el mismo repositorio, es fácil y práctica de usar, además de gratuita.
 
-   Link de Landing Page desplegada: 
+   Link de Landing Page desplegada:
+	<img src='images/LANDING-SS1.JPG'/>
+  	<img src='images/LANDING-SS2.JPG'/>
+	<img src='images/LANDING-SS3.JPG'/>
+	<img src='images/LANDING-SS4.JPG'/>
+	<img src='images/LANDING-SS5.JPG'/>
+	<img src='images/LANDING-SS6.JPG'/>
 
 - #### 5.2.1.8. Team Collaboration Insights during Sprint
 
