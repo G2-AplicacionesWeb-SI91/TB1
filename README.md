@@ -1491,11 +1491,11 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
 
   Sección LogIn:
   
-   <div align="center">
+<div align="center">
 
-  	<img src="images/landing_Login.png">
+  <img src="images/landing_Login.png">
 
-    </div>
+</div>
   
   Sección Register:
   
