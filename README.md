@@ -1302,11 +1302,21 @@ Esperamos a que se lanze el proyecto, sabremos que esta listo cuando veamos el U
 
 ### Creación de ramas
 Para la creación de cada rama del proyecto seguiremos estos pasos:
-1. Seleccionar "View all branches":
-  
+1. Seleccionar " # Branches":
 
-2. Click en "New Branch" y escribir el nombre de cada rama, luego crear nuevo branch:
-   
+  <img src='images/paso1-branch.JPG'/>
+
+2. Click en "New Branch" :
+
+   <img src='images/paso2-branch.JPG'/>
+
+3. Escribir el nombre de cada rama, luego crear nuevo branch:
+
+	<img src='images/paso3-branch.JPG'/>
+
+4.Ramas creadas:
+
+	<img src='images/paso4-branch.JPG'/>
   
 ## 5.2 Landing Page, Services & Applications Implementation.
 - ### 5.2.1 Sprint 1
