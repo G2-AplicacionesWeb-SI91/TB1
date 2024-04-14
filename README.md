@@ -1570,7 +1570,14 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
    Link de Landing Page desplegada: 
 
 - #### 5.2.1.8. Team Collaboration Insights during Sprint
-   [Poner información aquí]
+
+<div align="center">
+  <img src="images/informe_insight1.png">
+</div>
+
+<div align="center">
+  <img src="images/informe_insight2.png">
+</div>
 
 # Conclusiones
 
