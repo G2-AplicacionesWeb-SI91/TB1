@@ -1337,11 +1337,11 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
         </tr>
         <tr>
             <td>Prepared By</td>
-            <td>David Alejandro Rivas Sarango</td>
+            <td>Sexware</td>
         </tr>
         <tr>
             <td>Attendees (to planning meeting)</td>
-            <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano / Rivas Sarango, David Alejandro / Casimiro Fernandez, Carlos Oswaldo / Landeo Simeón, Favio Sebastián</td>
+            <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano  / Casimiro Fernandez, Carlos Oswaldo / Landeo Simeón, Favio Sebastián</td>
         </tr>
         <tr>
             <td>Sprint n – 1 Review Summary</td>
