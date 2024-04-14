@@ -1339,7 +1339,7 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
         </tr>
         <tr>
             <td>Attendees (to planning meeting)</td>
-            <td>Rivas Sarango, David Alejandro / ...</td>
+            <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano / Rivas Sarango, David Alejandro / Casimiro Fernandez, Carlos Oswaldo / Landeo Simeón, Favio Sebastián</td>
         </tr>
         <tr>
             <td>Sprint n – 1 Review Summary</td>
@@ -1354,22 +1354,22 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
         </tr>
         <tr>
             <td>Sprint 1 Goal</td>
-            <td>Diseñar e implementar una landing page.</td>
+            <td>Diseñar e implementar la Landing Page de TrackMyRoute para dar a conocer el valor de la propuesta.</td>
         </tr>
         <tr>
             <td>Sprint 1 Velocity</td>
-            <td>0</td>
+            <td>5</td>
         </tr>
         <tr>
             <td>Sum of Story Points</td>
-            <td>0</td>
+            <td>21</td>
         </tr>
     </tbody>
 </table>
   
 - #### 5.2.1.2. Sprint Backlog 1
    
-  En este primer Sprint backlog el grupo se enfoco en realizar la landing page y el diseño del Front de la aplicación junto con del CRUD de cultivos. Para el registro de cada tarea utilizamos Trello.
+  En este primer Sprint backlog el grupo se enfoco en realizar la Landing page. Para el registro de cada tarea utilizamos Trello.
 
 <table>
     <thead>
@@ -1407,19 +1407,44 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
 </table>
   
 - #### 5.2.1.3. Development Evidence for Sprint Review
-   [Poner información aquí]
+<table>
+    <thead>
+            <tr>
+                <td><strong>Repository</strong></td>
+                <td><strong>Branch</strong></td>
+                <td><strong>Commit ID</strong></td>
+                <td><strong>Commit Message</strong></td>
+                <td><strong>Commit Message Body</strong></td>
+                <td><strong>Commited on (Date)</strong></td>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Estimation (Hours)</td>
+                <td>Assigned to</td>
+                <td>Status (To-Do/In-Process/To-Review/Done)</td>
+            </tr>
+    </tbody>
+</table>
    
 - #### 5.2.1.4. Testing Suite Evidence for Sprint Review
-   [Poner información aquí]
+   En este punto del trabajo aun no se empieza el desarrollo de la Web Application por lo que no se esta usando ningun servicio de Testing. 
    
 - #### 5.2.1.5. Execution Evidence for Sprint Review
    [Poner información aquí]
   
 - #### 5.2.1.6. Services Documentation Evidence for Sprint Review
-   [Poner información aquí]
+   En este punto del trabajo aun no se empieza el desarrollo de la Web Application por lo que no hemos hecho la implementación de Web Services.
   
 - #### 5.2.1.7. Software Deployment Evidence for Sprint Review
-   [Poner información aquí]
+   Para realizar el despliegue de la Landing Page hemos utilizado Github Pages ya que permite alojar paginas desde el mismo repositorio, es fácil y práctica de usar, además de gratuita.
+
+   Link de Landing Page desplegada: 
 
 - #### 5.2.1.8. Team Collaboration Insights during Sprint
    [Poner información aquí]
