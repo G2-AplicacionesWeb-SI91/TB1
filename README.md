@@ -880,7 +880,7 @@ Tenemos una entidad la cual se encarga de ver la subscripcion actual del usuario
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1 Software Configuration Management
-- ### Software Development Environment Configuration
+### 5.1.1 Software Development Environment Configuration
    **Project Management**
 
 Para la organizacion del proyecto necesitabamos una planificación en cuanto a tareas asignadas, un punto de reunión y un repositorio donde trabajaramos en conjunto cada avance del proyecto, es por esto que elegimos las siguientes herramientas:
@@ -939,6 +939,7 @@ La herramienta para la implementación del proyecto es Rider de Jetbrains:
         </tr>
     </tbody>
 </table>
+
 **Software Testing**
 
 Gherkin es un sistema de etiquetado utilizado para detallar como se comporta el software de manera legible.
@@ -977,7 +978,7 @@ Se ha utilizado Github para alojar los distintos repositorios creados por los mi
     </tbody>
 </table>
 
-- ### Source Code Management
+### 5.1.2 Source Code Management
    <table>
     <tbody>
         <tr>
@@ -1016,7 +1017,7 @@ Teniendo en cuenta la información anterior nos inclinamos por este tipo de orga
 
 Con cada deployment de la aplicación debe establecerse como una nueva versión.
 
-- ### Source Code Style Guide & Conventions
+### 5.1.3 Source Code Style Guide & Conventions
    
 Usaremos buenas prácticas en cuanto al código de manera que sea coherente y sostenible.
 
@@ -1037,7 +1038,7 @@ Usaremos buenas prácticas en cuanto al código de manera que sea coherente y so
 **Commit conventions:** Para las convenciones de commit, se utilizarán las convenciones básicas es decir: 
  `git commit -m "<message>" -m"<description">`
   
-- ### Software Deployment Configuration
+### 5.1.4 Software Deployment Configuration
 
 ### Lanzamiento del proyecto
 Ademáas de control de versiones, Github posee GithubPages, que sirve para lanzar tu proyecto si se encuentra en un repositorio de Github.
