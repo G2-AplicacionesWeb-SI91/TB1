@@ -11,7 +11,7 @@
 - **Sección**: SI91
 - **Profesor**: Hugo Allan Mori Paiva
 - **Ciclo**: 2024-1
-- **Nombre del Startup**: Sexware
+- **Nombre del Startup**: TrackMyRoute
 - **Nombre del Producto**: TrackMyRoute
 - **Relación de Integrantes**:
   - Ramirez Mendoza, Carlos Arian (u202020108)
