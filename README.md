@@ -1181,16 +1181,6 @@ La herramienta para la implementación del proyecto es WebStorm de Jetbrains:
         </tr>
     </tbody>
 </table>
-La herramienta para la implementación del proyecto es Rider de Jetbrains:
-
-<table>
-    <tbody>
-        <tr>
-            <td>Link de referencia: </td>
-            <td>https://www.jetbrains.com/es-es/rider/</td>
-        </tr>
-    </tbody>
-</table>
 
 **Software Testing**
 
