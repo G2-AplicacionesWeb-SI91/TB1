@@ -1402,7 +1402,7 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
                 <td>Sección principal de Landing Page</td>
                 <td>Usuario debe serle visualmente atractiva la página y su contenido.</td>
                 <td>2</td>
-                <td>Assigned to</td>
+                <td>Alessandro Valenzuela </td>
                 <td>Done</td>
             </tr>
 	    <tr>
@@ -1412,7 +1412,7 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
                 <td>nformación de beneficios</td>
                 <td>Usuario debe poder visualizar una sección dedicada a los beneficios de la aplicación.</td>
                 <td>2</td>
-                <td>Assigned to</td>
+                <td>Alessandro Valenzuela</td>
                 <td>Done</td>
             </tr>
 	    <tr>
