@@ -1476,14 +1476,44 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
     </thead>
     <tbody>
             <tr>
-                <td>ID</td>
-                <td>Title</td>
-                <td>ID</td>
-                <td>Title</td>
-                <td>Description</td>
-                <td>Estimation (Hours)</td>
-                <td>Assigned to</td>
-                <td>Status (To-Do/In-Process/To-Review/Done)</td>
+                <td>https://github.com/G2-AplicacionesWeb-SI91/Landing</td>
+                <td>Landing page - main</td>
+                <td>bd194a8</td>
+                <td>chore: init commit landing page html and css</td>
+                <td>chore: init commit landing page html and css</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
+                <td>7fa250e</td>
+                <td>landing ended</td>
+                <td>landing ended</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
+                <td>5f79f2a</td>
+                <td>fix: img url</td>
+                <td>fix: img url</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td>https://github.com/G2-AplicacionesWeb-SI91/Landing</td>
+                <td>Landing page - main</td>
+                <td>5b5966f</td>
+                <td>Update styles.css</td>
+                <td>Update styles.css</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td>https://github.com/G2-AplicacionesWeb-SI91/Landing</td>
+                <td>Landing page - main</td>
+                <td>248073c</td>
+                <td>Update index.html</td>
+                <td>Update index.html</td>
+                <td>14/04/2024</td>
             </tr>
     </tbody>
 </table>
