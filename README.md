@@ -1316,7 +1316,17 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
 4. Ramas creadas:
 
 	<img src='images/paso4-branch.JPG'/>
-  
+
+### Agregar reglas de protección
+
+1. Settings -> Branches:
+
+<img src='images/rule-1.JPG'/>
+
+2. Nombrar regla como la rama a proteger y agregarle protección:
+
+<img src='images/rule-2.JPG'/>
+
 ## 5.2 Landing Page, Services & Applications Implementation.
 - ### 5.2.1 Sprint 1
 - #### 5.2.1.1. Sprint Planning 1
