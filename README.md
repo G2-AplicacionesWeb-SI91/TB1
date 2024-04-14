@@ -1396,14 +1396,64 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
     </thead>
     <tbody>
             <tr>
-                <td>ID</td>
-                <td>Title</td>
-                <td>ID</td>
-                <td>Title</td>
-                <td>Description</td>
-                <td>Estimation (Hours)</td>
+                <td>HU24</td>
+                <td>sección principal de landing page</td>
+                <td>01</td>
+                <td>Sección principal de Landing Page</td>
+                <td>Usuario debe serle visualmente atractiva la página y su contenido.</td>
+                <td>2</td>
                 <td>Assigned to</td>
-                <td>Status (To-Do/In-Process/To-Review/Done)</td>
+                <td>Done</td>
+            </tr>
+	    <tr>
+                <td>HU25</td>
+                <td>información de beneficios</td>
+                <td>02</td>
+                <td>nformación de beneficios</td>
+                <td>Usuario debe poder visualizar una sección dedicada a los beneficios de la aplicación.</td>
+                <td>2</td>
+                <td>Assigned to</td>
+                <td>Done</td>
+            </tr>
+	    <tr>
+                <td>HU26</td>
+                <td>conocer los aliados que respaldan la app</td>
+                <td>03</td>
+                <td>Conocer los aliados que respaldan la app</td>
+                <td>Usuario debe poder visualizar una lista de aliados estratégicos.</td>
+                <td>2</td>
+                <td>Not asigned yet</td>
+                <td>To-Do</td>
+            </tr>
+	    <tr>
+                <td>HU27</td>
+                <td>reseñas de usuarios satisfechos</td>
+                <td>04</td>
+                <td>Reseñas de usuarios satisfechos</td>
+                <td>Usuario debe poder visualizar reseñas y testimonios de usuarios satisfechos con la aplicación.</td>
+                <td>2</td>
+                <td>Not asigned yet</td>
+                <td>To-Do</td>
+            </tr>
+	    <tr>
+                <td>HU28</td>
+                <td>conocer los planes de suscripción</td>
+                <td>05</td>
+                <td>Conocer los planes de suscripción</td>
+                <td>Usuario debe poder visualizar información sobre los planes de suscripción.</td>
+                <td>2</td>
+                <td>Not asigned yet</td>
+                <td>To-Do</td>
+            </tr>
+	    <tr>
+                <td>HU29</td>
+                <td>obtener respuestas a preguntas frecuentes</td>
+                <td>06</td>
+                <td>Obtener respuestas a preguntas frecuentes</td>
+                <td>Usuario debe poder visualizar una sección de preguntas frecuentes.</td>
+                <td>2</td>
+                <td>Not asigned yet</td>
+                <td>To-Do</td>
             </tr>
     </tbody>
 </table>
