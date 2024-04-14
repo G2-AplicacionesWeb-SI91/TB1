@@ -1415,7 +1415,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
                 <td>Sección principal de Landing Page</td>
                 <td>Usuario debe serle visualmente atractiva la página y su contenido.</td>
                 <td>2</td>
-                <td>Alessandro Valenzuela </td>
+                <td>Favio Landeo</td>
                 <td>Done</td>
             </tr>
 	    <tr>
@@ -1435,7 +1435,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
                 <td>Conocer los aliados que respaldan la app</td>
                 <td>Usuario debe poder visualizar una lista de aliados estratégicos.</td>
                 <td>2</td>
-                <td>Not asigned yet</td>
+                <td>Arian Ramirez</td>
                 <td>To-Do</td>
             </tr>
 	    <tr>
@@ -1446,7 +1446,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
                 <td>Usuario debe poder visualizar reseñas y testimonios de usuarios satisfechos con la aplicación.</td>
                 <td>2</td>
                 <td>Not asigned yet</td>
-                <td>To-Do</td>
+                <td>Arian Ramirez</td>
             </tr>
 	    <tr>
                 <td>HU28</td>
@@ -1456,7 +1456,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
                 <td>Usuario debe poder visualizar información sobre los planes de suscripción.</td>
                 <td>2</td>
                 <td>Not asigned yet</td>
-                <td>To-Do</td>
+                <td>Carlos Casimiro</td>
             </tr>
 	    <tr>
                 <td>HU29</td>
@@ -1466,7 +1466,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
                 <td>Usuario debe poder visualizar una sección de preguntas frecuentes.</td>
                 <td>2</td>
                 <td>Not asigned yet</td>
-                <td>To-Do</td>
+                <td>David Rivas/td>
             </tr>
     </tbody>
 </table>
