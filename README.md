@@ -1373,6 +1373,8 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
    
   En este primer Sprint backlog el grupo se enfoco en realizar la Landing page. Para el registro de cada tarea utilizamos Trello.
 
+<img src='images/Sprint1-Trello.JPG' />
+
 <table>
     <thead>
             <tr>
