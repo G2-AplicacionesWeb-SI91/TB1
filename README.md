@@ -1733,23 +1733,23 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
             <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano  / Casimiro Fernandez, Carlos Oswaldo / Landeo Simeón, Favio Sebastián</td>
         </tr>
         <tr>
-            <td>Sprint n – 2 Review Summary</td>
-            <td>Mejorar los call to action de la Landing Page</td>
+            <td>Sprint n – 1 Review Summary</td>
+            <td>Mejorar los call to action de la Landing Page y tener un buen despliegue del landing page.</td>
         </tr>
         <tr>
             <td>Sprint n – 1 Retrospective Summary</td>
-            <td>Siendo el segundo sprint, se mencionará la expectativa de los miembros del equipo: Actividades a mejorar del sprint anterior y tareas pendientes para el sprint 2 </td>
+            <td>La colaboración entre los miembros del equipo fue efectiva, lo que permitió resolver los problemas de manera oportuna. </td>
         </tr>
         <tr>
             <td colspan="2">Sprint Goal & User Stories</td>
         </tr>
         <tr>
-            <td>Sprint 1 Goal</td>
-            <td>Diseñar e implementar más del 80% del frontend de la aplicación web</td>
+            <td>Sprint 2 Goal</td>
+            <td>Diseñar e implementar más del 80% del frontend de la aplicación web.</td>
         </tr>
         <tr>
             <td>Sprint 2 Velocity</td>
-            <td>5</td>
+            <td>32</td>
         </tr>
         <tr>
             <td>Sum of Story Points</td>
