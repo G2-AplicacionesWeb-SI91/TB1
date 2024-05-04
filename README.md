@@ -1669,7 +1669,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
 
    Link de Landing Page desplegada: https://g2-aplicacionesweb-si91.github.io/Landing/
 
-	<img src='images/LANDING-SS1.JPG'/>
+	<img src='images/landing1.png'/>
   <img src='images/LANDING-SS2.JPG'/>
 	<img src='images/LANDING-SS3.JPG'/>
 	<img src='images/LANDING-SS4.JPG'/>
@@ -1947,7 +1947,17 @@ En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos 
 
 - #### 5.2.1.5 Execution Evidence for Sprint Review
 
+<div align="center">
 
+  <img src="images/sprint2-exec1.png">
+
+</div>
+
+<div align="center">
+
+  <img src="images/sprint2-exec2.png">
+
+</div>
 
 - #### 5.2.1.6 Services Documentation Evidence for Sprint Review
 
@@ -1959,7 +1969,17 @@ En esta entrega no se hace uso de Web Services por lo que no hay documentación 
 
 - #### 5.2.1.8 Team Collaboration Insights during Sprint
 
+<div align="center">
 
+  <img src="images/sprint2-insight1.png">
+
+</div>
+
+<div align="center">
+
+  <img src="images/sprint2-insight2.png">
+
+</div>
 
 # Conclusiones
 
