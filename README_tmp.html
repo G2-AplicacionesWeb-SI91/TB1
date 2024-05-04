@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="universidad-peruana-de-ciencias-aplicadas">Universidad Peruana de Ciencias Aplicadas</h1>
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC">
+</div>
+<h3 id="centerinforme-de-trabajo-finalcenter"><center>Informe de Trabajo Final</center></h3>
+<ul>
+<li><strong>Carrera</strong>: Ingeniería de Software</li>
+<li><strong>Curso</strong>: Aplicaciones Web</li>
+<li><strong>Sección</strong>: SI91</li>
+<li><strong>Profesor</strong>: Hugo Allan Mori Paiva</li>
+<li><strong>Ciclo</strong>: 2024-1</li>
+<li><strong>Nombre del Startup</strong>: TrackMyRoute</li>
+<li><strong>Nombre del Producto</strong>: TrackMyRoute</li>
+<li><strong>Relación de Integrantes</strong>:
+<ul>
+<li>Ramirez Mendoza, Carlos Arian (u202020108)</li>
+<li>Valenzuela Vallejos, Alessandro Stefano(u202214695)</li>
+<li>Rivas Sarango, David Alejandro (U20191E831)</li>
+<li>Casimiro Fernandez, Carlos Oswaldo (U202115412)</li>
+<li>Landeo Simeón, Favio Sebastián (u202119588)</li>
+</ul>
+</li>
+<li><strong>Mes y Año</strong>: Abril del 2024</li>
+</ul>
+<hr>
+<h1 id="registro-de-versiones-del-informe">Registro de Versiones del Informe</h1>
+<p>El objetivo de esta sección es resumir las modificaciones relevantes que se realizan al informe durante el ciclo de vida del proyecto. Esta sección inicia en una página nueva y se incluye un cuadro con la siguiente estructura:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Versión</strong></th>
+<th><strong>Fecha</strong></th>
+<th><strong>Autor</strong></th>
+<th><strong>Descripción de Modificación</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.0</td>
+<td>13/04/2024</td>
+<td>Todos</td>
+<td>Añadimos los puntos que faltaban junto con el avance de la Landing Page</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="project-report-collaboration-insights">Project Report Collaboration Insights</h1>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/informe_insight1.png">
+</div>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/informe_insight2.png">
+</div>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/informe_insight3.png">
+</div>
+<hr>
+<h1 id="tabla-de-contenidos">Tabla de contenidos</h1>
+<ul>
+<li>
+<p><a href="#student-outcome">Student Outcome</a></p>
+</li>
+<li>
+<p><a href="#cap%C3%ADtulo-i-introducci%C3%B3n">Capítulo I: Introducción</a></p>
+<ul>
+<li><a href="#11-startup-profile">1.1 Startup Profile</a>
+<ul>
+<li><a href="#111-descripci%C3%B3n-de-la-startup">1.1.1 Descripción de la Startup</a></li>
+<li><a href="#112-perfiles-de-integrantes-del-equipo">1.1.2 Perfiles de integrantes del equipo</a></li>
+</ul>
+</li>
+<li><a href="#12-solution-profile">1.2 Solution Profile</a>
+<ul>
+<li><a href="#121-antecedentes-y-problem%C3%A1tica">1.2.1 Antecedentes y problemática</a></li>
+<li><a href="#122-lean-ux-process">1.2.2 Lean UX Process</a>
+<ul>
+<li><a href="#1221-lean-ux-problem-statements">1.2.2.1 Lean UX Problem Statements</a></li>
+<li><a href="#1222-lean-ux-assumptions">1.2.2.2 Lean UX Assumptions</a></li>
+<li><a href="#1211-lean-ux-hyphotesis-statements">1.2.2.3 Lean UX Hypothesis Statements</a></li>
+<li><a href="#1224-lean-ux-canvas">1.2.2.4 Lean UX Canvas</a></li>
+</ul>
+</li>
+<li><a href="#13-segmentos-objetivo">1.3 Segmentos objetivo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#cap%C3%ADtulo-ii-requirements-elicitation--analysis">Capítulo II: Requirements Elicitation &amp; Analysis</a></p>
+<ul>
+<li><a href="#21-competidores">2.1 Competidores</a>
+<ul>
+<li><a href="#211-an%C3%A1lisis-competitivo">2.1.1 Análisis competitivo</a></li>
+<li><a href="#212-estrategias-y-t%C3%A1cticas-frente-a-competidores">2.1.2 Estrategias y tácticas frente a competidores</a></li>
+</ul>
+</li>
+<li><a href="#22-entrevistas">2.2 Entrevistas</a>
+<ul>
+<li><a href="#221-dise%C3%B1o-de-entrevistas">2.2.1 Diseño de entrevistas</a></li>
+<li><a href="#222-registro-de-entrevistas">2.2.2 Registro de entrevistas</a></li>
+<li><a href="#223-an%C3%A1lisis-de-entrevistas">2.2.3 Análisis de entrevistas</a></li>
+</ul>
+</li>
+<li><a href="#23-needfinding">2.3 Needfinding</a>
+<ul>
+<li><a href="#231-user-personas">2.3.1 User Personas</a></li>
+<li><a href="#232-user-task-matrix">2.3.2 User Task Matrix</a></li>
+<li><a href="#233-user-journey-mapping">2.3.3 User Journey Mapping</a></li>
+<li><a href="#234-empathy-mapping">2.3.4 Empathy Mapping</a></li>
+<li><a href="#235-as-is-scenario-mapping">2.3.5 As-is Scenario Mapping</a></li>
+</ul>
+</li>
+<li><a href="#24-ubiquitous-language">2.4 Ubiquitous Language</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#cap%C3%ADtulo-iii-requirements-specification">Capítulo III: Requirements Specification</a></p>
+<ul>
+<li><a href="#31-to-be-scenario-mapping">3.1 To-Be Scenario Mapping</a></li>
+<li><a href="#32-user-stories">3.2 User Stories</a></li>
+<li><a href="#33-impact-mapping">3.3 Impact Mapping</a></li>
+<li><a href="#34-product-backlog">3.4 Product Backlog</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#cap%C3%ADtulo-iv-product-design">Capítulo IV: Product Design</a></p>
+<ul>
+<li><a href="#41-style-guidelines">4.1 Style Guidelines</a>
+<ul>
+<li><a href="#411-general-style-guidelines">4.1.1 General Style Guidelines</a></li>
+<li><a href="#412-web-style-guidelines">4.1.2 Web Style Guidelines</a></li>
+</ul>
+</li>
+<li><a href="#42-information-architecture">4.2 Information Architecture</a>
+<ul>
+<li><a href="#421-organization-systems">4.2.1 Organization Systems</a></li>
+<li><a href="#422-labeling-systems">4.2.2 Labeling Systems</a></li>
+<li><a href="#423-seo-tags-and-meta-tags">4.2.3 SEO Tags and Meta Tags</a></li>
+<li><a href="#424-searching-systems">4.2.4 Searching Systems</a></li>
+<li><a href="#425-navigation-systems">4.2.5 Navigation Systems</a></li>
+</ul>
+</li>
+<li><a href="#43-landing-page-ui-design">4.3 Landing Page UI Design</a>
+<ul>
+<li><a href="#431-landing-page-wireframe">4.3.1 Landing Page Wireframe</a></li>
+<li><a href="#432-landing-page-mock-up">4.3.2 Landing Page Mock-up</a></li>
+</ul>
+</li>
+<li><a href="#44-web-applications-uxui-design">4.4 Web Applications UX/UI Design</a>
+<ul>
+<li><a href="#441-web-applications-wireframes">4.4.1 Web Applications Wireframes</a></li>
+<li><a href="#442-web-applications-wireflow-diagrams">4.4.2 Web Applications Wireflow Diagrams</a></li>
+<li><a href="#443-web-applications-mock-ups">4.4.3 Web Applications Mock-ups</a></li>
+<li><a href="#444-web-applications-user-flow-diagrams">4.4.4 Web Applications User Flow Diagrams</a></li>
+</ul>
+</li>
+<li><a href="#45-web-applications-prototyping">4.5 Web Applications Prototyping</a></li>
+<li><a href="#46-domain-driven-software-architecture">4.6 Domain-Driven Software Architecture</a>
+<ul>
+<li><a href="#461-software-architecture-context-diagram">4.6.1 Software Architecture Context Diagram</a></li>
+<li><a href="#462-software-architecture-container-diagrams">4.6.2 Software Architecture Container Diagrams</a></li>
+<li><a href="#463-software-architecture-components-diagrams">4.6.3 Software Architecture Components Diagrams</a></li>
+</ul>
+</li>
+<li><a href="#47-software-object-oriented-design">4.7 Software Object-Oriented Design</a>
+<ul>
+<li><a href="#471-class-diagrams">4.7.1 Class Diagrams</a></li>
+<li><a href="#472-class-dictionary">4.7.2 Class Dictionary</a></li>
+</ul>
+</li>
+<li><a href="#48-database-design">4.8 Database Design</a>
+<ul>
+<li><a href="#481-database-diagram">4.8.1 Database Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#cap%C3%ADtulo-v-product-implementation-validation-deployment">Capítulo V: Product Implementation, Validation &amp; Deployment</a></p>
+<ul>
+<li><a href="#51-software-configuration-management">5.1 Software Configuration Management</a>
+<ul>
+<li><a href="#511-software-development-environment-configuration">5.1.1 Software Development Environment Configuration</a></li>
+<li><a href="#512-source-code-management">5.1.2 Source Code Management</a></li>
+<li><a href="#513-source-code-style-guide--conventions">5.1.3. Source Code Style Guide &amp; Conventions</a></li>
+<li><a href="#514-software-deployment-configuration">5.1.4. Software Deployment Configuration</a></li>
+</ul>
+</li>
+<li><a href="#52-landing-page-services-applications-implementation">5.2 Landing Page, Services &amp; Applications Implementation</a>
+<ul>
+<li><a href="#521-sprint-1">5.2.1 Sprint 1</a>
+<ul>
+<li><a href="#5211-sprint-planning-1">5.2.1.1 Sprint Planning 1</a></li>
+<li><a href="#5212-sprint-backlog-1">5.2.1.2 Sprint Backlog 1</a></li>
+<li><a href="#5213-development-evidence-for-sprint-review">5.2.1.3 Development Evidence for Sprint Review</a></li>
+<li><a href="#5214-testing-suite-evidence-for-sprint-review">5.2.1.4 Testing Suite Evidence for Sprint Review</a></li>
+<li><a href="#5215-execution-evidence-for-sprint-review">5.2.1.5 Execution Evidence for Sprint Review</a>
+- <a href="#5216-services-documentation-evidence-for-sprint-review">5.2.1.6 Services Documentation Evidence for Sprint Review</a></li>
+<li><a href="#5217-software-deployment-evidence-for-sprint-review">5.2.1.7 Software Deployment Evidence for Sprint Review</a></li>
+<li><a href="#5218-team-collaboration-insights-during-sprint">5.2.1.8 Team Collaboration Insights during Sprint</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="cap%C3%ADtulo-i-introducci%C3%B3n">Capítulo I: Introducción</h1>
+<h2 id="11-startup-profile">1.1 Startup Profile</h2>
+<h3 id="111-descripci%C3%B3n-de-la-startup">1.1.1 Descripción de la Startup</h3>
+<p>&quot;TrackMyRoute&quot; es una startup con la principal intención de transformar la forma en que las personas se desplazan por la ciudad utilizando el transporte público. Nuestra misión es simplificar y mejorar la movilidad urbana, ofreciendo a los residentes de Lima una aplicación integral que les permita encontrar las mejores rutas de transporte público para llegar a sus destinos de manera eficiente. Nuestra aplicación no solo brinda a los usuarios la capacidad de planificar sus viajes de manera óptima, sino que también proporciona información en tiempo real sobre el estado de las rutas y la disponibilidad de los medios de transporte. Además, colaboramos estrechamente con las empresas de transporte público para que también puedan beneficiarse de esta plataforma, obteniendo una visión en tiempo real de sus clientes y mejorando la calidad de sus servicios.</p>
+<h3 id="112-perfiles-de-integrantes-del-equipo">1.1.2 Perfiles de integrantes del equipo</h3>
+<table align="center" border="1" width="70%" style="text-align:center;">
+    <tr align="center">
+        <td rowspan="3">
+            <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/fotofavio.png" alt="Favio Sebasti&#xE1;n Landeo Sime&#xF3;n" style="margin-bottom: 5px;" width="800"> 
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Favio Sebasti&#xE1;n Landeo Sime&#xF3;n
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingenier&#xED;a de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        Tengo 20 a&#xF1;os y actualmente estoy cursando el s&#xE9;ptimo ciclo de la carrera de Ingenier&#xED;a de Software. Estoy disponible para ayudar siempre a mis compa&#xF1;eros y adem&#xE1;s tiendo a generar buenas relaciones sociales con diferentes tipos de personas gracias a mi tolerancia y capacidad de trabajo en equipo. En mis tiempos libres me gusta escuchar m&#xFA;sica, jugar videojuegos y editar videos.
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Captura.PNG" alt="Carlos Oswaldo Casimiro Fernandez" style="margin-bottom: 5px;" width="800">
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Carlos Oswaldo, Casimiro Fern&#xE1;ndez
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingenier&#xED;a de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+       Tengo 20 a&#xF1;os y soy estudiante de Ingenier&#xED;a de Software de la Universidad Peruana de Ciencias Aplicadas. Me considero una persona proactiva, educada y sociable con los que me rodean. Adem&#xE1;s cuento con habilidades peculiares como la animaci&#xF3;n en 3d, edici&#xF3;n de videos cinematogr&#xE1;ficos y conocimiento en lenguajes como c + +, Python.
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/arian-foto.jpg" alt="Carlos Arian Ramirez Mendoza" style="margin-bottom: 5px;" width="800">
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Carlos Arian Ramirez Mendoza
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingenier&#xED;a de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        Soy una persona muy interesada en la tecnolog&#xED;a, programaci&#xF3;n y videojuegos, me gusta trabajar en equipo, planificar e idear proyectos y soluciones para problem&#xE1;ticas de la vida real. Me apasiona el mundo de las start-ups y c&#xF3;mo estas pueden lograr impactar en la vida de varias personas resolviendo sus necesidades. Me comprometo a dar ideas innovadoras y dar distintos puntos de vista a la hora de realizar un trabajo.
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/rivas-foto.jpg" alt="David Alejandro Rivas Sarango" style="margin-bottom: 5px;" width="800">
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido: </b>
+            <br>
+            David Alejandro Rivas Sarango
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingenier&#xED;a de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        Actualmente estoy cursando la carrera de Ingenier&#xED;a de Software en la UPC. Soy una persona honesta y responsable. Me interesa el &#xE1;rea de Data Science, por esto estoy siguiendo cursos de capacitacion en SQL y Python.</td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/BPqhD18/image.png" alt="image" border="0"></a>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Alessandro Stefano, Valenzuela Vallejos
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingenier&#xED;a de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        Soy Alessandro Valenzuela alumno de la carrera de Ingenieria de software entre mis principales atributos soy una persona dedicada, perseverante y muy competitiva, me gusta relacionarme para crear un buen ambiente de trabajo para m&#xED; y mis compa&#xF1;eros. Tengo conocimiento en lenguajes de programaci&#xF3;n como c + + y en el desarrollo de bases de datos. Poseo buenas capacidades para solucionar distintos problemas para el desarrollo de un trabajo.
+        </td>
+    </tr>
+</table>
+<h2 id="12-solution-profile">1.2. Solution Profile</h2>
+<p>En esta sección iniciaremos por un análisis de los antecedentes y problemática sobre la movilización en transporte público para identificar las raíces del problema e identificar algunas necesidades que se deban cubrir para llegar a una solución de la problemática. Asimismo, luego pasaremos por el proceso UX para poder analizar más a detalle la problemática y poder plantear una hipótesis acerca de la problemática.</p>
+<h3 id="121-antecedentes-y-problem%C3%A1tica">1.2.1. Antecedentes y problemática</h3>
+<p>La movilización en transportes públicos en Lima, se ha visto influenciada por una serie de antecedentes y problemáticas a lo largo de su historia. En un contexto de rápido crecimiento poblacional y urbano, la demanda de servicios de transporte público ha ido en constante aumento. Sin embargo, varios factores han contribuido a desafiar la eficiencia y la calidad de la movilización en la ciudad. Históricamente, Lima contaba con sistemas de transporte público, como los tranvías, en el siglo XIX. Sin embargo, la falta de inversión y una planificación inadecuada llevaron al declive y eventual desaparición de estos sistemas en la segunda mitad del siglo XX. Entre las problemáticas más apremiantes se destaca la congestión del tráfico, que afecta de manera significativa a los limeños. El aumento de vehículos particulares y la infraestructura inadecuada han resultado en largos tiempos de viaje y congestión constante en las calles de la ciudad. Asimismo, el transporte público en Lima ha enfrentado dificultades, desde deficiencias en infraestructura y falta de mantenimiento hasta servicios ineficientes. Los usuarios a menudo se ven obligados a utilizar autobuses y combis en condiciones precarias, lo que afecta negativamente su experiencia de viaje. La seguridad en el transporte público también ha sido motivo de preocupación, con incidentes de robos y acoso a los pasajeros. Esto ha generado inquietudes sobre la seguridad de los usuarios en el sistema. Además, las tarifas de transporte público pueden resultar onerosas para personas de bajos ingresos, y la falta de accesibilidad adecuada para personas con discapacidad ha sido una preocupación persistente. A pesar de estos desafíos, el gobierno y las autoridades locales han implementado medidas para mejorar el transporte público en Lima, incluyendo la introducción de sistemas de transporte masivo como el Metropolitano y el Tren Eléctrico, así como esfuerzos para combatir la informalidad y elevar la calidad del servicio. Sin embargo, los retos siguen siendo considerables en una ciudad en constante crecimiento y transformación.</p>
+<p>¿Qué?: La movilización en transportes públicos en Lima se refiere al desplazamiento de personas dentro de la ciudad utilizando medios de transporte público, como autobuses, combis, el Metropolitano (un sistema de buses de tránsito rápido) y el Tren Eléctrico. Esto incluye viajes diarios para trabajar, estudiar y realizar actividades cotidianas.</p>
+<p>¿Quién?: Los usuarios del transporte público en Lima, que incluyen a residentes locales y visitantes de la ciudad, son los principales actores de esta movilización. Además, las autoridades gubernamentales y las empresas de transporte público desempeñan un papel importante en la gestión y regulación de estos servicios.</p>
+<p>¿Por qué?: Las personas utilizan el transporte público en Lima por varias razones, incluyendo la congestión del tráfico, la falta de estacionamiento, la necesidad de una opción de movilidad asequible y la preocupación por el medio ambiente. Además, muchas personas no tienen acceso a un automóvil personal y dependen del transporte público para sus desplazamientos diarios.</p>
+<p>¿Dónde?: Esta movilización se lleva a cabo en toda la ciudad de Lima, que incluye el centro histórico, los distritos periféricos y las áreas metropolitanas circundantes. Los usuarios se desplazan tanto dentro de la ciudad como hacia y desde los suburbios.</p>
+<p>¿Cuándo?: La movilización en transportes públicos en Lima ocurre todos los días, durante todas las horas del día, ya que es esencial para las actividades diarias de la población. Los horarios varían según la ruta y el tipo de transporte.</p>
+<p>¿Cómo?: Los usuarios pueden acceder al transporte público en Lima a través de una red de paraderos y estaciones que sirven a diferentes rutas y servicios. Los sistemas de transporte masivo, como el Metropolitano y el Tren Eléctrico, ofrecen tarjetas de acceso y estaciones específicas para abordar. Los autobuses y combis tienen paraderos designados en las calles</p>
+<p>¿Cuánto?: El costo de utilizar el transporte público en Lima varía según el tipo de servicio y la distancia recorrida. Los precios de los boletos pueden oscilar desde unos pocos centavos hasta varios soles peruanos, dependiendo de la ruta y el sistema de transporte. Los usuarios a menudo pueden optar por tarifas con descuento si utilizan tarjetas de prepago o si son estudiantes o adultos mayores.</p>
+<p>Conclusiones de las 5W y 2H: En conclusión, la movilización en transportes públicos en Lima, Perú, es una parte fundamental de la vida cotidiana de sus residentes y visitantes. Este sistema de transporte es utilizado por una amplia variedad de personas que dependen de él para desplazarse por la ciudad debido a la congestión del tráfico, la falta de estacionamiento y la necesidad de opciones de movilidad asequibles. A pesar de las numerosas problemáticas, como la congestión, la seguridad y la falta de inversión en infraestructura, el transporte público sigue siendo esencial para mantener la movilidad en una ciudad en constante crecimiento y transformación. Los esfuerzos de las autoridades locales y gubernamentales, como la implementación de sistemas de transporte masivo y la regulación del sector, son pasos importantes hacia la mejora de la movilización en Lima.</p>
+<h3 id="122-lean-ux-process">1.2.2. Lean UX Process</h3>
+<h4 id="1221-lean-ux-problem-statements">1.2.2.1. Lean UX Problem Statements</h4>
+<p>El propósito de TrackMyRoute es ayudar a las personas a planificar y realizar viajes en transporte público de manera fácil y eficiente. Además, de reducir los costos de transporte y la congestión de tráfico. Esto contribuye a mejorar la calidad del aire para reducir el impacto ambiental de los desplazamientos diarios.</p>
+<h4 id="1222-lean-ux-assumptions">1.2.2.2. Lean UX Assumptions</h4>
+<p>User Assumptions</p>
+<p>I. ¿Quién es el usuario? TrackMyRoute está dirigido a cualquier persona que utilice el transporte público en la ciudad de Lima. Esto puede incluir a estudiantes, trabajadores, viajeros y cualquier otra persona que necesite planificar un viaje en transporte público. Además es útil para turistas y visitantes que no están familiarizados con el sistema de transporte público local y que necesitan ayuda para planificar sus viajes.</p>
+<p>II. ¿Dónde encaja nuestro producto en su trabajo o vida?</p>
+<p>Nuestro servicio encaja para los residentes de Lima, que dependen en gran medida del transporte público para sus desplazamientos diarios, &quot;TrackMyRoute&quot; puede ser una herramienta esencial. Les permite encontrar la mejor ruta de transporte público para llegar a su destino de manera eficiente, ahorrando tiempo y minimizando la incertidumbre en sus viajes. Esto se traduce en una mayor comodidad y productividad en su vida cotidiana.</p>
+<p>III. ¿Qué problemas tiene nuestro producto? ¿Evitar?</p>
+<p>La precisión de la información en tiempo real es fundamental para la efectividad de la aplicación. Los datos incorrectos pueden llevar a los usuarios por rutas equivocadas y generar frustración. Además, al recopilar datos de ubicación en tiempo real, es crucial garantizar la privacidad y seguridad de los usuarios. Es por ello que debemos evitar problemas de seguridad, como la exposición de datos sensibles o la posibilidad de rastreo no autorizado.</p>
+<p>IV. ¿Cuándo y cómo es nuestro producto? ¿Usado?</p>
+<p>Nuestro servicio podrá ser utilizado a través de dispositivos móviles, como teléfonos inteligentes o tabletas. Los usuarios pueden descargar la aplicación desde tiendas de aplicaciones móviles, como la App Store o Google Play, e instalarla en sus dispositivos. Luego, ingresan su ubicación actual y destino, y la aplicación proporciona información sobre las rutas disponibles, tiempos de viaje estimados y actualizaciones en tiempo real sobre la ubicación de los vehículos de transporte público. Esto permite a los usuarios tomar decisiones informadas sobre la mejor manera de llegar a su destino utilizando el transporte público en Lima.</p>
+<p>V. ¿Qué características son importantes?</p>
+<p>“TrackMyRoute&quot; es una aplicación esencial para los usuarios de transporte público en Lima, ofreciendo una amplia gama de características cruciales, como la búsqueda de rutas, información en tiempo real sobre el transporte, notificaciones y alertas, mapas interactivos, detalles de tarifas y opciones de pago, comentarios de usuarios, historial de viajes, accesibilidad y medidas de seguridad, todo ello respaldado por una colaboración efectiva con las empresas de transporte. Esta aplicación mejora la experiencia de viaje al ayudar a los usuarios a planificar y seguir sus rutas de manera eficiente, brindando un servicio completo y personalizado que facilita la movilidad en la ciudad de Lima.</p>
+<p>VI. ¿Cómo debe verse nuestro producto y cómo comportarse?</p>
+<p>Nuestra plataforma tiene que interactuar con los usuarios mediante un diseño llamativo e intuitivo con la finalidad de que nuestros usuarios confíen en nosotros y tengan facilidad de lograr sus objetivos al usar la plataforma.</p>
+<p>Business Assumptions</p>
+<ol>
+<li>
+<p>Demanda de Usuarios: Suponemos que existe una demanda significativa de una aplicación de planificación de rutas de transporte público en Lima, ya que muchas personas utilizan el transporte público en la ciudad y buscan formas de optimizar sus viajes.</p>
+</li>
+<li>
+<p>Colaboración con Empresas de Transporte: Suponemos que las empresas de transporte público en Lima estarán dispuestas a colaborar y proporcionar datos actualizados sobre sus rutas y vehículos para integrarlos en nuestra aplicación.</p>
+</li>
+<li>
+<p>Disponibilidad de Datos en Tiempo Real: Suponemos que podemos acceder a datos en tiempo real de los sistemas de transporte público, lo que nos permitirá proporcionar información precisa sobre la ubicación y el estado de los vehículos.</p>
+</li>
+<li>
+<p>Aceptación de Tecnología: Suponemos que la población de Lima está dispuesta a adoptar y utilizar aplicaciones móviles para planificar sus viajes en transporte público, y que cuentan con los dispositivos y la conectividad necesarios.</p>
+</li>
+<li>
+<p>Monetización: Suponemos que podemos generar ingresos a través de modelos de monetización como la publicidad en la aplicación, la venta de boletos de transporte o la suscripción premium para características adicionales.</p>
+</li>
+<li>
+<p>Seguridad de Datos: Suponemos que podemos garantizar la seguridad y privacidad de los datos personales de los usuarios, lo que fomentará la confianza en nuestra aplicación.</p>
+</li>
+<li>
+<p>Competencia: Suponemos que habrá competidores en el mercado de aplicaciones de transporte público en Lima, y debemos encontrar formas de diferenciarnos y ofrecer un valor único a los usuarios.</p>
+</li>
+<li>
+<p>Retención de Usuarios: Suponemos que podemos mantener una base de usuarios activa y comprometida a largo plazo mediante actualizaciones regulares de la aplicación, características adicionales y un excelente servicio al cliente.</p>
+</li>
+<li>
+<p>Regulaciones y Cumplimiento Normativo: Suponemos que podemos cumplir con todas las regulaciones y requisitos legales relacionados con la operación de una aplicación de transporte público en Lima.</p>
+</li>
+<li>
+<p>Marketing efectivo: Suponemos que podemos llevar a cabo estrategias de marketing efectivas para aumentar la conciencia y la adopción de la aplicación entre los residentes y visitantes de Lima.</p>
+</li>
+</ol>
+<h4 id="1223-lean-ux-hypothesis-statements">1.2.2.3. Lean UX Hypothesis Statements</h4>
+<p>Creemos que existe una demanda insatisfecha de una aplicación de planificación de rutas de transporte público en Lima.
+Realizaremos encuestas y análisis de mercado para evaluar el interés y la disposición de los usuarios para utilizar la aplicación.
+Suponemos que las empresas de transporte público estarán dispuestas a colaborar y proporcionar datos esenciales para nuestra aplicación.
+Iniciaremos conversaciones con empresas de transporte para determinar su interés y disposición para colaborar.
+Creemos que la población de Lima está dispuesta a utilizar aplicaciones móviles para planificar sus viajes en transporte público.
+Realizaremos encuestas de aceptación de tecnología y evaluaremos la adopción inicial de la aplicación.
+Suponemos que habrá competidores en el mercado de aplicaciones de transporte público y que podemos diferenciarnos.
+Realizaremos un análisis de la competencia y evaluaremos nuestra propuesta de valor única.
+Suponemos que podemos generar ingresos a través de modelos de monetización como la publicidad en la aplicación y la venta de boletos.
+Implementaremos estos modelos y evaluaremos la generación de ingresos y la aceptación de los usuarios.</p>
+<h4 id="1224-lean-ux-canvas">1.2.2.4. Lean UX Canvas</h4>
+<p><img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/image.png" alt="alt text"></p>
+<hr>
+<h2 id="13-segmentos-objetivo">1.3. Segmentos Objetivo</h2>
+<p>Segmento objetivo 1: Pasajeros en busca de un autobús. (Pasajeros)</p>
+<p>• Personas que viajan al trabajo o la escuela en transporte público.
+• Turistas que exploran Lima y prefieren utilizar el transporte público.
+• Personas que no tienen acceso a un vehículo personal y dependen del transporte público para sus desplazamientos diarios.</p>
+<p>Segmento objetivo 2: Empresas de transporte que operan en Lima.</p>
+<p>• Los gerentes de operaciones y logística de estas empresas.
+• Empresas formalizadas y con papeles en regla.</p>
+<h1 id="cap%C3%ADtulo-ii-requirements-elicitation--analysis">Capítulo II: Requirements Elicitation &amp; Analysis</h1>
+<h2 id="21-competidores">2.1. Competidores</h2>
+<br>
+Luego de realizar una investigaci&#xF3;n en el mercado, hemos encontrado tres proyectos que consideramos como potenciales competidores para TrackMyRoute. Estos son:
+<br><br>
+<ul>
+<li>
+<p><strong>Moovit:</strong>
+<br></p>
+<p>Moovit es una aplicación de movilidad urbana que proporciona a los usuarios información sobre rutas y horarios de transporte público en tiempo real. Permite a los usuarios planificar sus viajes utilizando una variedad de opciones de transporte público, incluidos autobuses, trenes, metro y tranvías. Moovit también ofrece alertas sobre interrupciones en el servicio y actualizaciones en tiempo real para ayudar a los usuarios a navegar por la ciudad de manera eficiente.
+<br></p>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="https://moovit.com/wp-content/uploads/2020/03/opengraph-homepage-1.png">
+
+<p><br><br></p>
+<ul>
+<li>
+<p><strong>Citymapper:</strong>
+<br></p>
+<p>Citymapper es una aplicación de planificación de viajes que ofrece rutas y horarios para una amplia gama de opciones de transporte en ciudades de todo el mundo. Además de proporcionar información sobre transporte público, Citymapper incluye opciones de transporte alternativo como bicicletas compartidas, scooters eléctricos y servicios de viaje compartido. La aplicación también ofrece detalles sobre tarifas, tiempo de viaje y opciones de rutas más rápidas o escénicas.
+<br></p>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="https://logovectorseek.com/wp-content/uploads/2020/11/citymapper-logo-vector.png">
+
+<p><br><br></p>
+<ul>
+<li>
+<p><strong>Trafi:</strong>
+<br></p>
+<p>Trafi es una aplicación de movilidad urbana que ofrece información detallada sobre rutas y horarios de transporte público, así como opciones para otros modos de transporte, como bicicletas compartidas y servicios de viaje compartido. La aplicación utiliza datos en tiempo real para proporcionar a los usuarios actualizaciones sobre el estado del servicio, retrasos y cambios en las rutas. Trafi está disponible en varias ciudades de todo el mundo y se centra en ofrecer soluciones de movilidad integrales para sus usuarios.
+<br></p>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="https://logowik.com/content/uploads/images/trafi-20215422.logowik.com.webp">
+
+<p><br><br></p>
+<h3 id="211-an%C3%A1lisis-competitivo">2.1.1. Análisis competitivo</h3>
+<table>
+<tbody><tr><th colspan="7" valign="top"><b>Competitive Analysis Landscape</b></th></tr><tr><td colspan="2" rowspan="2">&#xBF;Por qu&#xE9; llevar a cabo este an&#xE1;lisis?</td><td colspan="5">Escriba en el recuadro la pregunta que busca responder o el objetivo de este an&#xE1;lisis.</td></tr><tr><td colspan="5">Este an&#xE1;lisis se concret&#xF3; teniendo como finalidad el poder identificar a nuestros potenciales competidores e idear estrategias y t&#xE1;cticas para diferenciarnos de ellos.</td></tr><tr><td colspan="3">Nuestro Producto / Competidores</td><td colspan="1" valign="top" style="font-weight: bold;">TrackMyRoute<br></td><td colspan="1" valign="top" style="font-weight: bold;">Moovit<br><img src="https://moovit.com/wp-content/uploads/2020/03/opengraph-homepage-1.png" alt="Mootvit" width="60px"></td><td colspan="1" valign="top" style="font-weight: bold;">Citymapper<br><img src="https://logovectorseek.com/wp-content/uploads/2020/11/citymapper-logo-vector.png" alt="Citymapper" width="60px"></td><td colspan="1" valign="top" style="font-weight: bold;">Trafi<br><img src="https://logowik.com/content/uploads/images/trafi-20215422.logowik.com.webp" alt="Trafi" width="60px"></td></tr><tr><td colspan="1" rowspan="2">Perfil</td><td colspan="2">Overview</td><td colspan="1" valign="top">TrackMyRoute se destaca por su enfoque espec&#xED;fico en mejorar la movilidad urbana en Lima, Per&#xFA;. Ofrece una combinaci&#xF3;n de planificaci&#xF3;n de rutas, informaci&#xF3;n en tiempo real sobre el estado del transporte p&#xFA;blico y la posibilidad de realizar pagos de pasajes dentro de la aplicaci&#xF3;n. Su colaboraci&#xF3;n con empresas de transporte p&#xFA;blico locales y la opci&#xF3;n de una versi&#xF3;n premium con funciones adicionales lo convierten en una opci&#xF3;n atractiva para los residentes de Lima que buscan optimizar sus desplazamientos por la ciudad.</td><td colspan="1" valign="top">Moovit es una aplicaci&#xF3;n ampliamente reconocida a nivel mundial por su capacidad para proporcionar informaci&#xF3;n detallada sobre rutas y horarios de transporte p&#xFA;blico en tiempo real. Con una amplia disponibilidad internacional, Moovit se destaca por su capacidad para ofrecer actualizaciones en tiempo real sobre el estado del servicio, alertas de servicio y una comunidad activa de usuarios que contribuyen con informaci&#xF3;n valiosa sobre el transporte p&#xFA;blico en sus ciudades.</td><td colspan="1" valign="top">Citymapper es conocida por su enfoque integral en la planificaci&#xF3;n de viajes, ofreciendo opciones para una variedad de modos de transporte, incluidos el transporte p&#xFA;blico, bicicletas compartidas, scooters el&#xE9;ctricos y servicios de viaje compartido. Su dise&#xF1;o intuitivo y la capacidad de ofrecer opciones de rutas m&#xE1;s r&#xE1;pidas o esc&#xE9;nicas lo convierten en una opci&#xF3;n popular entre los usuarios que buscan soluciones de movilidad flexibles y personalizadas en ciudades de todo el mundo.</td><td colspan="1" valign="top">Trafi ofrece una soluci&#xF3;n completa para la planificaci&#xF3;n de viajes en ciudades de todo el mundo, con informaci&#xF3;n detallada sobre rutas y horarios de transporte p&#xFA;blico, as&#xED; como opciones para otros modos de transporte como bicicletas compartidas y servicios de viaje compartido. Su enfoque en ofrecer soluciones de movilidad integrales y actualizaciones en tiempo real sobre el estado del servicio lo convierten en una herramienta valiosa para los usuarios que buscan optimizar sus desplazamientos urbanos.</td></tr><tr><td colspan="2">Ventaja competitiva</td><td colspan="1" valign="top">TrackMyRoute se destaca por su enfoque localizado en Lima, Per&#xFA;, lo que permite una adaptaci&#xF3;n precisa a las necesidades del sistema de transporte p&#xFA;blico local. Adem&#xE1;s, su integraci&#xF3;n con las empresas de transporte p&#xFA;blico ofrece una experiencia m&#xE1;s confiable y personalizada para los usuarios, brindando acceso a datos actualizados y recursos exclusivos.</td><td colspan="1" valign="top">Moovit sobresale por su amplia disponibilidad internacional, convirti&#xE9;ndose en una opci&#xF3;n confiable para usuarios que viajan entre diferentes ciudades y pa&#xED;ses. Adem&#xE1;s, sus actualizaciones en tiempo real sobre el estado del servicio y la participaci&#xF3;n activa de la comunidad de usuarios garantizan informaci&#xF3;n precisa y confiable para optimizar los viajes en transporte p&#xFA;blico.</td><td colspan="1" valign="top">Citymapper ofrece una ventaja competitiva a trav&#xE9;s de su variedad de modos de transporte, que incluyen opciones como transporte p&#xFA;blico, bicicletas compartidas y servicios de viaje compartido. Su dise&#xF1;o intuitivo y las opciones de rutas personalizadas hacen que la planificaci&#xF3;n de viajes sea flexible y adaptada a las preferencias individuales de los usuarios.</td><td colspan="1" valign="top">Trafi destaca por ofrecer soluciones integrales de movilidad, proporcionando informaci&#xF3;n detallada sobre una amplia variedad de modos de transporte. Sus actualizaciones en tiempo real sobre el estado del servicio permiten a los usuarios tomar decisiones informadas sobre sus desplazamientos, adapt&#xE1;ndose a cualquier cambio en el transporte p&#xFA;blico de manera eficiente.</td></tr><tr><td colspan="1" rowspan="2">Perfil de Marketing</td><td colspan="2">Mercado objetivo</td><td colspan="1" valign="top">El mercado objetivo principal para TrackMyRoute son los residentes de Lima, Per&#xFA;, que dependen del transporte p&#xFA;blico para sus desplazamientos diarios. Esto incluye a estudiantes, trabajadores y cualquier persona que utilice el transporte p&#xFA;blico en la ciudad. Adem&#xE1;s, la aplicaci&#xF3;n tambi&#xE9;n puede ser &#xFA;til para turistas y visitantes que desean explorar Lima utilizando el transporte p&#xFA;blico.</td><td colspan="1" valign="top">Moovit tiene un mercado objetivo amplio y diverso que abarca usuarios de transporte p&#xFA;blico en ciudades de todo el mundo. Esto incluye a personas de todas las edades y grupos demogr&#xE1;ficos que utilizan el transporte p&#xFA;blico como parte de su rutina diaria, as&#xED; como viajeros y turistas que buscan orientaci&#xF3;n sobre el transporte p&#xFA;blico en nuevas ubicaciones.</td><td colspan="1" valign="top">Citymapper se dirige a usuarios urbanos en ciudades de todo el mundo que buscan una soluci&#xF3;n integral para planificar sus viajes utilizando una variedad de modos de transporte. Esto incluye a personas j&#xF3;venes y activas que prefieren opciones de movilidad flexibles y personalizadas, as&#xED; como a profesionales y trabajadores que necesitan optimizar sus desplazamientos diarios.</td><td colspan="1" valign="top">Trafi est&#xE1; dirigido a usuarios urbanos en ciudades de todo el mundo que buscan una soluci&#xF3;n completa para planificar y optimizar sus viajes utilizando diferentes modos de transporte. Su mercado objetivo incluye a personas de todas las edades y grupos demogr&#xE1;ficos que dependen del transporte p&#xFA;blico y est&#xE1;n interesadas en recibir informaci&#xF3;n actualizada y precisa sobre sus opciones de movilidad.</td></tr><tr><td colspan="2">Estrategias de marketing</td><td colspan="1" valign="top">Publicidad dirigida en redes sociales, enfocada en residentes de Lima y colaboraci&#xF3;n con empresas de transporte p&#xFA;blico para promoci&#xF3;n mutua.</td><td colspan="1" valign="top">Publicidad en plataformas online y apps de viajes. Tambien programas de referidos para usuarios existentes.</td><td colspan="1" valign="top">Creaci&#xF3;n de contenido educativo en video. Colaboraciones con influencers locales.</td><td colspan="1" valign="top">Optimizaci&#xF3;n SEO para mejorar visibilidad en b&#xFA;squedas. Participaci&#xF3;n en eventos de movilidad urbana.</td></tr><tr><td colspan="1" rowspan="3">Perfil de Producto</td><td colspan="2">Productos &amp; Servicios</td><td colspan="1" valign="top">TrackMyRoute ofrece una aplicaci&#xF3;n m&#xF3;vil para la planificaci&#xF3;n de rutas de transporte p&#xFA;blico en Lima, con una versi&#xF3;n premium que incluye caracter&#xED;sticas como pagos integrados y actualizaciones en tiempo real. Adem&#xE1;s, se colabora con empresas de transporte p&#xFA;blico para mejorar la calidad de los servicios y la experiencia del usuario.</td><td colspan="1" valign="top">Moovit proporciona una aplicaci&#xF3;n m&#xF3;vil para la planificaci&#xF3;n de rutas y horarios de transporte p&#xFA;blico a nivel global. Ofrece actualizaciones en tiempo real sobre el estado del servicio y alertas de servicio, junto con una comunidad activa de usuarios que contribuyen con informaci&#xF3;n sobre el transporte p&#xFA;blico.</td><td colspan="1" valign="top">Citymapper ofrece una aplicaci&#xF3;n m&#xF3;vil para la planificaci&#xF3;n de viajes integrales en ciudades de todo el mundo. La aplicaci&#xF3;n proporciona rutas para una variedad de modos de transporte y opciones de rutas personalizadas, con un dise&#xF1;o intuitivo para mejorar la experiencia del usuario.</td><td colspan="1" valign="top">Trafi es una aplicaci&#xF3;n m&#xF3;vil que permite la planificaci&#xF3;n de viajes en ciudades globales. Ofrece informaci&#xF3;n detallada sobre rutas y horarios de transporte p&#xFA;blico, as&#xED; como opciones para otros modos de transporte. Adem&#xE1;s, proporciona actualizaciones en tiempo real sobre el estado del servicio y soluciones integrales de movilidad para usuarios urbanos.</td></tr><tr><td colspan="2">Precios &amp; Costos</td><td colspan="1" valign="top">Ofrece una versi&#xF3;n gratuita con opciones b&#xE1;sicas y una versi&#xF3;n premium con caracter&#xED;sticas adicionales que los usuarios pueden adquirir mediante una tarifa mensual o anual. Los ingresos provienen de la venta de la versi&#xF3;n premium y los costos asociados incluyen desarrollo inicial, mantenimiento de servidores, actualizaciones de software y posibles costos de soporte t&#xE9;cnico.</td><td colspan="1" valign="top">La aplicaci&#xF3;n es gratuita para los usuarios, generando ingresos principalmente a trav&#xE9;s de acuerdos de publicidad y posiblemente asociaciones con empresas de transporte p&#xFA;blico. Los costos incluyen el desarrollo continuo de la aplicaci&#xF3;n, mantenimiento de servidores y posibles costos de soporte t&#xE9;cnico y marketing.</td><td colspan="1" valign="top">Es gratuita para los usuarios y probablemente genere ingresos a trav&#xE9;s de acuerdos de publicidad y posibles asociaciones con empresas de transporte. Los costos est&#xE1;n asociados con el desarrollo y mantenimiento continuo de la aplicaci&#xF3;n, as&#xED; como los gastos de servidores y posibles costos de marketing.</td><td colspan="1" valign="top">Igualmente gratuita para los usuarios, Trafi podr&#xED;a generar ingresos a trav&#xE9;s de acuerdos de publicidad y posiblemente asociaciones con empresas de transporte. Los costos incluyen el desarrollo y mantenimiento de la aplicaci&#xF3;n, as&#xED; como los gastos de servidores y posibles costos de marketing y soporte t&#xE9;cnico.</td></tr><tr><td colspan="2">Canales de distribuci&#xF3;n (Web y/o M&#xF3;vil)</td><td colspan="1" valign="top">La aplicaci&#xF3;n puede distribuirse a trav&#xE9;s de su propio sitio web, donde los usuarios pueden acceder a informaci&#xF3;n sobre la aplicaci&#xF3;n y descargarla desde enlaces directos a las tiendas de aplicaciones.</td><td colspan="1" valign="top">Moovit ofrece informaci&#xF3;n sobre la aplicaci&#xF3;n y enlaces de descarga en su sitio web oficial, permitiendo a los usuarios acceder y descargar la aplicaci&#xF3;n desde sus navegadores web.</td><td colspan="1" valign="top">Citymapper proporciona informaci&#xF3;n sobre la aplicaci&#xF3;n y enlaces de descarga en su sitio web oficial, permitiendo a los usuarios acceder y descargar la aplicaci&#xF3;n desde sus navegadores web.</td><td colspan="1" valign="top">Trafi ofrece informaci&#xF3;n sobre la aplicaci&#xF3;n y enlaces de descarga en su sitio web oficial, permitiendo a los usuarios acceder y descargar la aplicaci&#xF3;n desde sus navegadores web.</td></tr><tr></tr><td colspan="1" rowspan="5">An&#xE1;lisis SWOT</td><tr><td colspan="2">Fortalezas</td><td colspan="1" valign="top">Enfoque localizado en Lima, integraci&#xF3;n con empresas de transporte p&#xFA;blico, versi&#xF3;n premium con funciones adicionales.</td><td colspan="1" valign="top">Amplia disponibilidad internacional, actualizaciones en tiempo real, comunidad activa de usuarios.</td><td colspan="1" valign="top">Variedad de modos de transporte, dise&#xF1;o intuitivo, opciones de rutas personalizadas.</td><td colspan="1" valign="top">Soluciones integrales de movilidad, actualizaciones en tiempo real, enfoque en la experiencia del usuario.</td></tr><tr><td colspan="2">Debilidades</td><td colspan="1" valign="top">Dependencia del desarrollo del sistema de transporte p&#xFA;blico en Lima, competencia con aplicaciones establecidas.</td><td colspan="1" valign="top">Dependencia de la calidad de los datos de transporte p&#xFA;blico, competencia con otras aplicaciones similares.</td><td colspan="1" valign="top">Dependencia de la calidad de los datos de transporte, competencia con aplicaciones establecidas como Moovit.</td><td colspan="1" valign="top">Dependencia de la calidad de los datos de transporte p&#xFA;blico, competencia con aplicaciones m&#xE1;s establecidas como Moovit y Citymapper.</td></tr><tr><td colspan="2">Oportunidades</td><td colspan="1" valign="top">Crecimiento del mercado de aplicaciones de movilidad urbana en Lima, colaboraci&#xF3;n con m&#xE1;s empresas de transporte p&#xFA;blico, expansi&#xF3;n a otras ciudades.</td><td colspan="1" valign="top">Expansi&#xF3;n a nuevos mercados, desarrollo de nuevas caracter&#xED;sticas y funcionalidades, colaboraciones con m&#xE1;s empresas de transporte.</td><td colspan="1" valign="top">Expansi&#xF3;n a nuevas ciudades, desarrollo de nuevas caracter&#xED;sticas innovadoras, colaboraciones con empresas de transporte y urbanismo.</td><td colspan="1" valign="top">Expansi&#xF3;n a nuevos mercados globales, desarrollo de nuevas funciones para mejorar la experiencia del usuario, colaboraciones con empresas de transporte y gobierno.</td></tr><tr><td colspan="2">Amenazas</td><td colspan="1" valign="top">Cambios en la infraestructura de transporte, entrada de competidores locales o globales.</td><td colspan="1" valign="top">Entrada de nuevos competidores, cambios en las pol&#xED;ticas de datos de transporte p&#xFA;blico.</td><td colspan="1" valign="top">Cambios en la infraestructura de transporte, entrada de nuevos competidores con caracter&#xED;sticas similares.</td><td colspan="1" valign="top"> Cambios en las pol&#xED;ticas de transporte, entrada de nuevos competidores con enfoques similares.</td></tr></tbody></table>
+<h3 id="212-estrategias-y-t%C3%A1cticas-frente-a-competidores">2.1.2. Estrategias y tácticas frente a competidores</h3>
+<ol>
+<li><strong>Diferenciación de Producto:</strong></li>
+</ol>
+<p>Estrategia: TrackMyRoute se enfocará en resaltar las características únicas de la aplicación, como la integración con empresas de transporte público locales y la oferta de una versión premium con funciones exclusivas.
+<br>  <br>
+Tácticas: Para llevar a cabo esta estrategia, se implementarán campañas de marketing que destaquen estas características distintivas, utilizando mensajes claros y persuasivos para comunicar el valor añadido de la aplicación en comparación con los competidores.</p>
+<ol start="2">
+<li><strong>Desarrollo Continuo:</strong></li>
+</ol>
+<p>Estrategia: La startup se comprometerá a mantenerse actualizada con las últimas tendencias y tecnologías en el mercado de movilidad urbana.
+<br>  <br>
+Tácticas: Para lograr esto, se planificarán actualizaciones frecuentes de la aplicación para mejorar la experiencia del usuario, se agregarán nuevas características basadas en comentarios de usuarios y análisis de competidores, y se buscarán colaboraciones con empresas de transporte público para integrar nuevas funcionalidades.</p>
+<ol start="3">
+<li><strong>Colaboraciones Estratégicas:</strong></li>
+</ol>
+<p>Estrategia: Se buscarán asociaciones con empresas de transporte público y otras organizaciones relacionadas con la movilidad urbana.
+<br>  <br>
+Tácticas: Para implementar esta estrategia, la startup identificará oportunidades para colaborar con empresas de transporte público en la mejora de la infraestructura de datos, ofrecerá promociones y descuentos exclusivos para los usuarios de la aplicación en colaboración con estas empresas, y participará activamente en eventos y conferencias de la industria para establecer conexiones con otras organizaciones del sector.</p>
+<ol start="4">
+<li><strong>Enfoque en la Experiencia del Usuario:</strong></li>
+</ol>
+<p>Estrategia: La prioridad será la satisfacción del usuario y la facilidad de uso de la aplicación.
+<br>  <br>
+Tácticas: Para llevar a cabo esta estrategia, se realizarán pruebas de usuario para identificar áreas de mejora en la experiencia del usuario, se ofrecerá soporte técnico receptivo y eficiente, y se proporcionarán recursos educativos y tutoriales para ayudar a los usuarios a aprovechar al máximo la aplicación.</p>
+<ol start="5">
+<li><strong>Análisis Competitivo Continuo:</strong></li>
+</ol>
+<p>Estrategia: La startup se comprometerá a monitorear de cerca las acciones y estrategias de los competidores.
+<br>  <br>
+Tácticas: Para ejecutar esta estrategia, se realizarán análisis periódicos de la competencia para identificar nuevas oportunidades y amenazas, se seguirán de cerca las actualizaciones y lanzamientos de productos de los competidores, y se ajustará la estrategia de la startup en función de los cambios en el mercado competitivo.</p>
+<h2 id="22-entrevistas">2.2 Entrevistas</h2>
+<h3 id="221-dise%C3%B1o-de-entrevistas">2.2.1 Diseño de entrevistas</h3>
+<p>Nuestro objetivo es obtener información sobre las necesidades y los problemas de los usuarios de
+transporte público en Lima. Esta información se utilizará para mejorar el servicio de nuestra empresa.
+Nuestros participantes serán usuarios de transporte público en Lima. Se seleccionarán participantes
+con diferentes perfiles, como edad, género, lugar de residencia, y frecuencia de uso del transporte
+público.
+Las preguntas serán abiertas y no directivas para que los participantes puedan expresar sus opiniones
+libremente. A continuación, se presentan algunos ejemplos de preguntas:</p>
+<p><strong>Segmento 1: Usuarios Diarios de Transporte Público en Lima:</strong></p>
+<ul>
+<li>¿Con qué frecuencia utilizas el transporte público en Lima?</li>
+<li>¿Cuál es tu principal motivo para utilizar el transporte público en lugar de otros medios de transporte?</li>
+<li>¿Cuáles son los horarios en los que más utilizas el transporte público y por qué?</li>
+<li>¿Has experimentado problemas de puntualidad con el transporte público? Si es así, ¿puedes describir una situación en la que esto haya sido un problema para ti?</li>
+<li>¿Has tenido alguna experiencia negativa o insegura mientras usabas el transporte público en Lima? Si es así, ¿puedes contarnos más al respecto?</li>
+<li>¿Qué tan satisfecho estás con la accesibilidad del transporte público en términos de paradas, estaciones y rutas disponibles?</li>
+<li>¿Cómo te enteras de las actualizaciones o cambios en el servicio de transporte público en Lima?</li>
+<li>¿Has utilizado aplicaciones o sitios web relacionados con el transporte público en Lima? Si es así, ¿cuál ha sido tu experiencia con ellos?</li>
+<li>¿Qué características de nuestra aplicación encuentras más útiles en tu rutina de viaje diario?</li>
+<li>¿Hay alguna característica específica que sientas que falta en la aplicación y que te gustaría ver implementada?</li>
+<li>¿Cómo crees que podríamos mejorar la experiencia general de los usuarios en nuestra aplicación de transporte público?</li>
+</ul>
+<p><strong>Segmento 2: Empresas de transporte en Lima:</strong></p>
+<ol>
+<li>¿Cuál es el nombre de su empresa de transporte público?</li>
+<li>¿Cuál es su rol dentro de la empresa?</li>
+<li>¿Podría describir brevemente las principales operaciones y servicios de transporte que ofrece su empresa en Lima?</li>
+<li>¿Qué desafíos enfrenta actualmente su empresa en términos de operaciones de transporte y atención al cliente?</li>
+<li>¿Está su empresa utilizando alguna aplicación o plataforma tecnológica para gestionar sus servicios de transporte?</li>
+<li>¿Qué características o funcionalidades consideraría más útiles en una aplicación destinada a empresas de transporte público como la suya?</li>
+<li>¿Cómo cree que una aplicación de este tipo podría mejorar la eficiencia y la calidad de los servicios de transporte que ofrece su empresa?</li>
+<li>¿Qué aspectos consideraría más importantes al evaluar y seleccionar una aplicación para su empresa?</li>
+<li>¿Cuál sería su principal preocupación o requisito al considerar la adopción de una nueva aplicación o plataforma tecnológica para su empresa de transporte público?</li>
+<li>¿Tiene alguna experiencia previa en la implementación o uso de aplicaciones similares en su empresa o en la industria del transporte público en general?</li>
+</ol>
+<h3 id="222-registro-de-entrevistas">2.2.2. Registro de entrevistas</h3>
+<p><strong>Entrevista 01</strong></p>
+<p>Entrevista #1:</p>
+<p><a href="https://ibb.co/HF7f6x9"><img src="https://i.ibb.co/M2nxrGJ/image.png" alt="image" border="0"></a></p>
+<p>Nombre: Albre Cañamero, Jose
+<strong>Enlace de entrevista:</strong>
+https://upcedupe-my.sharepoint.com/<img class="emoji" alt="v" src="data:image/png;base64,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" />/g/personal/u202214695_upc_edu_pe/EeS3yHZQ_xNArGNUtPUQuIQBAW61pI0n41otb6jIoq6hjQ?e=s4DVuo
+<strong>Resumen de la entrevista:</strong>
+El entrevistado, es un joven de 19 años que actualmente se encuentra estudiando la carrera de sociologia, el diaramente se moviliza por el transporte publico, debido a que le resulta mas económico movilizarse por ese medio. Nos comenta que la idea de nuestra le gusta mucho, porque el quisiera tener mas conocimiento sobre las mejores rutas que pueda tomar, quisiera que nosotros tengamos convenio con las empresas de los buses.</p>
+<p><strong>Entrevista 02</strong></p>
+<p>Entrevistado 2:</p>
+<p>Nombre y apellidos: Fabio Horna</p>
+<p>Edad: 24 años</p>
+<p>Ubicación: Lima</p>
+<p>Evidencia de la reunión:</p>
+<img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/entrevista2.jpg" alt="Canvas" width="90%">
+<p>Inicio: 00:04</p>
+<p>Fin: 02:57</p>
+<p><strong>Enlace de entrevista:</strong> https://upcedupe-my.sharepoint.com/<img class="emoji" alt="v" src="data:image/png;base64,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" />/g/personal/u202018894_upc_edu_pe/EddQn8WabOhChWfh2viP_c8BR0u5fm4qwyeLOcOZLOEE1g?e=uzQA3P&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</p>
+<p><strong>Resumen de la entrevista:</strong>
+Nuestro entrevistado fue Fabio Horna, un joven de 24 años que trabaja en una empresa de transporte público, discutió varios aspectos de su rol como auditor y las operaciones de la empresa en Lima. Explicó los servicios de transporte que ofrece la empresa, identificando los desafíos actuales en operaciones y atención al cliente, como la eficiencia y la satisfacción del usuario. Además, mencionó que su empresa desea incorporar tecnología para mejorar la gestión de los servicios, y destacó las funcionalidades importantes que debería tener una aplicación para optimizar estos procesos. Fabio valoró características como la usabilidad y la integración de datos al seleccionar tecnología y expresó preocupaciones sobre la implementación efectiva de nuevas plataformas. También compartió experiencias previas con tecnologías similares en el sector del transporte público.</p>
+<p><strong>Entrevista 03</strong></p>
+<p>Nombre y apellidos: Alba Murillo</p>
+<p>Edad: 24 años</p>
+<p>Ubicación: Lima</p>
+<p>Evidencia de la reunión:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/entrevista_arian.png">
+
+<p><strong>Enlace de entrevista:</strong> https://upcedupe-my.sharepoint.com/personal/u202018894_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202018894%5Fupc%5Fedu%5Fpe%2FDocuments%2FOpenSource%2FEntrevista02%20Segmento2%2Emp4&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;ga=1&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview</p>
+<p><strong>Resumen de la entrevista:</strong></p>
+<p>El análisis de la entrevista revela que los usuarios de transporte público en Lima valoran la puntualidad, la disponibilidad de información actualizada y la seguridad durante los viajes. Utilizan principalmente dispositivos móviles para acceder a aplicaciones y canales digitales, como Google Maps y Moovit, para planificar sus viajes. Esperan características como la visualización en tiempo real de los autobuses y notificaciones sobre cambios en el servicio, junto con una interfaz intuitiva y opciones de personalización. Su disposición a pagar por una versión premium depende de si ofrece mejoras significativas en la experiencia de viaje. En resumen, los usuarios buscan una aplicación confiable, precisa y fácil de usar que satisfaga sus necesidades de planificación de viajes en transporte público y mejore su experiencia general.</p>
+<h3 id="223-an%C3%A1lisis-de-entrevistas">2.2.3. Análisis de entrevistas</h3>
+<p><strong>Análisis de las Entrevistas: Usuarios Regulares del Transporte Público en Lima</strong></p>
+<p>El análisis de la entrevista revela que los usuarios de transporte público en Lima valoran la puntualidad, la disponibilidad de información actualizada y la seguridad durante los viajes. Utilizan principalmente dispositivos móviles para acceder a aplicaciones y canales digitales, como Google Maps y Moovit, para planificar sus viajes. Esperan características como la visualización en tiempo real de los autobuses y notificaciones sobre cambios en el servicio, junto con una interfaz intuitiva y opciones de personalización. Su disposición a pagar por una versión premium depende de si ofrece mejoras significativas en la experiencia de viaje. En resumen, los usuarios buscan una aplicación confiable, precisa y fácil de usar que satisfaga sus necesidades de planificación de viajes en transporte público y mejore su experiencia general.</p>
+<p><strong>Análisis de las Entrevistas: Empresas de Transporte Público en Lima</strong></p>
+<p>Las empresas de transporte público en Lima expresaron la necesidad de una aplicación que les permita optimizar la gestión de sus flotas, coordinar horarios y mejorar la eficiencia operativa. Esperan una aplicación fácil de usar que proporcione información precisa y actualizada sobre las rutas de transporte público, los horarios y las ubicaciones de las paradas. Además, valorarían características adicionales como la capacidad de gestionar flotas de manera eficiente, la generación de informes de rendimiento y la integración con sistemas de pago electrónico. La fiabilidad y la consistencia en el funcionamiento de la aplicación son aspectos clave para estas empresas, quienes necesitan contar con una herramienta confiable para gestionar sus operaciones diarias. Están abiertas a colaborar estrechamente con los desarrolladores de la aplicación para adaptarla a sus necesidades específicas y garantizar una implementación exitosa en sus operaciones</p>
+<h2 id="23-needfinding">2.3 Needfinding</h2>
+<h3 id="231-user-personas">2.3.1. User Personas</h3>
+<p>Los User Personas son necesarios para la formación de este proyecto, ya que brindan una perspectiva completa de los usuarios clave. Estos perfiles detallados permiten a la startup diseñar una plataforma y experiencia enfocada y personalizada, abordando de manera efectiva los desafíos específicos de cada segmento objetivo:</p>
+<p><strong>User Persona del segmento: Usuarios Diarios de Transporte Público en Lima</strong></p>
+<div align="center">
+</div>  <img src="https://i.imgur.com/ebiHXz2.png">
+
+<p><strong>User Persona del segmento: Empresas de transporte en Lima</strong></p>
+<div align="center">
+</div>  <img src="https://i.imgur.com/Tz0fqBD.png">
+
+<br>
+<h3 id="232-user-task-matrix">2.3.2. User Task Matrix</h3>
+<p>En esta seccion, se describen las tareas típicas que realizan los dos segmentos objetivos. Se evalúa la frecuencia y la severidad de cada tarea de los user persona, lo que ayuda a priorizar y entender cuáles son las áreas clave en las que el producto podría influir.</p>
+<p><strong>Segmento Objetivo:</strong> Usuarios Diarios de Transporte Público en Lima</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Tarea</th>
+<th style="text-align:center">Frecuencia</th>
+<th style="text-align:center">Severidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Planificar viajes diarios</td>
+<td style="text-align:center">Casi siempre</td>
+<td style="text-align:center">Alta</td>
+</tr>
+<tr>
+<td style="text-align:center">Obtener información sobre transporte público</td>
+<td style="text-align:center">Casi siempre</td>
+<td style="text-align:center">Alta</td>
+</tr>
+<tr>
+<td style="text-align:center">Minimizar tiempo de viaje</td>
+<td style="text-align:center">Casi siempre</td>
+<td style="text-align:center">Alta</td>
+</tr>
+<tr>
+<td style="text-align:center">Evitar retrasos en el transporte público</td>
+<td style="text-align:center">Casi siempre</td>
+<td style="text-align:center">Alta</td>
+</tr>
+<tr>
+<td style="text-align:center">Acceder a noticias locales</td>
+<td style="text-align:center">A veces</td>
+<td style="text-align:center">Media</td>
+</tr>
+<tr>
+<td style="text-align:center">Buscar eventos locales</td>
+<td style="text-align:center">A veces</td>
+<td style="text-align:center">Media</td>
+</tr>
+<tr>
+<td style="text-align:center">Acceder a descuentos locales</td>
+<td style="text-align:center">A veces</td>
+<td style="text-align:center">Media</td>
+</tr>
+<tr>
+<td style="text-align:center">Utilizar transporte público en horarios no laborales</td>
+<td style="text-align:center">Rara vez</td>
+<td style="text-align:center">Baja</td>
+</tr>
+<tr>
+<td style="text-align:center">Interactuar con la aplicación</td>
+<td style="text-align:center">Casi siempre</td>
+<td style="text-align:center">Alta</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Segmento Objetivo:</strong> Empresas de transporte en Lima</p>
+<table>
+<thead>
+<tr>
+<th>Tareas</th>
+<th>Frecuencia</th>
+<th>Severidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registrar la empresa en la aplicación</td>
+<td>Una vez</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Configurar y personalizar la aplicación</td>
+<td>Rara vez</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Programar rutas y horarios de los vehículos</td>
+<td>Casi Siempre</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Supervisar el estado y la ubicación de los vehículos</td>
+<td>Casi siempre</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Comunicarse con los conductores en tiempo real</td>
+<td>Casi siempre</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Generar informes de rendimiento y eficiencia</td>
+<td>Rara vez</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Integrar la aplicación con sistemas de pago</td>
+<td>Rara vez</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Proporcionar retroalimentación sobre la aplicación</td>
+<td>Rara vez</td>
+<td>Media</td>
+</tr>
+<tr>
+<td>Monitorear la satisfacción del cliente y gestionar quejas</td>
+<td>Casi siempre</td>
+<td>Media</td>
+</tr>
+</tbody>
+</table>
+<h3 id="233-user-journey-mapping">2.3.3. User Journey Mapping</h3>
+<p><strong>User Journey Mapping del segmento: Usuarios Diarios de Transporte Público en Lima</strong></p>
+<div align="center">
+</div>  <img src="https://i.imgur.com/beG78Qf.png">
+
+<p><strong>User Journey Mapping del segmento: Empresas de transporte en Lima</strong></p>
+<div align="center">
+</div>  <img src="https://i.imgur.com/ZtwuyG4.png">
+
+<h3 id="234-empathy-mapping">2.3.4. Empathy Mapping</h3>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/empathy.jpg">
+</div>
+<h3 id="235-as-is-scenario-mapping">2.3.5. As-is Scenario Mapping</h3>
+<p>As-is Map del Usuario</p>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/asismap.jpg">
+</div>
+<br>
+<p>As-is Map de la Empresa</p>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/asismap2.jpg">
+</div>
+<h1 id="cap%C3%ADtulo-iii-requeriments-specifications">Capítulo III: Requeriments Specifications</h1>
+<h2 id="31-to-be-scenario-mapping">3.1 To-Be Scenario Mapping</h2>
+<p>Con la herramiento del To-be scenario mapping exploramos las mejoras y las nuevas funcionalidades que se incorporarán en la aplicación “TrackMyRoute”. Estas mejoras están diseñadas para optimizar la experiencia de los usuarios al movilizarse por la ciudad de Lima en transporte público y proporcionar a la empresa de transporte una visión en tiempo real de sus clientes. A través de este proceso, visualizamos cómo la aplicación evolucionará para brindar un servicio más eficiente y útil a los dos grupos de usuarios.</p>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/tobemap.jpg">
+</div>
+<br>
+<h2 id="32-user-stories">3.2 User Stories</h2>
+<p>En la sección de User Stories, detallaremos las diversas necesidades y requerimientos de nuestros
+usuarios y la empresa de transporte. Cada historia de usuario representará un escenario o una función
+específica que se espera que la aplicación proporcione, con el objetivo de cumplir connuestro
+propósito principal: ayudar a las personas a navegar por la ciudad de Lima utilizando el transporte
+público de manera eficiente y brindar a la empresa de transporte información en tiempo real sobre sus
+clientes. A través de estas historias de usuario, podremos comprender mejor cómo la aplicación
+satisfará las necesidades de ambas partes y proporcionará una solución integral para la movilidad
+urbana.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Epic / Story ID</strong></th>
+<th><strong>Título</strong></th>
+<th><strong>Descripción</strong></th>
+<th><strong>Criterios de Aceptación</strong></th>
+<th><strong>Relacionado con (Epic ID)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HU01</td>
+<td>Registrar al usuario</td>
+<td>Como cliente quiero registrarme con todos mis datos pertinentes (nombre, correo, edad, etc.) en la aplicación para poder hacer uso de sus funcionalidades.</td>
+<td>Escenario: El cliente se registra en la aplicación. Dado que el cliente se encuentra en la pantalla de inicio de sesión,Y el cliente quiere registrarse para usar la aplicación,Cuando el cliente rellena un formulario de creación de una cuenta nueva con todos sus datos personales pertinentes,Entonces el sistema guardará todos sus datos y le permitirá acceder a las funcionalidades de la aplicación.</td>
+<td>HU02</td>
+</tr>
+<tr>
+<td>HU02</td>
+<td>Inicio de sesión en la aplicación</td>
+<td>Como cliente quiero iniciar sesión en la aplicación con mis credenciales (correo y contraseña) para poder entrar a la aplicación con mi cuenta existente</td>
+<td>Escenario: El cliente quiere iniciar sesión en la aplicación Dado que el cliente se encuentra en la pantalla de inicio de sesión,Y el usuario ya tiene una cuenta existente,Cuando el cliente rellena los campos de la pantalla de inicio de sesión con sus credenciales (correo y contraseña) correctamente,Entonces el cliente podrá acceder a las funcionalidades de la aplicación con su cuenta existente.</td>
+<td>HU01</td>
+</tr>
+<tr>
+<td>HU03</td>
+<td>Eliminar cuenta o usuario</td>
+<td>Como cliente quiero tener la posibilidad de borrar mi cuenta para que mis datos ya no permanezcan en la base de datos de la aplicación.</td>
+<td>Escenario: El cliente quiere eliminar una cuenta o usuario Dado que el cliente se encuentra en la pantalla de ajustes de la cuenta,Y el cliente tiene la intención de borrar su cuenta,Cuando el cliente selecciona la opción de borrar su cuenta en la aplicación,Entonces la aplicación eliminará su cuenta y los datos personales del cliente de la base de datos.</td>
+<td>HU01,HU02</td>
+</tr>
+<tr>
+<td>HU04</td>
+<td>Registro de rutas y buses</td>
+<td>Como desarrollador quiero registrar a las rutas de transporte urbano y a los buses que transitan por estas para así tener un registro de todas las que se encuentren en Lima.</td>
+<td>Escenario: el desarrollador quiere registrar las rutas de los buses. Dado que el desarrollador se encuentra en la pantalla de ingreso de datos en la base de datos,Y el desarrollador tiene a la mano los datos de las rutas y los buses,Cuando el desarrollador quiera insertar los datos pertinentes,Entonces la aplicación guardará en la base de datos todos los datos relacionados con las rutas y los buses</td>
+<td>HU05, HU06</td>
+</tr>
+<tr>
+<td>HU05</td>
+<td>Registro de conductores</td>
+<td>Como desarrollador quiero registrar a los conductores de los buses para así tener un registro de todos los conductores que transitan por las rutas por motivos de seguridad al usuario.</td>
+<td>Escenario: El desarrollador quiere registrar a los conductores de los buses. Dado que el desarrollador se encuentra en la pantalla de ingreso de datos en la base de datos,Y el desarrollador tiene a la mano los datos de las rutas y los buses,Cuando el desarrollador quiera insertar los datos pertinentes,Entonces la aplicación guardará en la base de datos todos los datos relacionados con las rutas y los buses.</td>
+<td>HU04, HU06</td>
+</tr>
+<tr>
+<td>HU06</td>
+<td>Registro de las empresas operadoras de rutas</td>
+<td>Como desarrollador quiero registrar a las empresas que operan en cada una de las rutas de transporte urbano en buses para así tener un registro de todas estas empresas en la base de datos de la aplicación</td>
+<td>Escenario: El desarrollador quiere registrar a las empresas operadoras de rutas. Dado que el desarrollador se encuentra en la pantalla de ingreso de datos en la base de datos,Y el desarrollador tiene a la mano los datos de las empresas operadoras de las rutas de transporte de buses,Cuando el desarrollador quiera insertar los datos pertinentes, Entonces la aplicación guardará en la base de datos todos los datos relacionados con las empresas operadoras de las rutas.</td>
+<td>HU04, HU05</td>
+</tr>
+<tr>
+<td>HU07</td>
+<td>Implementación de servicios externos</td>
+<td>Como desarrollador quiero implementar servicios externos de otras empresas como Google Maps para así poder darle la funcionalidad deseada a la aplicación sin tener que desarrollar todo desde cero</td>
+<td>Escenario: El desarrollador quiere implementar servicios externos a la app.Dado que el desarrollador se encuentra en la pantalla de implementación de servicios externos,Y el desarrollador ha juntado el código y los requisitos necesarios para llamar al servicio externo,Cuando el desarrollador quiera crear una funcionalidad que llame a un servicio externo de otra empresa,Entonces la aplicación hará uso de este servicio cuando lo requiera.</td>
+<td>HU06</td>
+</tr>
+<tr>
+<td>HU08</td>
+<td>Visualización del menú de opciones</td>
+<td>Como cliente quiero ver el menú de opciones de la aplicación para así tener una idea de las funcionalidades que están presentes en esta.</td>
+<td>Escenario: El cliente quiere ver las funciones de la aplicación.Dado que el cliente se encuentra en la pantalla de inicio de la aplicación,Y el cliente quiere ver qué puede ser la aplicación,Cuando el cliente selecciona el botón que abre el menú de opciones,Entonces la aplicación deberá mostrarle al usuario el menú de opciones con todas las funcionalidades presentes.</td>
+<td>HU10</td>
+</tr>
+<tr>
+<td>HU09</td>
+<td>Configuración de búsqueda de ruta personalizada</td>
+<td>Como cliente quiero modificar ciertas opciones relacionadas a la búsqueda de rutas (tiempo de viaje, distancia al paradero, mostrar la ruta más rápida, etc.) para optimizar esta búsqueda según mis preferencias.</td>
+<td>Escenario: El cliente quiere realizar una búsqueda personalizada.Dado que el cliente se encuentra en la pantalla de búsqueda de rutas,Y el cliente quiere especificar las condiciones de búsqueda según su parecer,Cuando el cliente modifique los criterios de búsqueda,Entonces la aplicación le mostrará las rutas disponibles según los filtros de búsqueda establecidos por el usuario.</td>
+<td>HU10</td>
+</tr>
+<tr>
+<td>HU10</td>
+<td>Visualización del mapa</td>
+<td>Como cliente quiero ver un mapa interactivo con las rutas presentes para tener una idea más clara del posible camino por el que quiera viajar.</td>
+<td>Escenario: El cliente quiere ver el mapa. Dado que el cliente se encuentra en la pantalla principal, Y el cliente desea visualizar el mapa  con las rutas disponibles, Cuando el cliente seleccione la opción  de buscar rutas e ingrese todos los filtros que desee, Entonces la aplicación deberá mostrar  un mapa interactivo de la zona con las posibles rutas.</td>
+<td>HU12</td>
+</tr>
+<tr>
+<td>HU11</td>
+<td>Visualización de costos del pasaje</td>
+<td>Como cliente quiero ver el costo del pasaje aproximado al elegir una ruta en la aplicación para saber con anticipación cuánto dinero debo tener para costear el viaje</td>
+<td>Escenario: El cliente quiere ver los costos de pasaje. Dado que el cliente se encuentra en la pantalla principal, Y el cliente desea ver cuánto le costaría realizar un viaje por cierta ruta, Cuando el cliente haya seleccionado  la opción de buscar rutas y haya  realizado la búsqueda de las rutas  disponibles, Entonces la aplicación deberá mostrar el costo aproximado de cada viaje por ruta.</td>
+<td>HU12</td>
+</tr>
+<tr>
+<td>HU12</td>
+<td>Visualización del número de buses a abordar</td>
+<td>Como cliente quiero ver cuántos buses se tiene que abordar para llegar al destino para determinar qué ruta sería la mejor conforme a la situación en la que me encuentre.</td>
+<td>Escenario: El cliente quiere ver cuántos buses puede abordar Dado que el cliente se encuentra en la pantalla principal, Y el cliente desea saber cuántos buses debe abordar para llegar a cierto lugar, Cuando el cliente haya seleccionado la opción de buscar rutas y haya realizado la búsqueda de las rutas disponibles, Entonces la aplicación deberá mostrar la cantidad de buses que se deberá abordar para llegar al destino.</td>
+<td>HU14</td>
+</tr>
+<tr>
+<td>HU13</td>
+<td>Planificación de viajes</td>
+<td>Como cliente quiero planificar mis viajes en función a mi ubicación actual y al destino (se muestran los horarios de salida y de llegada de los buses, su ubicación, etc.) para organizar mejor mis tiempos.</td>
+<td>Escenario: El cliente quiere planificar un viaje Dado que el cliente se encuentra en la pantalla principal, Y el cliente desea planificar un viaje, Cuando el cliente haya seleccionado la opción de buscar rutas y haya realizado la búsqueda de las rutas disponibles, Entonces la aplicación deberá permitirle al cliente el planificar su viaje dependiendo de los tiempos estimados del viaje hipotético.</td>
+<td>HU15</td>
+</tr>
+<tr>
+<td>HU14</td>
+<td>Información en tiempo real</td>
+<td>Como cliente quiero observar la información pertinente a mi viaje en tiempo real (ubicación actual de los autobuses, su hora estimada de llegada y cualquier retraso o cambio en la ruta) para tomar mejores decisiones en el acto.</td>
+<td>Escenario: El cliente quiere ver información de los buses en tiempo real Dado que el cliente ya eligió la ruta en la que desea viajar, Y el cliente desea ver información pertinente a su viaje en tiempo real, Cuando el cliente seleccione la opción para ver la información en tiempo real, Entonces la aplicación le tendrá que mostrar al cliente toda la información relacionada a su viaje actualizada y en tiempo real.</td>
+<td>HU17</td>
+</tr>
+<tr>
+<td>HU15</td>
+<td>Compra de boletos</td>
+<td>Como cliente quiero comprar boletos para el transporte público directamente desde la aplicación para agilizar y facilitar el proceso de pago por los boletos o pasajes.</td>
+<td>Escenario: El cliente quiere comprar un boleto anticipadamente Dado que el cliente ya eligió la ruta en la que desea viajar, Y los buses en los cuales el cliente va a viajar tienen el pago de pasajes por la aplicación disponible, Cuando el cliente le de a la opción para pagar por la aplicación, Entonces la aplicación le permitirá al cliente pagar por el boleto o pasaje desde esta.</td>
+<td>HU13</td>
+</tr>
+<tr>
+<td>HU16</td>
+<td>Notificaciones personalizadas</td>
+<td>Como cliente quiero recibir notificaciones personalizadas acerca de eventos pertinentes a mi viaje en bus (retrasos, horarios, etc.) para estar al tanto de las situaciones que pueden afectar mi futuro viaje</td>
+<td>Escenario: El cliente quiere recibir notificaciones acerca de eventos de buses Dado que el cliente está al tanto de las notificaciones de su celular, Cuando ocurra un evento de importancia para el viaje del cliente, Entonces la aplicación emitirá una notificación, la cual el cliente puede ver o ignorar si es que lo considera necesario.</td>
+<td>HU14</td>
+</tr>
+<tr>
+<td>HU17</td>
+<td>Mapas interactivos</td>
+<td>Como cliente quiero visualizar mapas interactivos en los que pueda ver la ubicación de las paradas de autobús, la ruta y la ubicación de los autobuses en tiempo real, para así poder tomar mejores decisiones en el momento sobre qué ruta elegir.</td>
+<td>Escenario: El cliente quiere visualizar mapas interactivos Dado que el cliente se encuentra en la pantalla principal, Y el cliente desea visualizar el mapa con las rutas disponibles, Cuando el cliente seleccione la opción de buscar rutas e ingrese todos los filtros que desee, Entonces la aplicación deberá mostrar un mapa interactivo de la zona donde se puede ver la ubicación de las paradas de autobús, la ruta y la ubicación de los autobuses en tiempo real.</td>
+<td>HU10, HU14</td>
+</tr>
+<tr>
+<td>HU18</td>
+<td>Integración con otros servicios de transporte</td>
+<td>Como desarrollador quiero integrar la aplicación con otros servicios de transporte público, como trenes o tranvías, para permitir a los usuarios planificar viajes intermodales.</td>
+<td>Escenario: El desarrollador quiere implementar otros servicios de transporte Dado que el desarrollador se encuentra en la pantalla de implementación de servicios externos, Y el desarrollador ha juntado el código y los requisitos necesarios para incluir a otro servicio de transporte público, Cuando el desarrollador quiera crear una funcionalidad que se integre con otro servicio, Entonces la aplicación hará uso de esta función para permitirles a los clientes la planificación de viajes intermodales.</td>
+<td>HU04</td>
+</tr>
+<tr>
+<td>HU19</td>
+<td>Accesibilidad</td>
+<td>Como desarrollador quiero hacer la aplicación más accesible para personas con discapacidades, ofreciendo opciones de accesibilidad como la navegación por voz y el alto contraste, para ampliar la cantidad de posibles usuarios.</td>
+<td>Escenario: El desarrollador quiere hacer la aplicación más accesible para el usuario Dado que el desarrollador se encuentra en la pantalla de implementación de servicios de accesibilidad, Y el desarrollador ha juntado el código y los requisitos necesarios para hacer uso de herramientas de accesibilidad, Cuando el desarrollador quiera crear una funcionalidad que mejore la accesibilidad de la aplicación, Entonces la aplicación integrará esta funcionalidad.</td>
+<td>HU20</td>
+</tr>
+<tr>
+<td>HU20</td>
+<td>Retroalimentación de los usuarios</td>
+<td>Como cliente quiero dar una retroalimentación sobre mi experiencia de viaje o al utilizar la aplicación para dar a conocer mi agrado o mi malestar con respecto al funcionamiento de esta.</td>
+<td>Escenario: El cliente quiere dar una retroalimentación sobre la app. Dado que el cliente está en la pantalla principal de la aplicación, Y el cliente desee dar una retroalimentación sobre su experiencia, Cuando el cliente seleccione la opción para dar una retroalimentación, Entonces la aplicación le deberá dar la posibilidad al cliente de dar una retroalimentación tanto sobre su viaje en el bus, la ruta o la funcionalidad de la aplicación en general.</td>
+<td>HU19</td>
+</tr>
+<tr>
+<td>HU21</td>
+<td>integración de api de transporte público</td>
+<td>como desarrollador, quiero integrar una api de transporte público para acceder a datos actualizados sobre rutas, horarios y paradas de transporte público en tiempo real.</td>
+<td>dado que se ha establecido la conexión con la api de transporte público, cuando realizo una solicitud de búsqueda de rutas con una ubicación de origen y destino, entonces la aplicación devuelve datos precisos y actualizados sobre las rutas disponibles, horarios de salida y llegada, y paradas intermedias.</td>
+<td>HU12, HU14</td>
+</tr>
+<tr>
+<td>HU22</td>
+<td>implementación de sistema de autenticación oauth</td>
+<td>como desarrollador, quiero implementar un sistema de autenticación oauth para permitir que los usuarios inicien sesión utilizando sus cuentas de redes sociales.</td>
+<td>dado que un usuario intenta iniciar sesión en la aplicación utilizando oauth, cuando selecciona la opción de inicio de sesión con una plataforma de redes sociales, entonces la aplicación redirige al usuario al sitio web de la plataforma de redes sociales para autorizar el acceso.</td>
+<td>HU01, HU02</td>
+</tr>
+<tr>
+<td>HU23</td>
+<td>desarrollo de algoritmo de ruta óptima</td>
+<td>como desarrollador, quiero diseñar un algoritmo eficiente para calcular la ruta óptima entre dos puntos dados, teniendo en cuenta factores como la distancia, el tiempo y las preferencias del usuario.</td>
+<td>dado que un usuario solicita una búsqueda de ruta entre dos ubicaciones, cuando el algoritmo calcula la ruta óptima basada en las preferencias del usuario y los datos de transporte disponibles, entonces la aplicación devuelve la ruta más rápida y eficiente, considerando factores como la duración del viaje y el número de trasbordos.</td>
+<td>HU13</td>
+</tr>
+<tr>
+<td>HU24</td>
+<td>sección principal de landing page</td>
+<td>como visitante de la landing page, quiero ser recibido por una sección principal llamativa para captar mi atención y despertar mi interés en explorar más sobre la aplicación de seguimiento de rutas.</td>
+<td>dado que ingreso a la landing page, cuando miro la sección principal, entonces encuentro un diseño visualmente atractivo con un mensaje claro y conciso que destaque las características únicas de la aplicación.</td>
+<td></td>
+</tr>
+<tr>
+<td>HU25</td>
+<td>información de beneficios</td>
+<td>como visitante de la landing page, quiero encontrar una sección dedicada a los beneficios de la aplicación de seguimiento de rutas para comprender cómo puede mejorar mi experiencia de viaje.</td>
+<td>dado que estoy interesado en la aplicación, cuando navego por la sección de beneficios, entonces encuentro información clara y convincente sobre cómo la aplicación puede ayudarme a planificar mejor mis viajes, ahorrar tiempo y optimizar mis desplazamientos diarios.</td>
+<td></td>
+</tr>
+<tr>
+<td>HU26</td>
+<td>conocer los aliados que respaldan la app</td>
+<td>como visitante de la landing page, quiero ver una lista de aliados que respaldan la aplicación de seguimiento de rutas para sentir confianza en su calidad y fiabilidad.</td>
+<td>dado que estoy interesado en la aplicación, cuando reviso la sección de aliados, entonces encuentro logotipos o testimonios de empresas, organizaciones o autoridades que respaldan y confían en la aplicación.</td>
+<td></td>
+</tr>
+<tr>
+<td>HU27</td>
+<td>reseñas de usuarios satisfechos</td>
+<td>como visitante de la landing page, quiero encontrar reseñas y testimonios de usuarios satisfechos para obtener una idea de su experiencia y satisfacción con la aplicación.</td>
+<td>dado que estoy interesado en la aplicación, cuando busco la sección de reseñas, entonces encuentro testimonios reales de usuarios que describen cómo la aplicación ha mejorado su experiencia de viaje y les ha ayudado en sus desplazamientos diarios.</td>
+<td></td>
+</tr>
+<tr>
+<td>HU28</td>
+<td>conocer los planes de suscripción</td>
+<td>como visitante de la landing page, quiero encontrar información sobre los planes de suscripción disponibles para entender las opciones de pago y beneficios asociados con cada plan.</td>
+<td>dado que estoy interesado en utilizar la aplicación de forma regular, cuando navego por la sección de planes de suscripción, entonces encuentro una descripción clara de los diferentes planes disponibles, sus precios y las características incluidas en cada uno.</td>
+<td></td>
+</tr>
+<tr>
+<td>HU29</td>
+<td>obtener respuestas a preguntas frecuentes</td>
+<td>como visitante de la landing page, quiero acceder a una sección de preguntas frecuentes para encontrar respuestas a mis dudas más comunes sobre la aplicación de seguimiento de rutas.</td>
+<td>dado que tengo preguntas sobre la aplicación, cuando accedo a la sección de preguntas frecuentes, entonces encuentro una lista completa de preguntas comunes y sus respuestas claras y concisas, lo que me ayuda a entender mejor cómo funciona la aplicación y cómo puedo utilizarla eficazmente.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="33-impact-mapping">3.3 Impact Mapping</h2>
+<p>En la sección de Impact Mapping, exploraremos las repercusiones más amplias y los objetivos
+estratégicos que buscamos lograr con la implementación de esta aplicación. En lugar de centrarnos en
+detalles técnicos o funcionalidades específicas, el Impact Mapping nos ayudará a comprender cómo
+nuestro proyecto contribuirá a alcanzar metas más grandes y cómo afectará positivamente a los
+diferentes grupos de interés. A través de este mapeo de impacto, identificaremos las conexiones entre
+las características de la aplicación y los resultados deseados, lo que nos permitirá tomar decisiones
+informadas sobre qué aspectos priorizar y cómo medir el éxito a largo plazo.</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/impact_mapping.png">
+
+<h2 id="34-product-backlog">3.4 Product Backlog</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">#Orden</th>
+<th style="text-align:left">User Story ID</th>
+<th style="text-align:left">Título</th>
+<th style="text-align:left">Descripción</th>
+<th style="text-align:left">Story Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">HU07</td>
+<td style="text-align:left">Implementación de servicios externos</td>
+<td style="text-align:left">Como desarrollador quiero implementar servicios externos de otras empresas como Google Maps para así poder darle la funcionalidad deseada a la aplicación sin tener que desarrollar todo desde cero</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">HU09</td>
+<td style="text-align:left">Configuración de búsqueda de ruta personalizada</td>
+<td style="text-align:left">Como cliente quiero modificar ciertas opciones relacionadas a la búsqueda de rutas (tiempo de viaje, distancia al paradero, mostrar la ruta más rápida, etc.) para optimizar esta búsqueda según mis preferencias.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">HU10</td>
+<td style="text-align:left">Visualización del mapa</td>
+<td style="text-align:left">Como cliente quiero ver un mapa interactivo con las rutas presentes para tener una idea más clara del posible camino por el que quiera viajar.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">HU11</td>
+<td style="text-align:left">Visualización de costos del pasaje</td>
+<td style="text-align:left">Como cliente quiero ver el costo del pasaje aproximado al elegir una ruta en la aplicación para saber con anticipación cuánto dinero debo tener para costear el viaje</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">HU12</td>
+<td style="text-align:left">Visualización del número de buses a abordar</td>
+<td style="text-align:left">Como cliente quiero ver cuántos buses se tiene que abordar para llegar al destino para determinar qué ruta sería la mejor conforme a la situación en la que me encuentre.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">HU13</td>
+<td style="text-align:left">Planificación de viajes</td>
+<td style="text-align:left">Como cliente quiero planificar mis viajes en función a mi ubicación actual y al destino (se muestran los horarios de salida y de llegada de los buses, su ubicación, etc.) para organizar mejor mis tiempos.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">HU14</td>
+<td style="text-align:left">Información en tiempo real</td>
+<td style="text-align:left">Como cliente quiero observar la información pertinente a mi viaje en tiempo real (ubicación actual de los autobuses, su hora estimada de llegada y cualquier retraso o cambio en la ruta) para tomar mejores decisiones en el acto.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">HU15</td>
+<td style="text-align:left">Compra de boletos</td>
+<td style="text-align:left">Como cliente quiero comprar boletos para el transporte público directamente desde la aplicación para agilizar y facilitar el proceso de pago por los boletos o pasajes.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">HU17</td>
+<td style="text-align:left">Mapas interactivos</td>
+<td style="text-align:left">Como cliente quiero visualizar mapas interactivos en los que pueda ver la ubicación de las paradas de autobús, la ruta y la ubicación de los autobuses en tiempo real, para así poder tomar mejores decisiones en el momento sobre qué ruta elegir.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">HU18</td>
+<td style="text-align:left">Integración con otros servicios de transporte</td>
+<td style="text-align:left">Como desarrollador quiero integrar la aplicación con otros servicios de transporte público, como trenes o tranvías, para permitir a los usuarios planificar viajes intermodales.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">HU21</td>
+<td style="text-align:left">integración de api de transporte público</td>
+<td style="text-align:left">como desarrollador, quiero integrar una api de transporte público para acceder a datos actualizados sobre rutas, horarios y paradas de transporte público en tiempo real.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">HU23</td>
+<td style="text-align:left">desarrollo de algoritmo de ruta óptima</td>
+<td style="text-align:left">como desarrollador, quiero diseñar un algoritmo eficiente para calcular la ruta óptima entre dos puntos dados, teniendo en cuenta factores como la distancia, el tiempo y las preferencias del usuario.</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">HU04</td>
+<td style="text-align:left">Registro de rutas y buses</td>
+<td style="text-align:left">Como desarrollador quiero registrar a las rutas de transporte urbano y a los buses que transitan por estas para así tener un registro de todas las que se encuentren en Lima.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">HU05</td>
+<td style="text-align:left">Registro de conductores</td>
+<td style="text-align:left">Como desarrollador quiero registrar a los conductores de los buses para así tener un registro de todos los conductores que transitan por las rutas por motivos de seguridad al usuario.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">HU06</td>
+<td style="text-align:left">Registro de las empresas operadoras de rutas</td>
+<td style="text-align:left">Como desarrollador quiero registrar a las empresas que operan en cada una de las rutas de transporte urbano en buses para así tener un registro de todas estas empresas en la base de datos de la aplicación</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">HU08</td>
+<td style="text-align:left">Visualización del menú de opciones</td>
+<td style="text-align:left">Como cliente quiero ver el menú de opciones de la aplicación para así tener una idea de las funcionalidades que están presentes en esta.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">HU19</td>
+<td style="text-align:left">Accesibilidad</td>
+<td style="text-align:left">Como desarrollador quiero hacer la aplicación más accesible para personas con discapacidades, ofreciendo opciones de accesibilidad como la navegación por voz y el alto contraste, para ampliar la cantidad de posibles usuarios.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">HU20</td>
+<td style="text-align:left">Retroalimentación de los usuarios</td>
+<td style="text-align:left">Como cliente quiero dar una retroalimentación sobre mi experiencia de viaje o al utilizar la aplicación para dar a conocer mi agrado o mi malestar con respecto al funcionamiento de esta.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">HU22</td>
+<td style="text-align:left">implementación de sistema de autenticación oauth</td>
+<td style="text-align:left">como desarrollador, quiero implementar un sistema de autenticación oauth para permitir que los usuarios inicien sesión utilizando sus cuentas de redes sociales.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">HU24</td>
+<td style="text-align:left">sección principal de landing page</td>
+<td style="text-align:left">como visitante de la landing page, quiero ser recibido por una sección principal llamativa para captar mi atención y despertar mi interés en explorar más sobre la aplicación de seguimiento de rutas.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">21</td>
+<td style="text-align:left">HU25</td>
+<td style="text-align:left">información de beneficios</td>
+<td style="text-align:left">como visitante de la landing page, quiero encontrar una sección dedicada a los beneficios de la aplicación de seguimiento de rutas para comprender cómo puede mejorar mi experiencia de viaje.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">22</td>
+<td style="text-align:left">HU26</td>
+<td style="text-align:left">conocer los aliados que respaldan la app</td>
+<td style="text-align:left">como visitante de la landing page, quiero ver una lista de aliados que respaldan la aplicación de seguimiento de rutas para sentir confianza en su calidad y fiabilidad.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">23</td>
+<td style="text-align:left">HU27</td>
+<td style="text-align:left">reseñas de usuarios satisfechos</td>
+<td style="text-align:left">como visitante de la landing page, quiero encontrar reseñas y testimonios de usuarios satisfechos para obtener una idea de su experiencia y satisfacción con la aplicación.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">24</td>
+<td style="text-align:left">HU28</td>
+<td style="text-align:left">conocer los planes de suscripción</td>
+<td style="text-align:left">como visitante de la landing page, quiero encontrar información sobre los planes de suscripción disponibles para entender las opciones de pago y beneficios asociados con cada plan.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">25</td>
+<td style="text-align:left">HU29</td>
+<td style="text-align:left">obtener respuestas a preguntas frecuentes</td>
+<td style="text-align:left">como visitante de la landing page, quiero acceder a una sección de preguntas frecuentes para encontrar respuestas a mis dudas más comunes sobre la aplicación de seguimiento de rutas.</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">26</td>
+<td style="text-align:left">HU01</td>
+<td style="text-align:left">Registrar al usuario</td>
+<td style="text-align:left">Como cliente quiero registrarme con todos mis datos pertinentes (nombre, correo, edad, etc.) en la aplicación para poder hacer uso de sus funcionalidades.</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">27</td>
+<td style="text-align:left">HU02</td>
+<td style="text-align:left">Inicio de sesión en la aplicación</td>
+<td style="text-align:left">Como cliente quiero iniciar sesión en la aplicación con mis credenciales (correo y contraseña) para poder entrar a la aplicación con mi cuenta existente</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">28</td>
+<td style="text-align:left">HU03</td>
+<td style="text-align:left">Eliminar cuenta o usuario</td>
+<td style="text-align:left">Como cliente quiero tener la posibilidad de borrar mi cuenta para que mis datos ya no permanezcan en la base de datos de la aplicación.</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">29</td>
+<td style="text-align:left">HU16</td>
+<td style="text-align:left">Notificaciones personalizadas</td>
+<td style="text-align:left">Como cliente quiero recibir notificaciones personalizadas acerca de eventos pertinentes a mi viaje en bus (retrasos, horarios, etc.) para estar al tanto de las situaciones que pueden afectar mi futuro viaje</td>
+<td style="text-align:left">2</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="cap%C3%ADtulo-iv-product-design">Capítulo IV: Product Design</h1>
+<h2 id="41-style-guidelines">4.1 Style Guidelines</h2>
+<p>Las guías de estilo son los criterios y sugerencias creados para uniformar la apariencia, el estilo y la facilidad de uso tanto de la Landing Page como de la Aplicación Web.</p>
+<ul>
+<li>
+<h3 id="411-general-style-guidelines">4.1.1 General Style Guidelines</h3>
+</li>
+</ul>
+<p>La paleta de colores que estamos usando en nuestra Landing Page y Web Application son los siguientes:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Colors.png">
+
+<p>El tono predominante y fundamental de nuestra solución es el azul y sus diversas variaciones, seleccionado con el propósito de generar en nuestros usuarios sensaciones de confianza, seguridad y calma. Nuestra meta es mantener la simplicidad y el minimalismo para lograr que nuestros usuarios se sientan comodos con la aplicación.</p>
+<p>Se ha seleccionado MuseoModerno para el logotipo, los títulos y los subtítulos de la Landing Page y la Aplicación Web, ya que su diseño evoca pistas y carreteras, lo cual se considera adecuado para nuestro producto. Para los textos, el contenido informativo y los botones de la Landing Page, se utilizará Montserrat.</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Fonts.png">
+
+<p>Optamos por establecer un espaciado entre letras de 1,15 para los textos y el contenido de la página, y de 2 píxeles para los títulos y subtítulos, con el objetivo de garantizar una visualización óptima para nuestros usuarios.</p>
+<p>En cuanto al tono de nuestra comunicación, será formal, cortés y tranquilo, ya que la mayoría de nuestro público objetivo son adultos.</p>
+<ul>
+<li>
+<h3 id="412-web-style-guidelines">4.1.2 Web Style Guidelines</h3>
+</li>
+</ul>
+<p>Para el diseño de la Aplicación Web, hemos definido una paleta de colores principal compuesta por azul y blanco, junto con la tipografía Montserrat que abarca el 90% del diseño. Priorizamos la simplicidad en el diseño y la optimización para su funcionamiento eficiente en todos los dispositivos, siguiendo los principios de responsive design y usabilidad.</p>
+<p>Utilizamos los siguientes iconos para la parte del dashboard.</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Iconos.png">
+
+<h2 id="42-information-architecture">4.2 Information Architecture</h2>
+<p>En este apartado, presentaremos el procedimiento de ordenar, configurar y categorizar el contenido de la Landing Page y la Aplicación Web de Track My Route de manera que resulte comprensible y accesible para nuestros usuarios. Ponemos énfasis en diseñar la estructura y la navegación de sistemas de información, asi como páginas web y sistemas de gestión de contenido, con el fin de potenciar la usabilidad y la experiencia del usuario.</p>
+<ul>
+<li>
+<h3 id="421-organization-systems">4.2.1 Organization Systems</h3>
+<ul>
+<li>
+<p><strong>Forma jerárquica</strong></p>
+<p>La aplicación web de TrackMyRoute se organizará de forma jerárquica, comenzando con un panel de control principal que ofrece acceso rápido a las funciones esenciales. Esto incluirá la búsqueda de rutas por ubicación y horarios en tiempo real, así como la opción de pago de pasajes. En un segundo nivel, los usuarios podrán acceder a su historial de viajes y pagos, además de encontrar promociones disponibles para ellos. En un nivel más profundo de jerarquía, tendrán la posibilidad de configurar notificaciones personalizadas y gestionar su perfil de usuario. Además, habrá una sección de ayuda que proporcionará recursos adicionales y soporte. Esta estructura jerárquica está diseñada para garantizar una navegación intuitiva y una experiencia fluida para los usuarios al buscar y gestionar información relacionada con el transporte público.</p>
+</li>
+<li>
+<p><strong>Organización secuencial (step-by-step to accomplish)</strong>
+En la aplicación web de TrackMyRoute, se ha implementado la organización secuencial en situaciones donde los usuarios necesitan completar una serie de pasos en un orden específico para alcanzar un objetivo determinado. Por ejemplo, durante el proceso de registro de un nuevo usuario, se les guiará a través de una secuencia de pasos que incluirá la creación de una cuenta, la configuración de preferencias y la aceptación de los términos y condiciones. Esto también se observa al buscar rutas y autobuses, así como al pagar el pasaje a través de la aplicación. Esta metodología de organización secuencial ayuda a simplificar y estructurar procesos complejos, lo que facilita la navegación y la comprensión para los usuarios.</p>
+</li>
+<li>
+<p><strong>Organización matricial</strong></p>
+<p>En TrackMyRoute, se emplea la organización matricial en situaciones donde hay una diversidad de categorías o dimensiones que se entrelazan y se relacionan entre sí. Esto es evidente al buscar autobuses, donde se muestra un mapa junto con la información de los autobuses y se ofrecen filtros para refinar la búsqueda. Asimismo, se utiliza en la disposición visual de las promociones dirigidas a los usuarios.</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="422-labeling-systems">4.2.2 Labeling Systems</h3>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Etiqueta</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Buscar Rutas</td>
+<td style="text-align:center">En esta sección se le mostrará al usuario avisos por parte de la aplicación</td>
+</tr>
+<tr>
+<td style="text-align:center">Notificaciones</td>
+<td style="text-align:center">En esta sección el usuario podrá ingresar su origen y destino y visualizar sus rutas y buses, así como un mapa con información en tiempo real.</td>
+</tr>
+<tr>
+<td style="text-align:center">Pagar Pasaje</td>
+<td style="text-align:center">En esta sección el usuario podrá pagar sus pasajes de su ruta de manera anticipada para ser más eficiente a la hora de abordar el bus.</td>
+</tr>
+<tr>
+<td style="text-align:center">Promociones</td>
+<td style="text-align:center">En esta sección el usuario podrá acceder a distintas promociones que brindamos a nuestros usuarios premium</td>
+</tr>
+<tr>
+<td style="text-align:center">Historial de Viajes</td>
+<td style="text-align:center">En esta sección el usuario podrá visualizar sus viajes anteriores y pasajes pagados.</td>
+</tr>
+<tr>
+<td style="text-align:center">Soporte y Ayuda</td>
+<td style="text-align:center">En esta sección el usuario accede a ayuda por parte de nuestro equipo de soporte.</td>
+</tr>
+<tr>
+<td style="text-align:center">Configuración</td>
+<td style="text-align:center">En esta sección el usuario puede configurar sus preferencias y su perfil.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<h3 id="423-seo-tags-and-meta-tags">4.2.3 SEO Tags and Meta Tags</h3>
+</li>
+</ul>
+<p>Los tags de SEO y Meta tags son cruciales ya que desempeñan una función vital en la optimización para motores de búsqueda (SEO), contribuyendo a mejorar la visibilidad y el ranking de una página web en los resultados de búsqueda. Por ende, para optimizar la búsqueda y el posicionamiento de TrackMyRoute, hemos implementado lo siguiente:</p>
+<table>
+<thead>
+<tr>
+<th>Landing Page</th>
+<th>Web Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title:</strong> TrackMyRoute<br><strong>Description:</strong> Optimiza tu viaje y libérate del estrés<br><strong>Keywords:</strong> Autobús, Metro, Tren, Paradas, Ubicación, Tráfico, Planificador, Seguridad, Comodidad, Precisión, Horario, Buses en Lima, Rutas.<br><strong>Authors:</strong> TrackMyRoute</td>
+<td><strong>Title:</strong>  TrackMyRoute <br> <strong>Description:</strong> Optimiza tu viaje y libérate del estrés <br> <strong>Keywords:</strong> Autobús, Metro, Tren, Paradas, Ubicación, Tráfico, Planificador, Seguridad, Comodidad, Precisión, Horario, Buses en Lima, Rutas, Buses, Seguimiento, Mapas, Transporte, Navegación, Tiempo, Notificaciones, Promociones, Pasajes, Historial. <br> <strong>Authors:</strong> TrackMyRoute</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<h3 id="424-searching-systems">4.2.4 Searching Systems</h3>
+<p>El sistema de búsqueda de nuestra aplicación se fundamenta en la ubicación de los autobuses y sus rutas, así como en los puntos de recogida de pasajeros. Esta funcionalidad estará conectada a una base de datos que contiene información sobre los autobuses, sus rutas y los costos de los pasajes. Por lo tanto, esta herramienta de búsqueda estará disponible en las secciones de &quot;Buscar Rutas&quot;, &quot;Pagar Pasajes&quot; y &quot;Historial de Viajes&quot;.</p>
+</li>
+<li>
+<h3 id="425-navigation-systems">4.2.5 Navigation Systems</h3>
+</li>
+</ul>
+<p>Los métodos de navegación utilizados en TrackMyRoute son los siguientes:</p>
+<ol>
+<li>Barra de navegación en la Landing Page: Los usuarios pueden desplazarse por nuestra Landing Page para familiarizarse con nuestra aplicación y comprender nuestra propuesta de valor.</li>
+<li>Barra de navegación en la Aplicación Web: Los usuarios tienen la posibilidad de explorar los distintos apartados y funciones de nuestra propuesta utilizando la barra de navegación.</li>
+<li>Tarjetas de promociones: Los usuarios pueden ver fácilmente las promociones que les ofrecemos a través de las tarjetas de promociones.</li>
+</ol>
+<h2 id="43-landing-page-ui-design">4.3 Landing Page UI Design</h2>
+<ul>
+<li>
+<h3 id="431-landing-page-wireframe">4.3.1 Landing Page Wireframe</h3>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/landing_wireframe.png">
+
+<ul>
+<li>
+<h3 id="432-landing-page-mock-up">4.3.2 Landing Page Mock-up</h3>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/landing_mockup.png">
+
+<h2 id="44-web-applications-uxui-design">4.4 Web Applications UX/UI Design</h2>
+<ul>
+<li>
+<h3 id="441-web-applications-wireframes">4.4.1 Web Applications Wireframes</h3>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-Login.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-Register.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-BuscarRutas.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-PagarPasaje.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-Promos.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-HistorialdeViajes.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-SoporteyAyuda.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Wireframe-Configuracion.png">
+
+<ul>
+<li>
+<h3 id="442-web-applications-wireflow-diagrams">4.4.2 Web Applications Wireflow Diagrams</h3>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/wireframe-flow1.jpg">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/wireframe-flow2.jpg">
+
+<ul>
+<li>
+<h3 id="443-web-applications-mock-ups">4.4.3 Web Applications Mock-ups</h3>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/landing_Login.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Landing_register.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Landing_Recuperar-Contrase&#xF1;a.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-BuscarRutas.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-BuscarRutas-origen.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-BuscarRutas-destino.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-BuscarRutas-final.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-PagarPasaje.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-HistorialdeViajes.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-Promos.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-SoporteyAyuda.png">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-Configuracion.png">
+
+<ul>
+<li>
+<h3 id="444-web-applications-user-flow-diagrams">4.4.4 Web Applications User Flow Diagrams</h3>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/userflow1.jpg">
+
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/userflow2.jpg">
+
+<h2 id="45-web-applications-prototyping">4.5 Web Applications Prototyping</h2>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/prototipo.png">
+
+<p>Link de prototipo: https://www.figma.com/proto/aJREmuLbY7nLlgmOTtjcW5/TrackMyRoute-Web?type=design&amp;node-id=3-6&amp;t=PO71zMM1GnVJDk1r-1&amp;scaling=scale-down-width&amp;page-id=1%3A3&amp;starting-point-node-id=3%3A6&amp;mode=design</p>
+<h2 id="46-domain-driven-software-architecture">4.6 Domain-Driven Software Architecture</h2>
+<p>Para el modelo de negocio que utilizaremos para desarrollar nuestro software complejo que se centra en la problematica que abordamos. para ello utilizaremos la tecnica de modelado C4 Model.</p>
+<h4 id="461-software-architecture-context-diagram">4.6.1. Software Architecture Context Diagram</h4>
+<p>Este es el diagrama de Contexto de nuestro sistema:
+<a href="https://ibb.co/6sR9D3q"><img src="https://i.ibb.co/9Y9KyFd/Diagrama-de-contexto.png" alt="Diagrama-de-contexto" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h4 id="462-software-architecture-container-diagram">4.6.2. Software Architecture Container Diagram</h4>
+<p>Este es el diagrama de Contenedores de nuestro sistema:
+<a href="https://ibb.co/WGG7WvQ"><img src="https://i.ibb.co/rFFqG2g/Diagrama-de-Contenedores.png" alt="Diagrama-de-Contenedores" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h3 id="463-software-architecture-components-diagrams">4.6.3 Software Architecture Components Diagrams</h3>
+<p>Esto son los diagramas de componentes de nuestro sistema:</p>
+<h5 id="diagrama-de-componentes-1">Diagrama de componentes #1:</h5>
+<p><a href="https://ibb.co/fY8VnbZ"><img src="https://i.ibb.co/RphGB1t/Diagrama-de-Componentes-1.png" alt="Diagrama-de-Componentes-1" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h5 id="diagrama-de-componentes-2">Diagrama de componentes #2:</h5>
+<p><a href="https://ibb.co/16Fq7d3"><img src="https://i.ibb.co/FVRwm09/Diagrama-de-Componentes-2.png" alt="Diagrama-de-Componentes-2" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h5 id="diagrama-de-componentes-3">Diagrama de componentes #3:</h5>
+<p><a href="https://ibb.co/ZK3KrfR"><img src="https://i.ibb.co/J2N2TcW/Diagrama-de-Componentes-3.png" alt="Diagrama-de-Componentes-3" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h5 id="diagrama-de-componentes-4">Diagrama de componentes #4:</h5>
+<p><a href="https://ibb.co/0qRCjGF"><img src="https://i.ibb.co/cJS6crC/Diagrama-de-Componentes-4.png" alt="Diagrama-de-Componentes-4" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h2 id="47-software-object-oriented-design">4.7 Software Object-Oriented Design</h2>
+<h3 id="471-class-diagrams">4.7.1 Class Diagrams</h3>
+<p>Para nuestro sistema, hemos implementado un diagrama de clases. Este diagrama visualiza la estructura estática del software, mostrando las clases, sus atributos y las relaciones entre ellas. Es una herramienta esencial que nos ayuda a comprender cómo se organizan y comunican las diferentes partes de nuestro sistema de software.</p>
+<p>Diagramas de clases por módulo:</p>
+<ul>
+<li>User Interface:</li>
+</ul>
+<p><a href="https://ibb.co/dBRPs3p"><img src="https://i.ibb.co/SNztD1m/Register-user.png" alt="Register-user" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<ul>
+<li>Subscription:</li>
+</ul>
+<p><a href="https://ibb.co/7SFX1G9"><img src="https://i.ibb.co/3TH7C0J/Subscription.png" alt="Subscription" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<ul>
+<li>FAQ:</li>
+</ul>
+<p><a href="https://ibb.co/swKY5Km"><img src="https://i.ibb.co/0MCbBCD/FAQ.png" alt="FAQ" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<ul>
+<li>Track Route:</li>
+</ul>
+<p><a href="https://ibb.co/VWL1F4z"><img src="https://i.ibb.co/ccyBWnZ/TRACK-ROUTE.png" alt="TRACK-ROUTE" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h3 id="472-class-dictionary">4.7.2 Class Dictionary</h3>
+<p>Explicacion del funcionamiento de cada funcion por módulo.
+Módulos:</p>
+<ul>
+<li>User Interface:
+Para explicar nuestro sistema de usuario este tendra que registrarse para luego iniciar sesion en su cuenta, donde este recibira un correo para confirmar su creacion, todo esto en una clase llamada UserInterface que recibira toda la información.</li>
+</ul>
+<p><a href="https://ibb.co/GTyXMmL"><img src="https://i.ibb.co/C2gq9LZ/1.png" alt="1" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<ul>
+<li>
+<p>Subscription:
+Este modulo de clases es referido a la eleccion que tenga el usuario sobre la subscripcion que desea poseer.
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/gDHP4gp/Captura-de-pantalla-2024-04-12-012158.png" alt="Captura-de-pantalla-2024-04-12-012158" border="0"></a></p>
+</li>
+<li>
+<p>FAQ:
+Esta esta dirigido a una parte mas de dudas que tenga el usuario sobre el uso o funcionamiento de la aplicación.
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/41KRfZJ/Captura-de-pantalla-2024-04-12-012114.png" alt="Captura-de-pantalla-2024-04-12-012114" border="0"></a></p>
+</li>
+<li>
+<p>Track Route:
+Esta es el modulo que explica el funcionamiento principal de la aplicacion, nos mostrara la ruta de los buses y como de acuerdo a las preferencias del usuario puede variar, ademas de una funcionalidad para pagar el servicio del bus que este desee tomar.</p>
+</li>
+</ul>
+<p><a href="https://ibb.co/VWL1F4z"><img src="https://i.ibb.co/ccyBWnZ/TRACK-ROUTE.png" alt="TRACK-ROUTE" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<h2 id="48-database-design">4.8 Database Design</h2>
+<h3 id="481-database-diagram">4.8.1 Database Diagram</h3>
+<p>Para explicar el sistema de nuestra aplicacion comenzemos por las entidades como buses company y customers cada una de ellas se refiere a los usuarios tanto de buses como el cliente que se transporta(Este de acuerdo a la subscripcion que posea tiene distintos beneficios)</p>
+<p><a href="https://ibb.co/kgsjjrs"><img src="https://i.ibb.co/svdnnDd/Captura-de-pantalla-2024-04-13-000952.png" alt="Captura-de-pantalla-2024-04-13-000952" border="0"></a></p>
+<p>Tenemos una entidad que explica la data que va tener cada uno de los buses en nuestro sistema.
+<a href="https://ibb.co/5Yb6Zb7"><img src="https://i.ibb.co/pWYxqYm/Captura-de-pantalla-2024-04-13-001411.png" alt="Captura-de-pantalla-2024-04-13-001411" border="0"></a></p>
+<p>Tenemos una entidad llamada tracMyRouteBuses esta se refiere a la data que va recibir sobre las rutas que van a tomar los distintos servicios de buses.</p>
+<p><a href="https://imgbb.com/"><img src="https://i.ibb.co/tm6Y0Dq/image.png" alt="image" border="0"></a></p>
+<p>Estas pueden ser personalizadas por el usuario.
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/RbR8SC8/Captura-de-pantalla-2024-04-12-011834.png" alt="Captura-de-pantalla-2024-04-12-011834" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<p>Para que este verifique si es valido la ruta que ah sido escogida y el status es un dato uqe se mandara a la entidad &quot;Status_TrackRouteBuses&quot;.</p>
+<p><a href="https://imgbb.com/"><img src="https://i.ibb.co/H2ttRPK/Captura-de-pantalla-2024-04-12-011940.png" alt="Captura-de-pantalla-2024-04-12-011940" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'></p>
+<p>Tenemos una entidad la cual se encarga de ver la subscripcion actual del usuario y que beneficios este va poseer.</p>
+<p><a href="https://ibb.co/dcTTW3s"><img src="https://i.ibb.co/rtjj7LK/Captura-de-pantalla-2024-04-13-001255.png" alt="Captura-de-pantalla-2024-04-13-001255" border="0"></a></p>
+<h1 id="cap%C3%ADtulo-v-product-implementation-validation--deployment">Capítulo V: Product Implementation, Validation &amp; Deployment</h1>
+<h2 id="51-software-configuration-management">5.1 Software Configuration Management</h2>
+<h3 id="511-software-development-environment-configuration">5.1.1 Software Development Environment Configuration</h3>
+<p><strong>Project Management</strong></p>
+<p>Para la organizacion del proyecto necesitabamos una planificación en cuanto a tareas asignadas, un punto de reunión y un repositorio donde trabajaramos en conjunto cada avance del proyecto, es por esto que elegimos las siguientes herramientas:</p>
+<ul>
+<li>
+<p>Centro de organización de trabajo: Github</p>
+</li>
+<li>
+<p>Planificación de tareas: Trello</p>
+</li>
+<li>
+<p>Reuniones con el equipo: Google Meet</p>
+</li>
+</ul>
+<p><strong>Requirements Management</strong></p>
+<p>Para realizar las actividades del proyecto necesitábamos designarlas a cada integrante del grupo en caso de revisión o cambios, esta lista de asignaciones fue realizada en Trello:</p>
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://www.trello.com/</td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Product UX/UI Design</strong></p>
+<p>Para el diseño de los wireframe y mockups, además de un prototipo de Web App se utilizó Figma:</p>
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://www.figma.com/</td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Software Development</strong></p>
+<p>La herramienta para la implementación del proyecto es WebStorm de Jetbrains:</p>
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://www.jetbrains.com/es-es/webstorm/</td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Software Testing</strong></p>
+<p>Gherkin es un sistema de etiquetado utilizado para detallar como se comporta el software de manera legible.</p>
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://cucumber.io/docs/gherkin/</td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Software Deployment</strong></p>
+<p>Se ha utilizado Github para desplegar la landing page con Github Pages:</p>
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://pages.github.com/</td>
+        </tr>
+    </tbody>
+</table>
+**Software Documentation**
+<p>Se ha utilizado Github para alojar los distintos repositorios creados por los miembros del equipo para la colaboración en tiempo real mientras se codifican distintas áreas del proyecto.</p>
+<table>
+    <tbody>
+        <tr>
+            <td>Link de referencia: </td>
+            <td>https://github.com/</td>
+        </tr>
+    </tbody>
+</table>
+<h3 id="512-source-code-management">5.1.2 Source Code Management</h3>
+   <table>
+    <tbody>
+        <tr>
+            <td>Link Landing Page:</td>
+            <td> https://github.com/G2-AplicacionesWeb-SI91/Landing </td>
+        </tr>
+        <tr>
+            <td> Backend Services: </td>
+            <td> https://github.com/G2-AplicacionesWeb-SI91/Backend </td>
+        </tr>
+        <tr>
+            <td>Link Front Web Applications: </td>
+            <td> https://github.com/G2-AplicacionesWeb-SI91/FrontEnd </td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Flujo de trabajo GitFlow</strong></p>
+<img src="https://nvie.com/img/git-model@2x.png" width="60%" alt="Ejemplo flujo de Gitflow">
+<p>Usaremos el flujo de trabajo planteado por Vincent Driessen en &quot;A successful Git branching model&quot; con los siguientes parámetros:</p>
+<ul>
+<li>Una rama de producción.</li>
+<li>Una rama de pruebas.</li>
+<li>Una rama en la que se solucionen los bugs rapidamente y vuelvan a producción.</li>
+<li>Ramas de features a implementar.</li>
+<li>Cada cambio en producción debe establecerse como una nueva versión.</li>
+<li>Para este proyecto en concreto consideramos que los cambios en la rama de producción y de pruebas deben tener autorización de un compa­ñero de equipo.</li>
+</ul>
+<p>Teniendo en cuenta la información anterior nos inclinamos por este tipo de organización en los branches:</p>
+<ul>
+<li><strong>Main branch:</strong> Esta rama esta destinada a la producción de la aplicación, cada cambio deberá tener autorización de un compañero de equipo para evitar cambios sin verificar.</li>
+<li><strong>Hotfix branch:</strong> En esta rama se incluirán todas las versiones que poseen errores identificados y que con cada arreglo de este se despliegue otra vez a Main Branch además de implementarla en lo que será Develop Branch.</li>
+<li><strong>Release branch:</strong> Esta rama se utilizará para una previa a lo que será el Main Branch, aquí se seguirá de cerca a la aplicación en otros ambientes en busca de bugs.</li>
+<li><strong>Develop branch:</strong> Esta rama está destinada a las constantes implementaciones en caliente de los features,</li>
+<li><strong>Features branch:</strong> Cada feature poseerá su respectiva rama, una vez que se encuentre correctamente implementada será fusionada con Develop branch.</li>
+</ul>
+<p>Con cada deployment de la aplicación debe establecerse como una nueva versión.</p>
+<h3 id="513-source-code-style-guide--conventions">5.1.3 Source Code Style Guide &amp; Conventions</h3>
+<p>Usaremos buenas prácticas en cuanto al código de manera que sea coherente y sostenible.</p>
+<p><strong>HTML:</strong></p>
+<ul>
+<li>Cada etiqueta, id, nombre y clase será nombrada usando Lowercase.</li>
+<li>Utilizar UTF-8.</li>
+<li>Redacción en inglés.</li>
+<li>En cada referencia a un archivo, colocar el tipo de archivo (.css, .js).</li>
+<li>Terminar cada etiqueta con /&gt;.</li>
+</ul>
+<p><strong>CSS:</strong></p>
+<ul>
+<li>Width del body al 100%.</li>
+<li>En cuanto a las imágenes, especificar el ancho (Width) de acuerdo a la etiqueta padre.</li>
+<li>Cada etiqueta, nombre y clase será nombrada de acuerdo al propósito y clasificación del elemento.</li>
+<li>Separación de palabras con un guion &quot;-&quot;.</li>
+<li>Margin y padding en &quot;*&quot; con valor de 0.</li>
+</ul>
+<p><strong>Commit conventions:</strong> Para las convenciones de commit, se utilizarán las convenciones básicas es decir:
+<code>git commit -m &quot;&lt;message&gt;&quot; -m&quot;&lt;description&quot;&gt;</code></p>
+<h3 id="514-software-deployment-configuration">5.1.4 Software Deployment Configuration</h3>
+<h3 id="lanzamiento-del-proyecto">Lanzamiento del proyecto</h3>
+<p>Ademáas de control de versiones, Github posee GithubPages, que sirve para lanzar tu proyecto si se encuentra en un repositorio de Github.</p>
+<ol>
+<li>
+<p>Seleccionamos al branch &quot;main&quot;, luego el directorio &quot;/root&quot; y finalmente guardamos la configuración.</p>
+</li>
+<li>
+<p>Esperamos a que se lanze el proyecto, sabremos que esta listo cuando veamos el URL:</p>
+</li>
+</ol>
+<h3 id="creaci%C3%B3n-de-ramas">Creación de ramas</h3>
+<p>Para la creación de cada rama del proyecto seguiremos estos pasos:</p>
+<ol>
+<li>Seleccionar &quot; # Branches&quot;:</li>
+</ol>
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/paso1-branch.JPG">
+<ol start="2">
+<li>
+<p>Click en &quot;New Branch&quot; :</p>
+<img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/paso2-branch.JPG">
+</li>
+<li>
+<p>Escribir el nombre de cada rama, luego crear nuevo branch:</p>
+ <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/paso3-branch.JPG">
+</li>
+<li>
+<p>Ramas creadas:</p>
+ <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/paso4-branch.JPG">
+</li>
+</ol>
+<h3 id="agregar-reglas-de-protecci%C3%B3n">Agregar reglas de protección</h3>
+<ol>
+<li>Settings -&gt; Branches:</li>
+</ol>
+<img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/rule-1.JPG">
+<ol start="2">
+<li>Nombrar regla como la rama a proteger y agregarle protección:</li>
+</ol>
+<img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/rule-2.JPG">
+<h2 id="52-landing-page-services--applications-implementation">5.2 Landing Page, Services &amp; Applications Implementation.</h2>
+<ul>
+<li>
+<h3 id="521-sprint-1">5.2.1 Sprint 1</h3>
+</li>
+<li>
+<h4 id="5211-sprint-planning-1">5.2.1.1. Sprint Planning 1</h4>
+ <table>
+  <thead>
+      <tr>
+          <td>Sprint #</td>
+          <td>Sprint 1</td>
+      </tr>
+      <tr>
+          <td colspan="2">Sprint Planning Background</td>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Date</td>
+          <td>30/03/2024</td>
+      </tr>
+      <tr>
+          <td>Time</td>
+          <td>00:00 am</td>
+      </tr>
+      <tr>
+          <td>Location</td>
+          <td>Google Meet</td>
+      </tr>
+      <tr>
+          <td>Prepared By</td>
+          <td>Sexware</td>
+      </tr>
+      <tr>
+          <td>Attendees (to planning meeting)</td>
+          <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano  / Casimiro Fernandez, Carlos Oswaldo / Landeo Sime&#xF3;n, Favio Sebasti&#xE1;n</td>
+      </tr>
+      <tr>
+          <td>Sprint n &#x2013; 1 Review Summary</td>
+          <td>Debido a que es el primer sprint, no hay reviews de un sprint anterior.</td>
+      </tr>
+      <tr>
+          <td>Sprint n &#x2013; 1 Retrospective Summary</td>
+          <td>Siendo el primer sprint, se mencionar&#xE1; la expectativa de los miembros del equipo: Terminar las actividades antes de la cr&#xED;tica. </td>
+      </tr>
+      <tr>
+          <td colspan="2">Sprint Goal &amp; User Stories</td>
+      </tr>
+      <tr>
+          <td>Sprint 1 Goal</td>
+          <td>Dise&#xF1;ar e implementar la Landing Page de TrackMyRoute para dar a conocer el valor de la propuesta.</td>
+      </tr>
+      <tr>
+          <td>Sprint 1 Velocity</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>Sum of Story Points</td>
+          <td>21</td>
+      </tr>
+  </tbody>
+</table></li>
+</ul>
+
+<ul>
+<li>
+<h4 id="5212-sprint-backlog-1">5.2.1.2. Sprint Backlog 1</h4>
+<p>En este primer Sprint backlog el grupo se enfoco en realizar la Landing page. Para el registro de cada tarea utilizamos Trello.</p>
+</li>
+</ul>
+<img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Sprint1-Trello.JPG">
+Link trello: https://trello.com/b/Bwzbm2Db/sprint1
+<table>
+    <thead>
+            <tr>
+            <td>Sprint #:</td>
+            <td colspan="7">Sprint 1</td>
+            </tr>
+            <tr>
+                <td colspan="2">User Story</td>
+                <td colspan="6">Work-Item / Task</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Estimation (Hours)</td>
+                <td>Assigned to</td>
+                <td>Status (To-Do/In-Process/To-Review/Done)</td>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>HU24</td>
+                <td>secci&#xF3;n principal de landing page</td>
+                <td>01</td>
+                <td>Secci&#xF3;n principal de Landing Page</td>
+                <td>Usuario debe serle visualmente atractiva la p&#xE1;gina y su contenido.</td>
+                <td>2</td>
+                <td>Favio Landeo</td>
+                <td>Done</td>
+            </tr>
+	    <tr>
+                <td>HU25</td>
+                <td>informaci&#xF3;n de beneficios</td>
+                <td>02</td>
+                <td>nformaci&#xF3;n de beneficios</td>
+                <td>Usuario debe poder visualizar una secci&#xF3;n dedicada a los beneficios de la aplicaci&#xF3;n.</td>
+                <td>2</td>
+                <td>Alessandro Valenzuela</td>
+                <td>Done</td>
+            </tr>
+	    <tr>
+                <td>HU26</td>
+                <td>conocer los aliados que respaldan la app</td>
+                <td>03</td>
+                <td>Conocer los aliados que respaldan la app</td>
+                <td>Usuario debe poder visualizar una lista de aliados estrat&#xE9;gicos.</td>
+                <td>2</td>
+                <td>Arian Ramirez</td>
+                <td>To-Do</td>
+            </tr>
+	    <tr>
+                <td>HU27</td>
+                <td>rese&#xF1;as de usuarios satisfechos</td>
+                <td>04</td>
+                <td>Rese&#xF1;as de usuarios satisfechos</td>
+                <td>Usuario debe poder visualizar rese&#xF1;as y testimonios de usuarios satisfechos con la aplicaci&#xF3;n.</td>
+                <td>2</td>
+                <td>Not asigned yet</td>
+                <td>Arian Ramirez</td>
+            </tr>
+	    <tr>
+                <td>HU28</td>
+                <td>conocer los planes de suscripci&#xF3;n</td>
+                <td>05</td>
+                <td>Conocer los planes de suscripci&#xF3;n</td>
+                <td>Usuario debe poder visualizar informaci&#xF3;n sobre los planes de suscripci&#xF3;n.</td>
+                <td>2</td>
+                <td>Not asigned yet</td>
+                <td>Carlos Casimiro</td>
+            </tr>
+	    <tr>
+                <td>HU29</td>
+                <td>obtener respuestas a preguntas frecuentes</td>
+                <td>06</td>
+                <td>Obtener respuestas a preguntas frecuentes</td>
+                <td>Usuario debe poder visualizar una secci&#xF3;n de preguntas frecuentes.</td>
+                <td>2</td>
+                <td>Not asigned yet</td>
+                <td>David Rivas/td&gt;
+            </td></tr>
+    </tbody>
+</table>
+<ul>
+<li>
+<h4 id="5213-development-evidence-for-sprint-review">5.2.1.3. Development Evidence for Sprint Review</h4>
+</li>
+</ul>
+<table>
+    <thead>
+            <tr>
+                <td><strong>Repository</strong></td>
+                <td><strong>Branch</strong></td>
+                <td><strong>Commit ID</strong></td>
+                <td><strong>Commit Message</strong></td>
+                <td><strong>Commit Message Body</strong></td>
+                <td><strong>Commited on (Date)</strong></td>
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>https://github.com/G2-AplicacionesWeb-SI91/Landing</td>
+                <td>Landing page - main</td>
+                <td>bd194a8</td>
+                <td>chore: init commit landing page html and css</td>
+                <td>chore: init commit landing page html and css</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
+                <td>7fa250e</td>
+                <td>landing ended</td>
+                <td>landing ended</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
+                <td>5f79f2a</td>
+                <td>fix: img url</td>
+                <td>fix: img url</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
+                <td>5b5966f</td>
+                <td>Update styles.css</td>
+                <td>Update styles.css</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
+                <td>248073c</td>
+                <td>Update index.html</td>
+                <td>Update index.html</td>
+                <td>14/04/2024</td>
+            </tr>
+    </tbody>
+</table>
+<ul>
+<li>
+<h4 id="5214-testing-suite-evidence-for-sprint-review">5.2.1.4. Testing Suite Evidence for Sprint Review</h4>
+<p>En este punto del trabajo aun no se empieza el desarrollo de la Web Application por lo que no se esta usando ningun servicio de Testing.</p>
+</li>
+<li>
+<h4 id="5215-execution-evidence-for-sprint-review">5.2.1.5. Execution Evidence for Sprint Review</h4>
+<p>Sección LogIn:</p>
+</li>
+</ul>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/landing_Login.png">
+
+<p>Sección Register:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Landing_register.png">
+
+<p>Sección Recuperar contraseña:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Landing_Recuperar-Contrase&#xF1;a.png">
+
+<p>Sección Buscar rutas:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-BuscarRutas.png">
+
+<p>Sección Pagar pasaje:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-PagarPasaje.png">
+
+<p>Sección Historial de viajes:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-HistorialdeViajes.png">
+
+<p>Sección Promos:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-Promos.png">
+
+<p>Sección Soporte:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-SoporteyAyuda.png">
+
+<p>Sección Configuración:</p>
+<div align="center">
+</div>  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/Dashboard-Configuracion.png">
+
+<ul>
+<li>
+<h4 id="5216-services-documentation-evidence-for-sprint-review">5.2.1.6. Services Documentation Evidence for Sprint Review</h4>
+<p>En este punto del trabajo aun no se empieza el desarrollo de la Web Application por lo que no hemos hecho la implementación de Web Services.</p>
+</li>
+<li>
+<h4 id="5217-software-deployment-evidence-for-sprint-review">5.2.1.7. Software Deployment Evidence for Sprint Review</h4>
+<p>Para realizar el despliegue de la Landing Page hemos utilizado Github Pages ya que permite alojar paginas desde el mismo repositorio, es fácil y práctica de usar, además de gratuita.</p>
+<p>Link de Landing Page desplegada:
+<img src='images/LANDING-SS1.JPG'/>
+<img src='images/LANDING-SS2.JPG'/>
+<img src='images/LANDING-SS3.JPG'/>
+<img src='images/LANDING-SS4.JPG'/>
+<img src='images/LANDING-SS5.JPG'/>
+<img src='images/LANDING-SS6.JPG'/></p>
+</li>
+<li>
+<h4 id="5218-team-collaboration-insights-during-sprint">5.2.1.8. Team Collaboration Insights during Sprint</h4>
+</li>
+</ul>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/informe_insight1.png">
+</div>
+<div align="center">
+  <img src="file:///c:/Users/ARIAN/OneDrive - Universidad Peruana de Ciencias/VIII Ciclo/aplicaciones_web/documentacion/images/informe_insight2.png">
+</div>
+<h1 id="conclusiones">Conclusiones</h1>
+<ul>
+<li>TB1:
+Para esta entrega concluimos que es muy importante tener en cuenta la opinion de nuestros futuros usuarios, así como la ventaja competitiva que podemos brindar sobre nuestros competidores. Tambien concluimos que es necesaria una previa investigación y diseño de producto para tener claro los puntos principales de la aplicación.</li>
+</ul>
+
+</body>
+</html>
