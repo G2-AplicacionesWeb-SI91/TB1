@@ -1749,7 +1749,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
         </tr>
         <tr>
             <td>Sprint 2 Velocity</td>
-            <td>32</td>
+            <td>28</td>
         </tr>
         <tr>
             <td>Sum of Story Points</td>
