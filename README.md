@@ -130,6 +130,18 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
             - [5.2.1.8 Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
 ---
 
+## STUDENT OUTCOME
+<b>ABET – EAC - Student Outcome 5</b>
+
+
+Criterio Espeficico:
+5.c1. Participa en equipos  multidisciplinarios con eficacia, eficiencia y  objetividad, en el marco de un proyecto en  soluciones de ingeniería de software
+Conclusiones
+Se compartio informacion de manera clara y concisa, escuchando activamene las ideas de los demas ademas de una planificacion cuidadosa y evaluando cada avance de manera critica.
+Criterio Espeficico:
+5.c2. Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software
+Conclusiones
+Al tener conocimientos en un sector empresarial o dominio de aplicación específico, el equipo estará mejor equipado para desarrollar soluciones de software que sean relevantes y útiles para el sector de transito.
 
 # Capítulo I: Introducción
 ## 1.1 Startup Profile
