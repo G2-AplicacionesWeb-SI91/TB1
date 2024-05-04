@@ -1283,32 +1283,6 @@ Usaremos buenas prácticas en cuanto al código de manera que sea coherente y so
   
 ### 5.1.4 Software Deployment Configuration
 
-### Lanzamiento del proyecto
-
-## Landing Page Deployment:
-Además de control de versiones, Github posee GithubPages, que sirve para lanzar tu proyecto si se encuentra en un repositorio de Github. Para esto necesitamos:
- * Una cuenta persona
- * Repositorio
- * Permisos en el repositorio
-
-1. Seleccionamos al branch "main", luego el directorio "/root" y finalmente guardamos la configuración.
-
-2. Esperamos a que se lanze el proyecto, sabremos que esta listo cuando veamos el URL: 
-
-	https://g2-aplicacionesweb-si91.github.io/Landing/
-
-## Frontend-Application Deployment
-Con el fin de desplegar el frontend usaremos Firebase, que se usa continuamente para el despliegue de aplicaciones web.
-
-<table>
-    <tbody>
-        <tr>
-            <td>Link de Firebase: </td>
-            <td>https://firebase.google.com</td>
-        </tr>
-    </tbody>
-</table>
-
 ### Creación de ramas
 Para la creación de cada rama del proyecto seguiremos estos pasos:
 1. Seleccionar " # Branches":
@@ -1336,6 +1310,34 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
 2. Nombrar regla como la rama a proteger y agregarle protección:
 
 <img src='images/rule-2.JPG'/>
+
+## Lanzamiento del proyecto
+
+### Landing Page Deployment:
+Además de control de versiones, Github posee GithubPages, que sirve para lanzar tu proyecto si se encuentra en un repositorio de Github. Para esto necesitamos:
+ * Una cuenta persona
+ * Repositorio
+ * Permisos en el repositorio
+
+1. Seleccionamos al branch "main", luego el directorio "/root" y finalmente guardamos la configuración.
+
+2. Esperamos a que se lanze el proyecto, sabremos que esta listo cuando veamos el URL:
+   
+	https://g2-aplicacionesweb-si91.github.io/Landing/
+
+### Frontend-Application Deployment
+Con el fin de desplegar el frontend usaremos Firebase, que se usa continuamente para el despliegue de aplicaciones web.
+
+<table>
+    <tbody>
+        <tr>
+            <td>Link de Firebase: </td>
+            <td>https://firebase.google.com</td>
+        </tr>
+    </tbody>
+</table>
+
+A continuacion se presentará la serie de pasos que se siguieron para el deployment:
 
 ## 5.2 Landing Page, Services & Applications Implementation.
 - ### 5.2.1 Sprint 1
@@ -1366,7 +1368,7 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
         </tr>
         <tr>
             <td>Prepared By</td>
-            <td>Sexware</td>
+            <td>TrackMyRoute</td>
         </tr>
         <tr>
             <td>Attendees (to planning meeting)</td>
@@ -1531,9 +1533,25 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
 	    <tr>
                 <td></td>
                 <td>Landing page - main</td>
+                <td>fed933d</td>
+                <td>fix: url img</td>
+                <td>fix: url img</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
                 <td>5b5966f</td>
                 <td>Update styles.css</td>
                 <td>Update styles.css</td>
+                <td>14/04/2024</td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td>Landing page - main</td>
+                <td>934607f</td>
+                <td>updated: format document</td>
+                <td>updated: format document</td>
                 <td>14/04/2024</td>
             </tr>
 	    <tr>
