@@ -125,7 +125,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
             - [5.2.1.3 Development Evidence for Sprint Review](#5213-development-evidence-for-sprint-review)
             - [5.2.1.4 Testing Suite Evidence for Sprint Review](#5214-testing-suite-evidence-for-sprint-review)
             - [5.2.1.5 Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
-                       - [5.2.1.6 Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+            - [5.2.1.6 Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
             - [5.2.1.7 Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
             - [5.2.1.8 Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
 ---
@@ -713,6 +713,11 @@ urbana.
 | HU27 | reseñas de usuarios satisfechos                  | como visitante de la landing page, quiero encontrar reseñas y testimonios de usuarios satisfechos para obtener una idea de su experiencia y satisfacción con la aplicación.                             | dado que estoy interesado en la aplicación, cuando busco la sección de reseñas, entonces encuentro testimonios reales de usuarios que describen cómo la aplicación ha mejorado su experiencia de viaje y les ha ayudado en sus desplazamientos diarios.                                                                                       |            |
 | HU28 | conocer los planes de suscripción                | como visitante de la landing page, quiero encontrar información sobre los planes de suscripción disponibles para entender las opciones de pago y beneficios asociados con cada plan.                    | dado que estoy interesado en utilizar la aplicación de forma regular, cuando navego por la sección de planes de suscripción, entonces encuentro una descripción clara de los diferentes planes disponibles, sus precios y las características incluidas en cada uno.                                                                          |            |
 | HU29 | obtener respuestas a preguntas frecuentes        | como visitante de la landing page, quiero acceder a una sección de preguntas frecuentes para encontrar respuestas a mis dudas más comunes sobre la aplicación de seguimiento de rutas.                  | dado que tengo preguntas sobre la aplicación, cuando accedo a la sección de preguntas frecuentes, entonces encuentro una lista completa de preguntas comunes y sus respuestas claras y concisas, lo que me ayuda a entender mejor cómo funciona la aplicación y cómo puedo utilizarla eficazmente.                                            |            |
+|HU30 | Promociones | Como cliente, quiero ver las promociones disponibles en la aplicación para que pueda aprovechar descuentos al utilizar el servicio de transporte público. | Dado que el cliente abre la aplicación, Cuando accede a la sección de promociones, Entonces se muestran claramente todas las promociones vigentes, incluyendo sus términos y condiciones. |
+|HU31 | Soporte y Ayuda | Como cliente, quiero tener acceso a opciones de soporte y ayuda dentro de la aplicación para que pueda resolver cualquier problema o duda que pueda surgir durante su uso. | Dado que el cliente necesita ayuda o soporte, Cuando accede a la sección de soporte y ayuda, Entonces encuentra información detallada sobre cómo contactar al servicio de atención al cliente, así como preguntas frecuentes y tutoriales útiles. | 
+|HU32 | Configuración | Como cliente, quiero tener la capacidad de personalizar la configuración de mi cuenta en la aplicación para que pueda adaptarla a mis preferencias y necesidades individuales. | Dado que el cliente desea personalizar su experiencia en la aplicación, Cuando accede a la sección de configuración de la cuenta, Entonces puede ajustar preferencias como notificaciones, idioma, método de pago, etc|
+|HU33 | Historial de Viajes | Como cliente, quiero poder acceder a un historial detallado de mis viajes anteriores en la aplicación para que pueda realizar un seguimiento de mis desplazamientos y gastos. | Dado que el cliente desea revisar sus viajes pasados, Cuando accede a la sección de historial de viajes, Entonces se muestra una lista cronológica de todos los viajes realizados, incluyendo detalles como fecha, hora, ruta, costo, y método de pago utilizado.|
+|HU34 | Recuperación de Contraseña | Como cliente, quiero tener la opción de recuperar mi contraseña en caso de olvido o pérdida para que pueda volver a acceder a mi cuenta sin problemas. | Dado que el cliente ha olvidado su contraseña, Cuando selecciona la opción de recuperación de contraseña e ingresa su dirección de correo electrónico o número de teléfono asociado a la cuenta, Entonces recibe un enlace o código de verificación que le permite restablecer su contraseña y acceder nuevamente a su cuenta.|
 
 
 
@@ -765,7 +770,11 @@ informadas sobre qué aspectos priorizar y cómo medir el éxito a largo plazo.
 |27|HU02|Inicio de sesión en la aplicación|Como cliente quiero iniciar sesión en la aplicación con mis credenciales (correo y contraseña) para poder entrar a la aplicación con mi cuenta existente|2|
 |28|HU03|Eliminar cuenta o usuario|Como cliente quiero tener la posibilidad de borrar mi cuenta para que mis datos ya no permanezcan en la base de datos de la aplicación.|2|
 |29|HU16|Notificaciones personalizadas|Como cliente quiero recibir notificaciones personalizadas acerca de eventos pertinentes a mi viaje en bus (retrasos, horarios, etc.) para estar al tanto de las situaciones que pueden afectar mi futuro viaje|2|
-
+|30| HU30 |Promociones |Como cliente, quiero ver las promociones disponibles en la aplicación para que pueda aprovechar descuentos al utilizar el servicio de transporte público.  | 2 |
+|31|HU31 |Soporte y Ayuda |Como cliente, quiero tener acceso a opciones de soporte y ayuda dentro de la aplicación para que pueda resolver cualquier problema o duda que pueda surgir durante su uso. | 2|
+|32|HU32 | Configuración | Como cliente, quiero tener la capacidad de personalizar la configuración de mi cuenta en la aplicación para que pueda adaptarla a mis preferencias y necesidades individuales.| 3|
+|33|HU33 | Historial de Viajes| Como cliente, quiero poder acceder a un historial detallado de mis viajes anteriores en la aplicación para que pueda realizar un seguimiento de mis desplazamientos y gastos.| 5|
+|34| HU34| Recuperación de Contraseña| Como cliente, quiero tener la opción de recuperar mi contraseña en caso de olvido o pérdida para que pueda volver a acceder a mi cuenta sin problemas| 3|
 ---
 # Capítulo IV: Product Design
 ## 4.1 Style Guidelines
@@ -865,6 +874,9 @@ Los métodos de navegación utilizados en TrackMyRoute son los siguientes:
 </div>
   
 - ### 4.3.2 Landing Page Mock-up
+
+Link Landing Page mockup: https://www.figma.com/proto/aJREmuLbY7nLlgmOTtjcW5/TrackMyRoute-Web?type=design&node-id=1-2&t=vpM8mg1HtrwmaE8b-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design 
+
 <div align="center">
 
   <img src="images/landing_mockup.png">
@@ -1283,7 +1295,11 @@ Usaremos buenas prácticas en cuanto al código de manera que sea coherente y so
   
 ### 5.1.4 Software Deployment Configuration
 
-### Creación de ramas
+#### Repositorios de la Organización
+
+<img src='images/repositories.png'/>
+
+#### Creación de ramas
 Para la creación de cada rama del proyecto seguiremos estos pasos:
 1. Seleccionar " # Branches":
 
@@ -1310,6 +1326,8 @@ Para la creación de cada rama del proyecto seguiremos estos pasos:
 2. Nombrar regla como la rama a proteger y agregarle protección:
 
 <img src='images/rule-2.JPG'/>
+
+
 
 ## Lanzamiento del proyecto
 
@@ -1343,7 +1361,7 @@ A continuacion se presentará la serie de pasos que se siguieron para el deploym
 - ### 5.2.1 Sprint 1
 - #### 5.2.1.1. Sprint Planning 1
 
-   <table>
+<table>
     <thead>
         <tr>
             <td>Sprint #</td>
@@ -1405,6 +1423,7 @@ A continuacion se presentará la serie de pasos que se siguieron para el deploym
   En este primer Sprint backlog el grupo se enfoco en realizar la Landing page. Para el registro de cada tarea utilizamos Trello.
 
 <img src='images/Sprint1-Trello.JPG' />
+
 Link trello: https://trello.com/b/Bwzbm2Db/sprint1
 
 
@@ -1648,9 +1667,10 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
 - #### 5.2.1.7. Software Deployment Evidence for Sprint Review
    Para realizar el despliegue de la Landing Page hemos utilizado Github Pages ya que permite alojar paginas desde el mismo repositorio, es fácil y práctica de usar, además de gratuita.
 
-   Link de Landing Page desplegada:
+   Link de Landing Page desplegada: https://g2-aplicacionesweb-si91.github.io/Landing/
+
 	<img src='images/LANDING-SS1.JPG'/>
-  	<img src='images/LANDING-SS2.JPG'/>
+  <img src='images/LANDING-SS2.JPG'/>
 	<img src='images/LANDING-SS3.JPG'/>
 	<img src='images/LANDING-SS4.JPG'/>
 	<img src='images/LANDING-SS5.JPG'/>
@@ -1666,7 +1686,292 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
   <img src="images/informe_insight2.png">
 </div>
 
+### 5.2.2. Sprint 2
+- #### 5.2.1.1 Sprint Planning 2
+
+<table>
+    <thead>
+        <tr>
+            <td>Sprint #</td>
+            <td>Sprint 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sprint Planning Background</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Date</td>
+            <td>20/04/2024</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>16:50 pm</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Google Meet</td>
+        </tr>
+        <tr>
+            <td>Prepared By</td>
+            <td>TrackMyRoute</td>
+        </tr>
+        <tr>
+            <td>Attendees (to planning meeting)</td>
+            <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano  / Casimiro Fernandez, Carlos Oswaldo / Landeo Simeón, Favio Sebastián</td>
+        </tr>
+        <tr>
+            <td>Sprint n – 2 Review Summary</td>
+            <td>Mejorar los call to action de la Landing Page</td>
+        </tr>
+        <tr>
+            <td>Sprint n – 1 Retrospective Summary</td>
+            <td>Siendo el segundo sprint, se mencionará la expectativa de los miembros del equipo: Actividades a mejorar del sprint anterior y tareas pendientes para el sprint 2 </td>
+        </tr>
+        <tr>
+            <td colspan="2">Sprint Goal & User Stories</td>
+        </tr>
+        <tr>
+            <td>Sprint 1 Goal</td>
+            <td>Diseñar e implementar más del 80% del frontend de la aplicación web</td>
+        </tr>
+        <tr>
+            <td>Sprint 2 Velocity</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Sum of Story Points</td>
+            <td>32</td>
+        </tr>
+    </tbody>
+</table>
+
+- #### 5.2.1.2 Sprint Backlog 2
+
+<table>
+  <thead>
+    <tr>
+    <td>Sprint #:</td>
+    <td colspan="7">Sprint 2</td>
+    </tr>
+    <tr>
+        <td colspan="2">User Story</td>
+        <td colspan="6">Work-Item / Task</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>ID</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Estimation (Hours)</td>
+        <td>Assigned to</td>
+        <td>Status (To-Do/In-Process/To-Review/Done)</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HU34</td>
+      <td>Recuperación de contraseña</td>
+      <td>T001</td>
+      <td>Desarrollo de pagina de recuperación de contraseña</td>
+      <td>Desarrollo e implementacion de la pagina de recuperación de contraseña</td>
+      <td>4 hrs</td>
+      <td>Favio Landeo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Registrar al usuario</td>
+      <td>T002</td>
+      <td>Desarrollo de pantalla de registro</td>
+      <td>Desarrollo e implementación del la vista de registro de usuario</td>
+      <td>4 hrs</td>
+      <td>Alessandro Valenzuela</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Inicio de sesión en la aplicación</td>
+      <td>T003</td>
+      <td>Desarrollo de sistema de inicio de sesion</td>
+      <td>Desarrollo e implementación de la vista de inicio de sesión y autenticacion</td>
+      <td>4 hrs</td>
+      <td>Alessandro Valenzuela</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>HU16</td>
+      <td>Notificaciones personalizadas</td>
+      <td>T003</td>
+      <td>Desarrollo de pagina de notificaciones</td>
+      <td>Desarrollo e implementación de la vista de notificaciones</td>
+      <td>4 hrs</td>
+      <td>Favio Landeo</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>HU08</td>
+      <td>Visualización del menú de opciones</td>
+      <td>T004</td>
+      <td>Desarrollo de menu de opciones	</td>
+      <td>Desarrollo e implementación del side nav con opciones para el usuario</td>
+      <td>4 hrs</td>
+      <td>Arian Ramirez</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>HU10</td>
+      <td>Visualización del mapa</td>
+      <td>T005</td>
+      <td>Desarrollo de vista del mapa</td>
+      <td>Desarrollo e implementación de la vista del mapa con los campos de ingreso de origen y destino</td>
+      <td>5 hrs</td>
+      <td>Arian Ramirez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>HU15</td>
+      <td>Compra de boletos</td>
+      <td>T006</td>
+      <td>Desarrollo de vista pay-ticket</td>
+      <td>Desarrollo e implementación de la vista de la sección para pagar pasaje de algun bus seleccionado</td>
+      <td>7 hrs</td>
+      <td>Arian Ramirez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>HU30</td>
+      <td>Promociones</td>
+      <td>T007</td>
+      <td>Desarrollo de pagina de promociones</td>
+      <td>Desarrollo e implementación de la vista de promociones que se le ofreceran al usuario premiun</td>
+      <td>4hrs</td>
+      <td>David Rivas</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>HU31</td>
+      <td>Soporte y Ayuda</td>
+      <td>T008</td>
+      <td>Desarrollo de pagina de ayuda</td>
+      <td>Desarrollo e implementación de la vista de soporte y ayuda</td>
+      <td>4hr</td>
+      <td>Carlos Casimiro</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>HU32	</td>
+      <td>Configuración	</td>
+      <td>T008</td>
+      <td>Desarrollo de pagina de configuración</td>
+      <td>Desarrollo e implementación de la pagina de configuración</td>
+      <td>4 hr</td>
+      <td>Carlos Casimiro</td>
+      <td>In Process</td>
+    </tr>
+    <tr>
+      <td>HU33</td>
+      <td>Historial de Viajes</td>
+      <td>T008</td>
+      <td>Desarrollo de pagina de historial de viajes</td>
+      <td>Desarrollo e implementación de la pagina de historial de viajes</td>
+      <td>4 hrs</td>
+      <td>David Rivas</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
+- #### 5.2.1.3 Development Evidence for Sprint Review
+
+<table>
+  <thead>
+    <tr>
+        <td><strong>Repository</strong></td>
+        <td><strong>Branch</strong></td>
+        <td><strong>Commit ID</strong></td>
+        <td><strong>Commit Message</strong></td>
+        <td><strong>Commited on (Date)</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/frontend</td>
+      <td>feature/search-routes</td>
+      <td>d7b5c312db3ba249542b9b2b434d95d8ade15766</td>
+      <td>feat: search routes page</td>
+      <td>04/05/2024</td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/frontend</td>
+      <td>feature/pay-ticket</td>
+      <td>4119f514426ebcb93fd17bca8deae143e49b8bd4</td>
+      <td>feat: pay tickets view</td>
+      <td>04/05/2024</td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/frontend</td>
+      <td>feature/promos</td>
+      <td>2fc2e16784405f25b9289084d5300fa5ab077dac</td>
+      <td>fixed: promo.entity, promo.component, index.js, app.vue</td>
+      <td>03/05/2024</td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/frontend</td>
+      <td>featur/trips-history</td>
+      <td>78d7a6165d458718ff533ce621c8b0603502a756</td>
+      <td>feat: history component and configuration</td>
+      <td>03/05/2024</td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/frontend</td>
+      <td>feature/notifications</td>
+      <td>94e67283e2f100ec0a8752140e6ddb7578f34321</td>
+      <td>feat(side-bar.component): added routes and margin left to side bar.</td>
+      <td>03/05/2024</td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/frontend</td>
+      <td>feature/recovery-pass</td>
+      <td>383cb4dc4ff7873858e1bae32fdb53b97f308d19</td>
+      <td>feat: added header to recovery-pass component</td>
+      <td>03/05/2024</td>
+    </tr>
+  </tbody>
+</table>
+
+- #### 5.2.1.4 Testing Suite Evidence for Sprint Review
+
+En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos en la parte visual de la Web Application
+
+- #### 5.2.1.5 Execution Evidence for Sprint Review
+
+
+
+- #### 5.2.1.6 Services Documentation Evidence for Sprint Review
+
+En esta entrega no se hace uso de Web Services por lo que no hay documentación de ello.
+
+- #### 5.2.1.7 Software Deployment Evidence for Sprint Review
+
+
+
+- #### 5.2.1.8 Team Collaboration Insights during Sprint
+
+
+
 # Conclusiones
 
 - TB1:
 	Para esta entrega concluimos que es muy importante tener en cuenta la opinion de nuestros futuros usuarios, así como la ventaja competitiva que podemos brindar sobre nuestros competidores. Tambien concluimos que es necesaria una previa investigación y diseño de producto para tener claro los puntos principales de la aplicación.
+
+- TP:
+  Concluimos que es importante tener un buen orden en el control de versiones o Git Flow, para que no haya conflictos a la hora de hacer las integraciones correpondientes.
+
+
+# Anexos
+
+Link Landing Page mockup: https://www.figma.com/proto/aJREmuLbY7nLlgmOTtjcW5/TrackMyRoute-Web?type=design&node-id=1-2&t=vpM8mg1HtrwmaE8b-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design 
+
+Link de prototipo: https://www.figma.com/proto/aJREmuLbY7nLlgmOTtjcW5/TrackMyRoute-Web?type=design&node-id=3-6&t=PO71zMM1GnVJDk1r-1&scaling=scale-down-width&page-id=1%3A3&starting-point-node-id=3%3A6&mode=design
