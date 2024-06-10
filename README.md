@@ -2197,6 +2197,8 @@ Backend Service:
     <tbody>
         <tr>
             <td rowspan="3">Notifications</td>
+	    <td rowspan="4">Payments</td>
+	    <td rowspan="2">Promos</td>
         </tr>
         <tr>
             <td>POST</td>
@@ -2212,9 +2214,6 @@ Backend Service:
             <td>GET</td>
             <td>{id}</td>
             <td>api/v1/notifications/{id}</td>
-        </tr>
-	<tr>
-            <td rowspan="4">Payments</td>
         </tr>
         <tr>
             <td>POST</td>
@@ -2235,9 +2234,6 @@ Backend Service:
             <td>GET</td>
             <td>No tiene</td>
             <td>api/v1/payments</td>
-        </tr>
-	<tr>
-            <td rowspan="2">Promos</td>
         </tr>
         <tr>
             <td>GET</td>
