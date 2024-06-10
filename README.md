@@ -113,38 +113,13 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
     - [5.1.4 Software Deployment Configuration](#514-software-deployment-configuration)
       - [Repositorios de la Organización](#repositorios-de-la-organización)
       - [Creación de ramas](#creación-de-ramas)
-      - [Agregar reglas de protección](#agregar-reglas-de-protección)
-      - [Lanzamiento del proyecto](#lanzamiento-del-proyecto)
-      - [Landing Page Deployment:](#landing-page-deployment)
-      - [Frontend-Application Deployment](#frontend-application-deployment)
+    - [Agregar reglas de protección](#agregar-reglas-de-protección)
+  - [Lanzamiento del proyecto](#lanzamiento-del-proyecto)
+    - [Landing Page Deployment:](#landing-page-deployment)
+    - [Frontend-Application Deployment](#frontend-application-deployment)
   - [5.2 Landing Page, Services \& Applications Implementation.](#52-landing-page-services--applications-implementation)
-    - [5.2.1. Sprint 1](#521-sprint-1)
-      	- [5.2.1.1. Sprint Planning 1](#5.2.1.1.)<br>
-        - [5.2.1.2. Sprint Backlog 1](#5.2.1.2.)<br>
-        - [5.2.1.3. Development Evidence for Sprint Review](#5.2.1.3.)
-        - [5.2.1.4. Testing Suite Evidence for Sprint Review](#5.2.1.4.)
-      	- [5.2.1.5. Execution Evidence for Sprint Review](#5.2.1.5.)
-        - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5.2.1.6.)
- 	- [5.2.1.7. Software Deployment Evidence for Sprint Review](#5.2.1.7.)
-	- [5.2.1.8. Team Collaboration Insights during Sprint](#5.2.1.8.)
     - [5.2.2. Sprint 2](#522-sprint-2)
-	- [5.2.2.1. Sprint Planning 2](#5.2.2.1.)
-	- [5.2.2.2. Sprint Backlog 2](#5.2.2.2.)
-	- [5.2.2.3. Development Evidence for Sprint Review](#5.2.2.3.)
-        - [5.2.2.4. Testing Suite Evidence for Sprint Review](#5.2.2.4.)
-        - [5.2.2.5. Execution Evidence for Sprint Review](#5.2.2.5.)
-        - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5.2.2.6.)
- 	- [5.2.2.7. Software Deployment Evidence for Sprint Review](#5.2.2.7.)
-	- [5.2.2.8. Team Collaboration Insights during Sprint](#5.2.2.8.)
     - [5.2.3. Sprint 3](#523-sprint-3)
-	- [5.2.3.1. Sprint Planning 3](#5.2.3.1.)
-        - [5.2.3.2. Sprint Backlog 3](#5.2.3.2.)
-        - [5.2.3.3. Development Evidence for Sprint Review](#5.2.3.3.)
-        - [5.2.3.4. Testing Suite Evidence for Sprint Review](#5.2.3.4.)
-        - [5.2.3.5. Execution Evidence for Sprint Review](#5.2.3.5.)
-        - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5.2.3.6.)
- 	- [5.2.3.7. Software Deployment Evidence for Sprint Review](#5.2.3.7.)
-	- [5.2.3.8. Team Collaboration Insights during Sprint](#5.2.3.8.)
 - [Conclusiones](#conclusiones)
 - [Anexos](#anexos)
 ---
@@ -2215,30 +2190,30 @@ En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento inter
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td>main</td>
-      <td>3fa172d</td>
-      <td>project files</td>
+      <td>bc-users</td>
+      <td>f84130b</td>
+      <td>Update Back-Auth 1.1</td>
       <td>07/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td>main</td>
-      <td>9bf146f</td>
-      <td>feat(shared): added file Shared where resides the basic code for the project and packages dependencies.</td>
+      <td>bc-notifications</td>
+      <td>6420fd4</td>
+      <td>fix: updated endpoint name.</td>
       <td>08/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td>main</td>
-      <td>f66ea13</td>
-      <td>feat: added shared interfaces.</td>
+      <td>bc-promo</td>
+      <td>879395c</td>
+      <td>feat: promos interface layer</td>
       <td>09/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td>main</td>
-      <td>1c05f46</td>
-      <td>fix: fixed apply function in class kebab case naming convention.</td>
+      <td>feature/tracking</td>
+      <td>ce1da0e</td>
+      <td>feat(tracking): re do tracking bc</td>
       <td>09/06/2024</td>
     </tr>
   </tbody>
