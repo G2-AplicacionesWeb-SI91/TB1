@@ -2252,13 +2252,18 @@ En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos 
 
 <div align="center">
 
-  <img src="">
+  <img src="images/NotifSSjpeg.jpeg">
+
+</div>
+<div align="center">
+
+  <img src="images/PaymentsSS.jpeg">
 
 </div>
 
 <div align="center">
 
-  <img src="">
+  <img src="images/PromoSS.JPG">
 
 </div>
 
