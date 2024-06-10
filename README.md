@@ -2101,8 +2101,8 @@ En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento inter
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
+      <td>HU13</td>
+      <td>Planificación de viajes</td>
       <td></td>
       <td></td>
       <td></td>
@@ -2110,6 +2110,86 @@ En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento inter
       <td></td>
       <td></td>
     </tr>
+	  <tr>
+      <td>HU16</td>
+      <td>Notificaciones personalizadas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	  <tr>
+      <td>HU30</td>
+      <td>Promociones</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	  <tr>
+      <td>HU02</td>
+      <td>Inicio de sesión en la aplicación</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	<tr>
+      <td>HU01</td>
+      <td>Registrar al usuario</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+<tr>
+      <td>HU20</td>
+      <td>Retroalimentación de los usuarios</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	  <tr>
+      <td>HU33</td>
+      <td>Historial de Viajes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	  <tr>
+      <td>HU31</td>
+      <td>Soporte y Ayuda</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	  <tr>
+      <td>HU06</td>
+      <td>Registro de las empresas operadoras de rutas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>  
   </tbody>
 </table>
 
