@@ -1693,7 +1693,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
 </div>
 
 ### 5.2.2. Sprint 2
-- #### 5.2.1.1 Sprint Planning 2
+- #### 5.2.2.1 Sprint Planning 2
 
 <table>
     <thead>
@@ -1752,7 +1752,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
     </tbody>
 </table>
 
-- #### 5.2.1.2 Sprint Backlog 2
+- #### 5.2.2.2 Sprint Backlog 2
 
 <table>
   <thead>
@@ -1889,7 +1889,7 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
   </tbody>
 </table>
 
-- #### 5.2.1.3 Development Evidence for Sprint Review
+- #### 5.2.2.3 Development Evidence for Sprint Review
 
 <table>
   <thead>
@@ -1947,11 +1947,11 @@ Link trello: https://trello.com/b/Bwzbm2Db/sprint1
   </tbody>
 </table>
 
-- #### 5.2.1.4 Testing Suite Evidence for Sprint Review
+- #### 5.2.2.4 Testing Suite Evidence for Sprint Review
 
 En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos en la parte visual de la Web Application
 
-- #### 5.2.1.5 Execution Evidence for Sprint Review
+- #### 5.2.2.5 Execution Evidence for Sprint Review
 
 <div align="center">
 
@@ -1965,15 +1965,15 @@ En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos 
 
 </div>
 
-- #### 5.2.1.6 Services Documentation Evidence for Sprint Review
+- #### 5.2.2.6 Services Documentation Evidence for Sprint Review
 
 En esta entrega no se hace uso de Web Services por lo que no hay documentación de ello.
 
-- #### 5.2.1.7 Software Deployment Evidence for Sprint Review
+- #### 5.2.2.7 Software Deployment Evidence for Sprint Review
 
 
 
-- #### 5.2.1.8 Team Collaboration Insights during Sprint
+- #### 5.2.2.8 Team Collaboration Insights during Sprint
 
 <div align="center">
 
@@ -2139,7 +2139,7 @@ En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento inter
   </tbody>
 </table>
 
-- #### 5.2.13.4 Testing Suite Evidence for Sprint Review
+- #### 5.2.3.4 Testing Suite Evidence for Sprint Review
 
 En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos en la parte visual de la Web Application
 
