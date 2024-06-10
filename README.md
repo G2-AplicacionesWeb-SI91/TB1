@@ -2241,7 +2241,7 @@ Backend Service:
         <tr>
             <td>POST</td>
             <td>No tiene</td>
-            <td>api/v1/forum/promo</td>
+            <td>api/v1/promo</td>
         </tr>
     </tbody>
 </table>
