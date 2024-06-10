@@ -2076,7 +2076,7 @@ En esta entrega no se hace uso de Web Services por lo que no hay documentación 
 
 En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento interno para que la API funcione correctamente.
 
-
+<img src="images/ssBuenoPB3.JPG" />
 
 <table>
   <thead>
