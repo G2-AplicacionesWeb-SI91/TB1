@@ -2103,92 +2103,92 @@ En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento inter
     <tr>
       <td>HU13</td>
       <td>Planificación de viajes</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+      <td>Planificación de viajes</td>
+      <td>Como cliente quiero planificar mis viajes en función a mi ubicación actual y al destino (se muestran los horarios de salida y de llegada de los buses, su ubicación, etc.) para organizar mejor mis tiempos.</td>
+      <td>5</td>
+      <td>Arian Ramirez</td>
+      <td>Done</td>
     </tr>
 	  <tr>
       <td>HU16</td>
       <td>Notificaciones personalizadas</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+       <td>Notificaciones personalizadas</td>
+      <td>Como cliente quiero recibir notificaciones personalizadas acerca de eventos pertinentes a mi viaje en bus (retrasos, horarios, etc.) para estar al tanto de las situaciones que pueden afectar mi futuro viaje</td>
+      <td>2</td>
+      <td>Favio Landeo</td>
+      <td>Done</td>
     </tr>
 	  <tr>
       <td>HU30</td>
       <td>Promociones</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+     <td>Promociones</td>
+      <td>Como cliente, quiero ver las promociones disponibles en la aplicación para que pueda aprovechar descuentos al utilizar el servicio de transporte público.</td>
+      <td>2</td>
+      <td>David Rivas</td>
+      <td>Done</td>
     </tr>
 	  <tr>
       <td>HU02</td>
       <td>Inicio de sesión en la aplicación</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+     <td>Inicio de sesión en la aplicación</td>
+      <td>Como cliente quiero iniciar sesión en la aplicación con mis credenciales (correo y contraseña) para poder entrar a la aplicación con mi cuenta existente</td>
+      <td>2</td>
+      <td>Alessandro Valenzuela</td>
+      <td>Done</td>
     </tr>
 	<tr>
       <td>HU01</td>
       <td>Registrar al usuario</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+     <td>Registrar al usuario</td>
+      <td>Como cliente quiero registrarme con todos mis datos pertinentes (nombre, correo, edad, etc.) en la aplicación para poder hacer uso de sus funcionalidades.</td>
+      <td>2</td>
+      <td>Alessandro Valenzuela</td>
+      <td>In process</td>
     </tr>
 <tr>
       <td>HU20</td>
       <td>Retroalimentación de los usuarios</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+     <td>Retroalimentación de los usuarios</td>
+      <td>Como cliente quiero dar una retroalimentación sobre mi experiencia de viaje o al utilizar la aplicación para dar a conocer mi agrado o mi malestar con respecto al funcionamiento de esta.</td>
+      <td>3</td>
+      <td>Casimiro</td>
+      <td>In process</td>
     </tr>
 	  <tr>
       <td>HU33</td>
       <td>Historial de Viajes</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+         <td>Historial de Viajes</td>
+      <td>Como cliente, quiero poder acceder a un historial detallado de mis viajes anteriores en la aplicación para que pueda realizar un seguimiento de mis desplazamientos y gastos.</td>
+      <td>5</td>
+      <td>Arian Ramirez</td>
+      <td>Done</td>
     </tr>
 	  <tr>
       <td>HU31</td>
       <td>Soporte y Ayuda</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+      <td>Soporte y Ayuda</td>
+      <td>Como cliente, quiero tener acceso a opciones de soporte y ayuda dentro de la aplicación para que pueda resolver cualquier problema o duda que pueda surgir durante su uso.</td>
+      <td>2</td>
+      <td>Casimiro</td>
+      <td>In process</td>
     </tr>
 	  <tr>
       <td>HU06</td>
       <td>Registro de las empresas operadoras de rutas</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>1</td>
+      <td>Registro de las empresas operadoras de rutas</td>
+      <td>Como desarrollador quiero registrar a las empresas que operan en cada una de las rutas de transporte urbano en buses para así tener un registro de todas estas empresas en la base de datos de la aplicación</td>
+      <td>3</td>
+      <td>David Rivas</td>
+      <td>In process</td>
     </tr>  
   </tbody>
 </table>
