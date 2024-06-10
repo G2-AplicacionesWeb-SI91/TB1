@@ -48,86 +48,80 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 ---
 
 # Tabla de contenidos
-- [Student Outcome](#student-outcome)
+- [Universidad Peruana de Ciencias Aplicadas](#universidad-peruana-de-ciencias-aplicadas)
+    - [Informe de Trabajo Final](#informe-de-trabajo-final)
+- [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
+- [Tabla de contenidos](#tabla-de-contenidos)
+  - [STUDENT OUTCOME](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1 Startup Profile](#11-startup-profile)
-        - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
-	    - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2 Solution Profile](#12-solution-profile)
-        - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-        - [1.2.2 Lean UX Process](#122-lean-ux-process)
-            - [1.2.2.1 Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-            - [1.2.2.2 Lean UX Assumptions](#1222-lean-ux-assumptions)
-            - [1.2.2.3 Lean UX Hypothesis Statements](#1211-lean-ux-hyphotesis-statements)
-            - [1.2.2.4 Lean UX Canvas](#1224-lean-ux-canvas)
-        - [1.3 Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1 Competidores](#21-competidores)
-        - [2.1.1 Análisis competitivo](#211-análisis-competitivo)
-        - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2 Entrevistas](#22-entrevistas)
-        - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
-        - [2.2.2 Registro de entrevistas](#222-registro-de-entrevistas)
-        - [2.2.3 Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3 Needfinding](#23-needfinding)
-        - [2.3.1 User Personas](#231-user-personas)
-        - [2.3.2 User Task Matrix](#232-user-task-matrix)
-        - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
-        - [2.3.4 Empathy Mapping](#234-empathy-mapping)
-        - [2.3.5 As-is Scenario Mapping](#235-as-is-scenario-mapping)
-    - [2.4 Ubiquitous Language](#24-ubiquitous-language)
-
-- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1 To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2 User Stories](#32-user-stories)
-    - [3.3 Impact Mapping](#33-impact-mapping)
-    - [3.4 Product Backlog](#34-product-backlog)
-
+  - [1.1 Startup Profile](#11-startup-profile)
+    - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](#12-solution-profile)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2. Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3. Segmentos Objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
+  - [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2 Entrevistas](#22-entrevistas)
+    - [2.2.1 Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3 Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+    - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+- [Capítulo III: Requeriments Specifications](#capítulo-iii-requeriments-specifications)
+  - [3.1 To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+  - [3.2 User Stories](#32-user-stories)
+  - [3.3 Impact Mapping](#33-impact-mapping)
+  - [3.4 Product Backlog](#34-product-backlog)
+  - [|34| HU34| Recuperación de Contraseña| Como cliente, quiero tener la opción de recuperar mi contraseña en caso de olvido o pérdida para que pueda volver a acceder a mi cuenta sin problemas| 3|](#34-hu34-recuperación-de-contraseña-como-cliente-quiero-tener-la-opción-de-recuperar-mi-contraseña-en-caso-de-olvido-o-pérdida-para-que-pueda-volver-a-acceder-a-mi-cuenta-sin-problemas-3)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
-    - [4.1 Style Guidelines](#41-style-guidelines)
-        - [4.1.1 General Style Guidelines](#411-general-style-guidelines)
-        - [4.1.2 Web Style Guidelines](#412-web-style-guidelines)
-    - [4.2 Information Architecture](#42-information-architecture)
-        - [4.2.1 Organization Systems](#421-organization-systems)
-        - [4.2.2 Labeling Systems](#422-labeling-systems)
-        - [4.2.3 SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
-        - [4.2.4 Searching Systems](#424-searching-systems)
-        - [4.2.5 Navigation Systems](#425-navigation-systems)
-    - [4.3 Landing Page UI Design](#43-landing-page-ui-design)
-        - [4.3.1 Landing Page Wireframe](#431-landing-page-wireframe)
-        - [4.3.2 Landing Page Mock-up](#432-landing-page-mock-up)
-    - [4.4 Web Applications UX/UI Design](#44-web-applications-uxui-design)
-        - [4.4.1 Web Applications Wireframes](#441-web-applications-wireframes)
-        - [4.4.2 Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
-        - [4.4.3 Web Applications Mock-ups](#443-web-applications-mock-ups)
-        - [4.4.4 Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
-    - [4.5 Web Applications Prototyping](#45-web-applications-prototyping)
-    - [4.6 Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
-        - [4.6.1 Software Architecture Context Diagram](#461-software-architecture-context-diagram)
-        - [4.6.2 Software Architecture Container Diagrams](#462-software-architecture-container-diagrams)
-        - [4.6.3 Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
-    - [4.7 Software Object-Oriented Design](#47-software-object-oriented-design)
-        - [4.7.1 Class Diagrams](#471-class-diagrams)
-        - [4.7.2 Class Dictionary](#472-class-dictionary)
-    - [4.8 Database Design](#48-database-design)
-        - [4.8.1 Database Diagram](#481-database-diagram)
-
-- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation-deployment)
-    - [5.1 Software Configuration Management](#51-software-configuration-management)
-        - [5.1.1 Software Development Environment Configuration](#511-software-development-environment-configuration)
-        - [5.1.2 Source Code Management](#512-source-code-management)
-        - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
-        - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-    - [5.2 Landing Page, Services & Applications Implementation](#52-landing-page-services-applications-implementation)
-        - [5.2.1 Sprint 1](#521-sprint-1)
-            - [5.2.1.1 Sprint Planning 1](#5211-sprint-planning-1)
-            - [5.2.1.2 Sprint Backlog 1](#5212-sprint-backlog-1)
-            - [5.2.1.3 Development Evidence for Sprint Review](#5213-development-evidence-for-sprint-review)
-            - [5.2.1.4 Testing Suite Evidence for Sprint Review](#5214-testing-suite-evidence-for-sprint-review)
-            - [5.2.1.5 Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
-            - [5.2.1.6 Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
-            - [5.2.1.7 Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
-            - [5.2.1.8 Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+  - [4.1 Style Guidelines](#41-style-guidelines)
+  - [4.2 Information Architecture](#42-information-architecture)
+  - [4.3 Landing Page UI Design](#43-landing-page-ui-design)
+  - [4.4 Web Applications UX/UI Design](#44-web-applications-uxui-design)
+  - [4.5 Web Applications Prototyping](#45-web-applications-prototyping)
+  - [4.6 Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+      - [4.6.1. Software Architecture Context Diagram](#461-software-architecture-context-diagram)
+      - [4.6.2. Software Architecture Container Diagram](#462-software-architecture-container-diagram)
+    - [4.6.3 Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
+        - [Diagrama de componentes #1:](#diagrama-de-componentes-1)
+        - [Diagrama de componentes #2:](#diagrama-de-componentes-2)
+        - [Diagrama de componentes #3:](#diagrama-de-componentes-3)
+        - [Diagrama de componentes #4:](#diagrama-de-componentes-4)
+  - [4.7 Software Object-Oriented Design](#47-software-object-oriented-design)
+    - [4.7.1 Class Diagrams](#471-class-diagrams)
+    - [4.7.2 Class Dictionary](#472-class-dictionary)
+  - [4.8 Database Design](#48-database-design)
+    - [4.8.1 Database Diagram](#481-database-diagram)
+- [Capítulo V: Product Implementation, Validation \& Deployment](#capítulo-v-product-implementation-validation--deployment)
+  - [5.1 Software Configuration Management](#51-software-configuration-management)
+    - [5.1.1 Software Development Environment Configuration](#511-software-development-environment-configuration)
+    - [5.1.2 Source Code Management](#512-source-code-management)
+    - [5.1.3 Source Code Style Guide \& Conventions](#513-source-code-style-guide--conventions)
+    - [5.1.4 Software Deployment Configuration](#514-software-deployment-configuration)
+      - [Repositorios de la Organización](#repositorios-de-la-organización)
+      - [Creación de ramas](#creación-de-ramas)
+    - [Agregar reglas de protección](#agregar-reglas-de-protección)
+  - [Lanzamiento del proyecto](#lanzamiento-del-proyecto)
+    - [Landing Page Deployment:](#landing-page-deployment)
+    - [Frontend-Application Deployment](#frontend-application-deployment)
+  - [5.2 Landing Page, Services \& Applications Implementation.](#52-landing-page-services--applications-implementation)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+- [Conclusiones](#conclusiones)
+- [Anexos](#anexos)
 ---
 
 ## STUDENT OUTCOME
@@ -1993,6 +1987,195 @@ En esta entrega no se hace uso de Web Services por lo que no hay documentación 
 
 </div>
 
+### 5.2.3. Sprint 3
+- #### 5.2.3.1 Sprint Planning 3
+
+<table>
+    <thead>
+        <tr>
+            <td>Sprint #</td>
+            <td>Sprint 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sprint Planning Background</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Date</td>
+            <td>26/05/2024</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>16:50 pm</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Google Meet</td>
+        </tr>
+        <tr>
+            <td>Prepared By</td>
+            <td>TrackMyRoute</td>
+        </tr>
+        <tr>
+            <td>Attendees (to planning meeting)</td>
+            <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano  / Casimiro Fernandez, Carlos Oswaldo / Landeo Simeón, Favio Sebastián</td>
+        </tr>
+        <tr>
+            <td>Sprint n – 3 Review Summary</td>
+            <td>Desarrollar los respectivos bounded context en el backend de TrackMyRoute, utilizando las herramientas de C#, .NET, Swagger y MySQL</td>
+        </tr>
+        <tr>
+            <td>Sprint n – 3 Retrospective Summary</td>
+            <td>El equipo mantendrá la comunicación, y se establecerán mejores parámetros de desarrollo para realizar el desarrollo del backend</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sprint Goal & User Stories</td>
+        </tr>
+        <tr>
+            <td>Sprint 3 Goal</td>
+            <td>Diseñar e implementar más del 40% del backend de la aplicación web.</td>
+        </tr>
+        <tr>
+            <td>Sprint 3 Velocity</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>Sum of Story Points</td>
+            <td>32</td>
+        </tr>
+    </tbody>
+</table>
+
+- #### 5.2.3.2 Sprint Backlog 3
+
+<table>
+  <thead>
+    <tr>
+    <td>Sprint #:</td>
+    <td colspan="7">Sprint 3</td>
+    </tr>
+    <tr>
+        <td colspan="2">User Story</td>
+        <td colspan="6">Work-Item / Task</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>ID</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Estimation (Hours)</td>
+        <td>Assigned to</td>
+        <td>Status (To-Do/In-Process/To-Review/Done)</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+- #### 5.2.3.3 Development Evidence for Sprint Review
+
+<table>
+  <thead>
+    <tr>
+        <td><strong>Repository</strong></td>
+        <td><strong>Branch</strong></td>
+        <td><strong>Commit ID</strong></td>
+        <td><strong>Commit Message</strong></td>
+        <td><strong>Commited on (Date)</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+- #### 5.2.13.4 Testing Suite Evidence for Sprint Review
+
+En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos en la parte visual de la Web Application
+
+- #### 5.2.3.5 Execution Evidence for Sprint Review
+
+<div align="center">
+
+  <img src="">
+
+</div>
+
+<div align="center">
+
+  <img src="">
+
+</div>
+
+- #### 5.2.3.6 Services Documentation Evidence for Sprint Review
+
+
+- #### 5.2.3.7 Software Deployment Evidence for Sprint Review
+
+
+
+- #### 5.2.3.8 Team Collaboration Insights during Sprint
+
+<div align="center">
+
+  <img src="">
+
+</div>
+
+<div align="center">
+
+  <img src="">
+
+</div>
+
+
+
 # Conclusiones
 
 - TB1:
@@ -2001,10 +2184,27 @@ En esta entrega no se hace uso de Web Services por lo que no hay documentación 
 - TP:
   Concluimos que es importante tener un buen orden en el control de versiones o Git Flow, para que no haya conflictos a la hora de hacer las integraciones correpondientes.
 
+- TB2: 
+  
+
 
 # Anexos
 
 Link Landing Page mockup: https://www.figma.com/proto/aJREmuLbY7nLlgmOTtjcW5/TrackMyRoute-Web?type=design&node-id=1-2&t=vpM8mg1HtrwmaE8b-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design 
-Video About-The-Team-Sprint-3: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20191e831_upc_edu_pe/EbkZDhVHgNZHu6CYATcPtjYBVMSHPvXKkQlV-CRuYsBe-Q?e=zYgbN1
 
 Link de prototipo: https://www.figma.com/proto/aJREmuLbY7nLlgmOTtjcW5/TrackMyRoute-Web?type=design&node-id=3-6&t=PO71zMM1GnVJDk1r-1&scaling=scale-down-width&page-id=1%3A3&starting-point-node-id=3%3A6&mode=design
+
+Link Repositorio Landing Page: https://github.com/G2-AplicacionesWeb-SI91/Landing
+
+Link Repositorio Frontend: https://github.com/G2-AplicacionesWeb-SI91/frontend
+
+Link Repositorio Backend: https://github.com/G2-AplicacionesWeb-SI91/backend
+
+Link Landing Page Desplegada: https://g2-aplicacionesweb-si91.github.io/Landing/
+
+Link Web App Desplegada: https://trackmyroute-appsweb.web.app/
+
+Link Web Service Desplegado: 
+
+Video About-The-Team-Sprint-3: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20191e831_upc_edu_pe/EbkZDhVHgNZHu6CYATcPtjYBVMSHPvXKkQlV-CRuYsBe-Q?e=zYgbN1
+
