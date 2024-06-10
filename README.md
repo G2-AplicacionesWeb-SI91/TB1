@@ -2344,7 +2344,7 @@ Backend Service:
   <table>
     <tbody>
         <tr>
-            <td https://g2-aplicacionesweb-si91.github.io/Landing/</td>
+            <td> https://g2-aplicacionesweb-si91.github.io/Landing/</td>
         </tr>
     </tbody>
 </table>
@@ -2357,13 +2357,24 @@ Backend Service:
     </tbody>
 </table>
 * Backend Service
-<table>
-    <tbody>
-        <tr>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+Nos enfocamos en la evidencia del backend para este sprint, se trabajo con SwaggerAPI para el testeo de conexión y correcto funcionamiento del backend.
+
+<div align="center">
+
+  <img src="images/NotifSSjpeg.jpeg">
+
+</div>
+<div align="center">
+
+  <img src="images/PaymentsSS.jpeg">
+
+</div>
+
+<div align="center">
+
+  <img src="images/PromoSS.JPG">
+
+</div>
 
 - #### 5.2.3.8 Team Collaboration Insights during Sprint
 
