@@ -2063,7 +2063,7 @@ En esta entrega no se hace uso de Web Services por lo que no hay documentación 
         </tr>
         <tr>
             <td>Sprint 3 Velocity</td>
-            <td>28</td>
+            <td>26</td>
         </tr>
         <tr>
             <td>Sum of Story Points</td>
