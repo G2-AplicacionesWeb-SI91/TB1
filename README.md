@@ -2022,19 +2022,19 @@ En esta entrega no se hace uso de Web Services por lo que no hay documentación 
             <td>Rivas Sarango, David Alejandro / Ramirez Mendoza, Carlos Arian / Valenzuela Vallejos, Alessandro Stefano  / Casimiro Fernandez, Carlos Oswaldo / Landeo Simeón, Favio Sebastián</td>
         </tr>
         <tr>
-            <td>Sprint n – 3 Review Summary</td>
-            <td>Desarrollar los respectivos bounded context en el backend de TrackMyRoute, utilizando las herramientas de C#, .NET, Swagger y MySQL</td>
+            <td>Sprint n – 2 Review Summary</td>
+            <td>Se logró desarrollar los respectivos bounded context en el frontend de TrackMyRoute con las herramientas de Vue.js y mejora en el frontend. </td>
         </tr>
         <tr>
-            <td>Sprint n – 3 Retrospective Summary</td>
-            <td>El equipo mantendrá la comunicación, y se establecerán mejores parámetros de desarrollo para realizar el desarrollo del backend</td>
+            <td>Sprint n – 2 Retrospective Summary</td>
+            <td>El equipo mantendrá la comunicación como viene haciendo desde el primer sprint y se establecerán mejores parámetros de desarrollo para realizar el desarrollo del backend.</td>
         </tr>
         <tr>
             <td colspan="2">Sprint Goal & User Stories</td>
         </tr>
         <tr>
             <td>Sprint 3 Goal</td>
-            <td>Diseñar e implementar más del 40% del backend de la aplicación web.</td>
+            <td>Se utilazarán las herramientas de C#, .NET, Swagger y MySQL. Diseñar e implementar más del 40% del backend de la aplicación web.</td>
         </tr>
         <tr>
             <td>Sprint 3 Velocity</td>
