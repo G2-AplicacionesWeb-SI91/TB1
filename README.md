@@ -2261,13 +2261,13 @@ Backend Service:
 
 <div align="center">
 
-  <img src="">
+  <img src="images/SSPULSE TB2.JPG">
 
 </div>
 
 <div align="center">
 
-  <img src="">
+  <img src="images/ssGitFlowTB2.JPG">
 
 </div>
 
