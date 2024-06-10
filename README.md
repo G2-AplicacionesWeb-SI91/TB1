@@ -2184,6 +2184,68 @@ En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos 
 
 - #### 5.2.3.6 Services Documentation Evidence for Sprint Review
 
+Backend Service:
+<table>
+    <thead>
+        <tr>
+            <th>Endpoint</th>
+            <th>Operaciones</th>
+            <th>Parametros</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="12">Forum</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/notifications</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>No tiene</td>
+            <td>api/v1/notifications</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{id}</td>
+            <td>api/v1/notifications/{id}</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/payments</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{answerId}</td>
+            <td>api/v1/payments/{id}</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{busCompany}</td>
+            <td>api/v1/payments/bus-company/{busCompany}</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>No tiene</td>
+            <td>api/v1/payments</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{promoId}</td>
+            <td>api/v1/promo/{promoId}</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/forum/promo</td>
+        </tr>
+    </tbody>
+</table>
+
 
 - #### 5.2.3.7 Software Deployment Evidence for Sprint Review
 
