@@ -2128,45 +2128,45 @@ En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento inter
   <tbody>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>main</td>
+      <td>7aad70f</td>
+      <td>Project Files</td>
+      <td>07/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>main</td>
+      <td>3fa172d</td>
+      <td>project files</td>
+      <td>07/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>main</td>
+      <td>9bf146f</td>
+      <td>feat(shared): added file Shared where resides the basic code for the project and packages dependencies.</td>
+      <td>08/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>main</td>
+      <td>f66ea13</td>
+      <td>feat: added shared interfaces.</td>
+      <td>09/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>main</td>
+      <td>1c05f46</td>
+      <td>fix: fixed apply function in class kebab case naming convention.</td>
+      <td>09/06/2024</td>
     </tr>
   </tbody>
 </table>
 
 - #### 5.2.3.4 Testing Suite Evidence for Sprint Review
 
-En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos en la parte visual de la Web Application
+En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos en la parte del Backend
 
 - #### 5.2.3.5 Execution Evidence for Sprint Review
 
