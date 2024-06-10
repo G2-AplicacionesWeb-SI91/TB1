@@ -2049,6 +2049,10 @@ En esta entrega no se hace uso de Web Services por lo que no hay documentación 
 
 - #### 5.2.3.2 Sprint Backlog 3
 
+En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento interno para que la API funcione correctamente.
+
+
+
 <table>
   <thead>
     <tr>
