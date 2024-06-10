@@ -2340,7 +2340,30 @@ Backend Service:
 
 - #### 5.2.3.7 Software Deployment Evidence for Sprint Review
 
-
+* Langing Page
+  <table>
+    <tbody>
+        <tr>
+            <td https://g2-aplicacionesweb-si91.github.io/Landing/</td>
+        </tr>
+    </tbody>
+</table>
+* Frontend-application
+<table>
+    <tbody>
+        <tr>
+            <td>https://trackmyroute-appsweb123.web.app/login</td>
+        </tr>
+    </tbody>
+</table>
+* Backend Service
+<table>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 - #### 5.2.3.8 Team Collaboration Insights during Sprint
 
