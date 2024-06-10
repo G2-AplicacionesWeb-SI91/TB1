@@ -120,6 +120,9 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   - [5.2 Landing Page, Services \& Applications Implementation.](#52-landing-page-services--applications-implementation)
     - [5.2.2. Sprint 2](#522-sprint-2)
     - [5.2.3. Sprint 3](#523-sprint-3)
+  - [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
 - [Conclusiones](#conclusiones)
 - [Anexos](#anexos)
 ---
@@ -2364,6 +2367,57 @@ Nos enfocamos en la evidencia del backend para este sprint, se trabajo con Swagg
   <img src="images/ssGitFlowTB2.JPG">
 
 </div>
+
+## 5.3. Validation Interviews
+
+En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante el proyecto.
+
+### 5.3.1. Diseño de Entrevistas 
+
+**Segmento 1: Usuarios de servicios de transporte**
+
+1. ¿La información en la página principal te ayuda a comprender claramente el objetivo de TrackMyRoute?
+2. ¿Qué tan sencillo fue navegar por la página principal y encontrar la información que necesitabas?
+3. ¿El diseño de la página principal es atractivo y profesional?
+4. ¿Está bien comunicada la propuesta de valor de TrackMyRoute y te resulta convincente?
+5. ¿Qué elementos o información adicional te gustaría ver en la página principal para sentirte más seguro al usar nuestro servicio?
+6. ¿Qué tan intuitivo es el proceso de registro e inicio de sesión en la aplicación?
+7. ¿Están claramente explicadas y son fáciles de usar las funcionalidades principales de TrackMyRoute?
+8. ¿Te parecen agradables y prácticos el diseño y la disposición de los elementos en la aplicación web?
+9. ¿Te sientes cómodo navegando por las diferentes secciones de la aplicación web?
+10. ¿Crees que falta alguna funcionalidad o característica en la aplicación web?
+
+**Segmento 2: Empresas y conductores de transporte público**
+
+1. ¿La página principal comunica claramente los beneficios de TrackMyRoute para tu negocio?
+2. ¿Encuentras fácilmente la información sobre planes y precios en la página principal?
+3. ¿Qué tan profesional y confiable te parece la presentación de la página principal?
+4. ¿La sección de testimonios o casos de éxito te ayuda a confiar en TrackMyRoute?
+5. ¿Qué información adicional te gustaría ver en la página principal para considerar implementar TrackMyRoute en tu empresa?
+6. ¿Es claro y fácil de seguir el proceso de configuración inicial de la aplicación web?
+7. ¿Son adecuadas las funcionalidades de administración y gestión de rutas en la aplicación web para las necesidades de tu negocio?
+8. ¿El diseño de la aplicación web es profesional y se alinea con las expectativas de tu empresa?
+9. ¿Te resulta fácil acceder a informes y análisis dentro de la aplicación web?
+10. ¿Hay alguna funcionalidad específica que crees que debería añadirse para mejorar la experiencia de uso en un entorno empresarial?
+
+### 5.3.2. Registro de Entrevistas
+
+
+- Entrevista 1
+
+<div align="center">
+  <img src="./images/validation-interview-1.png"/>
+</div>
+
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202115412_upc_edu_pe/EQYMFUKssqhJmauBsFlZWVMBSaemDE5YDtg0jCwE_pByFw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=e3bNzV
+
+- Entrevista 2
+
+<div align="center">
+  <img src="./images/validation-interview-2.png"/>
+</div>
+
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202115412_upc_edu_pe/EelZzGkqHWFJiHPGFeqyOo0BcaIKXQZPmBSSTJ6FMZC7Vg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=O1TB3v
 
 
 
