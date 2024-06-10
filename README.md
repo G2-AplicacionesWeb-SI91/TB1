@@ -2214,7 +2214,7 @@ En esta entrega no se hace uso de sistemas de Testing ya que solo nos enfocamos 
   Concluimos que es importante tener un buen orden en el control de versiones o Git Flow, para que no haya conflictos a la hora de hacer las integraciones correpondientes.
 
 - TB2: 
-  
+  En esta entrega comprendimos que cuando usamos metodologías ágiles en un proyecto trabajamos de manera más armoniona y beneficiosa en cuanto a eficacia.
 
 
 # Anexos
