@@ -29,7 +29,8 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 | **Versión** | **Fecha** | **Autor** | **Descripción de Modificación** |
 |-------------|-----------|-----------|---------------------------------|
 | v1.0        | 13/04/2024| Todos     | Añadimos los puntos que faltaban junto con el avance de la Landing Page|
-
+| v2.0        | 13/04/2024| Todos     | Implementacion del Front de nuestro Sistema|
+| v3.0        | 13/04/2024| Todos     | Implementacion del Back de nuestro Sistema|
 ---
 # Project Report Collaboration Insights 
 
