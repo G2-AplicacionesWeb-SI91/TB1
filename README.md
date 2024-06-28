@@ -2584,9 +2584,9 @@ Link: [https://trello.com/b/8cUWzeGy/si730-2401-si91-grupo2]
   <tbody>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
-      <td>main</td>
-      <td>7aad70f</td>
-      <td>Project Files</td>
+      <td>feature/payment</td>
+      <td>ddb8626</td>
+      <td>feat(feature/payment): get and post methods</td>
       <td>07/06/2024</td>
     </tr>
     <tr>
@@ -2599,22 +2599,22 @@ Link: [https://trello.com/b/8cUWzeGy/si730-2401-si91-grupo2]
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
       <td>bc-notifications</td>
-      <td>6420fd4</td>
-      <td>fix: updated endpoint name.</td>
+      <td>87926ea</td>
+      <td>fix: fixed api controller route.</td>
       <td>08/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
       <td>bc-promo</td>
-      <td>879395c</td>
-      <td>feat: promos interface layer</td>
+      <td>5776b69</td>
+      <td>feat: promoaudit</td>
       <td>09/06/2024</td>
     </tr>
     <tr>
       <td>https://github.com/G2-AplicacionesWeb-SI91/backend</td>
       <td>feature/tracking</td>
-      <td>ce1da0e</td>
-      <td>feat(tracking): re do tracking bc</td>
+      <td>3d9c109</td>
+      <td>fix(feature/tracking): new query</td>
       <td>09/06/2024</td>
     </tr>
   </tbody>
