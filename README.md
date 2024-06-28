@@ -2449,7 +2449,7 @@ Nos enfocamos en la evidencia del backend para este sprint, se trabajo con Swagg
 
 En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento interno para que la API funcione correctamente.
 
-<img src="images/ssBuenoPB3.JPG" />
+<img src="images/ss01TF.JPG" />
 
 Link: [https://trello.com/b/8cUWzeGy/si730-2401-si91-grupo2]
 
