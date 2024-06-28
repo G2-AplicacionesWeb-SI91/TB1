@@ -142,7 +142,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 
 Criterio Espeficico: <br>
-5.c1. Participa en equipos  multidisciplinarios con eficacia, eficiencia y  objetividad, en el marco de un proyecto en  soluciones de ingeniería de software<
+5.c1. Participa en equipos  multidisciplinarios con eficacia, eficiencia y  objetividad, en el marco de un proyecto en  soluciones de ingeniería de software
 <br>
 Conclusiones <br>
 Se compartio informacion de manera clara y concisa, escuchando activamene las ideas de los demas ademas de una planificacion cuidadosa y evaluando cada avance de manera critica.
