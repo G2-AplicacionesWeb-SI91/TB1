@@ -2620,7 +2620,181 @@ Link: [https://trello.com/b/8cUWzeGy/si730-2401-si91-grupo2]
   </tbody>
 </table>
 
+- #### 5.2.4.4 Testing Suite Evidence for Sprint Review
 
+<div align="center">
+
+  <img src="images/NotifSSjpeg.jpeg">
+
+</div>
+
+- #### 5.2.4.5 Execution Evidence for Sprint Review
+
+<div align="center">
+
+  <img src="./images/back-sprint4.jpg">
+
+</div>
+
+
+- #### 5.2.4.6 Services Documentation Evidence for Sprint Review
+
+Backend Service:
+<table>
+    <thead>
+        <tr>
+            <th>Endpoint</th>
+            <th>Operaciones</th>
+            <th>Parametros</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+            <td rowspan="3">Authentication</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/authentication/sign-in</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/authentication/sign-up</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Profiles</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/profiles</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>No tiene</td>
+            <td>api/v1/profiles</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{id}</td>
+            <td>api/v1/profiles/{id}</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Notifications</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/notifications</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>No tiene</td>
+            <td>api/v1/notifications</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{id}</td>
+            <td>api/v1/notifications/{id}</td>
+        </tr>
+	<tr>
+		<td rowspan="5">Payments</td>
+	</tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/payments</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{answerId}</td>
+            <td>api/v1/payments/{id}</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>{busCompany}</td>
+            <td>api/v1/payments/bus-company/{busCompany}</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>No tiene</td>
+            <td>api/v1/payments</td>
+        </tr>
+	    <tr>
+	    <td rowspan="4">Promos</td>
+	    </tr>
+        <tr>
+            <td>GET</td>
+            <td>{promoId}</td>
+            <td>api/v1/promo/{promoId}</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>No tiene</td>
+            <td>api/v1/promo/</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>No tiene</td>
+            <td>api/v1/promo</td>
+        </tr>
+    </tbody>
+</table>
+
+
+- #### 5.2.4.7 Software Deployment Evidence for Sprint Review
+
+* Langing Page
+  <table>
+    <tbody>
+        <tr>
+            <td> https://g2-aplicacionesweb-si91.github.io/Landing/</td>
+        </tr>
+    </tbody>
+</table>
+* Frontend-application
+<table>
+    <tbody>
+        <tr>
+            <td>https://trackmyroute-appsweb123.web.app/login</td>
+        </tr>
+    </tbody>
+</table>
+* Backend Service
+Nos enfocamos en la evidencia del backend para este sprint, se trabajo con SwaggerAPI para el testeo de conexión y correcto funcionamiento del backend.
+
+<div align="center">
+
+  <img src="images/NotifSSjpeg.jpeg">
+
+</div>
+<div align="center">
+
+  <img src="images/PaymentsSS.jpeg">
+
+</div>
+
+<div align="center">
+
+  <img src="images/PromoSS.JPG">
+
+</div>
+
+- #### 5.2.4.8 Team Collaboration Insights during Sprint
+
+<div align="center">
+
+  <img src="images/SSPULSE TB2.JPG">
+
+</div>
+
+<div align="center">
+
+  <img src="./images/insight-1-sprint-4.png">
+
+</div>
 
 
 ## 5.3. Validation Interviews
