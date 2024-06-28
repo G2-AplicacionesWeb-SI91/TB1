@@ -2879,6 +2879,8 @@ Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202115412_upc_edu_pe/Ee
 - TB2: 
   En esta entrega comprendimos que cuando usamos metodologías ágiles en un proyecto trabajamos de manera más armoniona y beneficiosa en cuanto a eficacia.
 
+- TF: Para la entrega final de Trackmyroute, concluimos que la combinación de Vue.js para el frontend y .NET para el backend, junto con la implementación de Domain-Driven Design (DDD), ha sido una elección técnica robusta que nos permitió abordar la complejidad del dominio de nuestro proyecto de manera eficaz. A lo largo del desarrollo, aprendimos la importancia de mantener una arquitectura bien estructurada y cohesiva, lo cual facilitó la gestión y evolución del código. Aunque no hemos completado la aplicación en su totalidad, el proceso nos brindó valiosas lecciones sobre la integración de tecnologías modernas y metodologías de diseño avanzadas. La utilización de DDD nos permitió enfocar nuestro esfuerzo en el comportamiento del negocio, asegurando que las funcionalidades clave estuvieran alineadas con las necesidades del usuario final. Además, trabajar con Git Flow fue crucial para mantener un control de versiones ordenado y minimizar conflictos durante las integraciones. Finalmente, la adopción de metodologías ágiles nos ayudó a mejorar la colaboración del equipo y la eficacia en la entrega de resultados incrementales, lo que nos permitirá continuar el desarrollo de Trackmyroute con una base sólida y bien fundamentada.
+
 
 # Anexos
 
@@ -2897,6 +2899,11 @@ Link Landing Page Desplegada: https://g2-aplicacionesweb-si91.github.io/Landing/
 Link Web App Desplegada: https://trackmyroute-appsweb123.web.app/login
 
 Link Web Service Desplegado: 
+
+Link video expo TB1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202020108_upc_edu_pe/EWG5NyVGtpVArTHxzr9npgMBf_cZyZDDOk5VOPT0KqlPWg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=djw7bV
+Link video expo TB2: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202020108_upc_edu_pe/EdrPQyFP1i5OrawuOG0juK0B6KVfb2Ak78IviFQ6IFKIkw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=huH7c0
+Link video expo TP: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202020108_upc_edu_pe/EVVqKmJMqIVHq8E1U6yoXwUBChC-lofGLCrTjTPqA8uxpw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xm0QJ7
+Link video expo TF: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202020108_upc_edu_pe/EVwWZyV6o1pLrrRyGqz7tH8BFs1HYOCp9Dq9LUTg6KaBIQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MormXS
 
 Video About-The-Team-Sprint-3: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20191e831_upc_edu_pe/EbkZDhVHgNZHu6CYATcPtjYBVMSHPvXKkQlV-CRuYsBe-Q?e=zYgbN1
 
