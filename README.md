@@ -2624,7 +2624,25 @@ Link: [https://trello.com/b/8cUWzeGy/si730-2401-si91-grupo2]
 
 <div align="center">
 
-  <img src="images/NotifSSjpeg.jpeg">
+  <img src="./images/back-test-1.png">
+
+</div>
+
+<div align="center">
+
+  <img src="./images/back-test-2.png">
+
+</div>
+
+<div align="center">
+
+  <img src="./images/back-test-3.png">
+
+</div>
+
+<div align="center">
+
+  <img src="./images/back-test-4.png">
 
 </div>
 
