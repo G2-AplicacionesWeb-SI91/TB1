@@ -2451,6 +2451,8 @@ En esta entrega nos enfocamos en el backlog del negocio, el funcionamiento inter
 
 <img src="images/ssBuenoPB3.JPG" />
 
+Link: [https://trello.com/b/8cUWzeGy/si730-2401-si91-grupo2]
+
 <table>
   <thead>
     <tr>
